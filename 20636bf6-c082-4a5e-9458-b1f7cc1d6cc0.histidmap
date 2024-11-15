@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<historyIdMap xmlns:r="http://dev.rcware.eu/serialization/references" xmlns:n1="default" xmlns="http://dev.rcware.eu/shark-ide-2">
+  <n1:vals>
+    <n1:keyval k="$temp2_filtered$" v="9793" />
+    <n1:keyval k="$temp3_filtered$" v="9792" />
+    <n1:keyval k="$temp1_filtered$" v="9791" />
+    <n1:keyval k="$temp_venku$" v="9805" />
+    <n1:keyval k="$hw$.$temp_sever_temperature$" v="9804" />
+    <n1:keyval k="$hw$.$temp_jih_temperature$" v="9803" />
+    <n1:keyval k="$temp_sever_filtered$" v="9806" />
+    <n1:keyval k="$temp_jih_filtered$" v="9807" />
+    <n1:keyval k="$garaz_filtered$" v="9811" />
+    <n1:keyval k="$obyvak_filtered$" v="9812" />
+    <n1:keyval k="$krb_filtered$" v="9819" />
+    <n1:keyval k="$main$.$out_temp_source$" v="9824" />
+    <n1:keyval k="$temp_puda$" v="9854" />
+    <n1:keyval k="$runcnt$" v="9860" />
+    <n1:keyval k="$hw$.$pro380-mod_total_active_energy$" v="9923" />
+    <n1:keyval k="$hw$.$pro380-mod_total_active_power$" v="9939" />
+    <n1:keyval k="$hw$.$sdm120m_fve_fve_power$" v="10094" />
+    <n1:keyval k="$hw$.$sdm120m_fve_fve_energy$" v="10093" />
+    <n1:keyval k="$fve_power$" v="10097" />
+    <n1:keyval k="$fve_dayproducing$" v="10155" />
+    <n1:keyval k="$svetla_sviti$" v="10164" />
+    <n1:keyval k="$power_consumption$" v="10166" />
+    <n1:keyval k="$hw$.$pro380-mod_reverse_active_energy$" v="9912" />
+    <n1:keyval k="$vodomer_pulses$" v="10191" />
+    <n1:keyval k="$vodomer_litry$" v="10214" />
+    <n1:keyval k="$hw$.$device_kotel$" v="10218" />
+    <n1:keyval k="$hw$.$xg18_garaz$" v="10216" />
+    <n1:keyval k="$hw$.$xg18_kotel_vystup$" v="12425" />
+    <n1:keyval k="$hw$.$xg18_kotel_vratka$" v="12426" />
+    <n1:keyval k="$hw$.$neuron l523_rekuperace$" v="12448" />
+  </n1:vals>
+</historyIdMap>

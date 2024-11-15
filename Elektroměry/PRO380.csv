@@ -1,0 +1,32 @@
+﻿Name;Autogen Name;Enable;Comm. Value Mapped Type;ST Type;Array Length;Group;Read/Write Interval;Datapoint Role Property;Transform;ID;Note;Data Offset (Parser);Bit Offset (Parser);MultiByte Length (Parser);Write Offset Gap
+CurrentRead;;;;;;;00:00:00;;;2efcf351-474d-470a-a577-a80c8bb4e755;;;;;
+CurrentRead_commblock;;;Bit;bool;0;CurrentRead;00:00:00;Attribute;identity;dbefdcad-6010-4c3b-ac8a-5071d5617e7f;;;;;
+CurrentRead_commerror;;;Bit;bool;0;CurrentRead;00:00:00;Attribute;identity;7ec64187-a189-40ec-8c63-b34de0c4a7e6;;;;;
+CurrentRead_timestamp;;;BuiltIn;dt;0;CurrentRead;00:00:00;Attribute;identity;bc5ffc18-f069-4bcb-881f-f7b05a1463a3;;;;;
+L1 Current;;;BuiltIn;real;0;CurrentRead;00:00:00;Data;identity;1bb02a6a-7b52-407c-87a1-137cad060b6a;;0;0;4;0
+L2 Current;;;BuiltIn;real;0;CurrentRead;00:00:00;Data;identity;a3027c1b-eff4-4ae2-8f0c-6d04e8852616;;4;0;4;0
+L3 Current;;;BuiltIn;real;0;CurrentRead;00:00:00;Data;identity;89ccd917-4327-47e2-b603-87f35b287a04;;8;0;4;0
+PowerRead;;;;;;;00:00:00;;;d354bce1-0810-496b-8fe5-a28b6b39b0a3;;;;;
+PowerRead_commblock;;;Bit;bool;0;PowerRead;00:00:00;Attribute;identity;d9a3a8a0-ad38-48af-8197-f1828ae55299;;;;;
+PowerRead_commerror;;;Bit;bool;0;PowerRead;00:00:00;Attribute;identity;10c2245e-0f2a-4696-9201-5560fce60cc5;;;;;
+PowerRead_timestamp;;;BuiltIn;dt;0;PowerRead;00:00:00;Attribute;identity;4953c8f2-2772-4827-972c-4f66d2d8eeaf;;;;;
+ L1 Apparent Power;;;BuiltIn;real;0;PowerRead;00:00:00;Data;identity;dceb08f4-47ea-4870-a05a-bf2c28e9a540;;36;0;4;0
+L1 Active Power;;;BuiltIn;real;0;PowerRead;00:00:00;Data;identity;bffe17bb-d18a-48fa-946d-04ef0baa3007;;4;0;4;0
+L1 reactive power;;;BuiltIn;real;0;PowerRead;00:00:00;Data;identity;d543ace6-694f-4ea9-8e0e-9a3f88ff2c28;;20;0;4;0
+L2 Active Power;;;BuiltIn;real;0;PowerRead;00:00:00;Data;identity;d78c21e7-f479-41bd-bf76-8934b03be82a;;8;0;4;0
+L2 Apparent Power;;;BuiltIn;real;0;PowerRead;00:00:00;Data;identity;144d734b-e5ae-4a8b-b81e-d27f22280d27;;40;0;4;0
+L2 reactive power;;;BuiltIn;real;0;PowerRead;00:00:00;Data;identity;a270f886-cea3-46ab-856f-3f0b26ab3925;;24;0;4;0
+L3 Active Power;;;BuiltIn;real;0;PowerRead;00:00:00;Data;identity;e59662c5-df9e-49d8-ae84-d97f3fc0a061;;12;0;4;0
+L3 Apparent Power;;;BuiltIn;real;0;PowerRead;00:00:00;Data;identity;afc585d5-7c22-4868-9c11-fefca620f365;;44;0;4;0
+L3 reactive power;;;BuiltIn;real;0;PowerRead;00:00:00;Data;identity;6f724190-8355-437d-8fb2-6f7aa05726fd;;28;0;4;0
+Total Active Power;;;BuiltIn;real;0;PowerRead;00:00:00;Data;identity;c08374de-9e71-4131-b964-9caff08f0778;;0;0;4;0
+Total Apparent Power;;;BuiltIn;real;0;PowerRead;00:00:00;Data;identity;85f292e0-f7c1-4241-ac7d-1207ab8d6d2a;;32;0;4;0
+Total reactive power;;;BuiltIn;real;0;PowerRead;00:00:00;Data;identity;37f34085-818f-40dd-a461-267e91d05023;;16;0;4;0
+VoltageRead;;;;;;;00:00:00;;;05a4799a-a84c-44e3-ae67-6a13faf1a939;;;;;
+VoltageRead_commblock;;;Bit;bool;0;VoltageRead;00:00:00;Attribute;identity;b2d62036-f067-4a76-a145-822740d80f38;;;;;
+VoltageRead_commerror;;;Bit;bool;0;VoltageRead;00:00:00;Attribute;identity;a678cfa3-fdd6-482f-9150-5d0ae67af6bb;;;;;
+VoltageRead_timestamp;;;BuiltIn;dt;0;VoltageRead;00:00:00;Attribute;identity;d99af38a-b50f-4685-8df7-8fd55d7cbe87;;;;;
+Grid frequency;;;BuiltIn;real;0;VoltageRead;00:00:00;Data;identity;2122b9ef-3083-40cd-b8fd-3852732310fd;;12;0;4;0
+L1 Voltage;;;BuiltIn;real;0;VoltageRead;00:00:00;Data;identity;589e0162-a239-47a6-914f-bf91ee56516f;;0;0;4;0
+L2 Voltage;;;BuiltIn;real;0;VoltageRead;00:00:00;Data;identity;94ecaf87-038e-4f3b-b821-c9cccc809e7c;;4;0;4;0
+L3 Voltage;;;BuiltIn;real;0;VoltageRead;00:00:00;Data;identity;f075587a-2a9b-4a45-a7a4-d12c3dcd0bdf;;8;0;4;0

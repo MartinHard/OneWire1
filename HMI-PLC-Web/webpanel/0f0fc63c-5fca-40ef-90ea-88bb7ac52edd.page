@@ -1,0 +1,1263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page xmlns:r="http://dev.rcware.eu/serialization/references" id="0f0fc63c-5fca-40ef-90ea-88bb7ac52edd" xmlns="http://dev.rcware.eu/shark-hmi">
+  <content>
+    <canvas width="1024" height="600" r:type="8565f6b3-fecb-47d5-89fb-e6d8c5942880">
+      <metadata>
+        <stringMetadata key="viewer.background.color" value="#FFA7A7A7" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+      </metadata>
+      <children>
+        <rectangle width="210" height="210" fill="#FFBDCADE" cornerRadius="10" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b">
+          <metadata>
+            <intMetadata key="canvas.y" value="350" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="30" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="name" value="Rectangle" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="gadgetName" value="rectangle" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+        </rectangle>
+        <layoutPanel width="100" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="360" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="40" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="text" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Text" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <layoutPanel width="98" height="28" horizontalAlignment="Center" verticalAlignment="Center" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+              <children>
+                <rectangle horizontalAlignment="Stretch" verticalAlignment="Stretch" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+                <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Sever:" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+              </children>
+            </layoutPanel>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="400" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="40" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="text" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Text" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <layoutPanel width="98" height="28" horizontalAlignment="Center" verticalAlignment="Center" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+              <children>
+                <rectangle horizontalAlignment="Stretch" verticalAlignment="Stretch" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+                <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Jih:" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+              </children>
+            </layoutPanel>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="210" height="60" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="10" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="800" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="dateTimeIndicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="DateTime Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="210" height="60" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="208" height="58" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="26.08.2024 18:16" font="Open Sans" fontSize="24" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b">
+              <evaluators>
+                <textValueEvaluator varRef="varRef://DefaultConnection/systemTime_20636bf6-c082-4a5e-9458-b1f7cc1d6cc0" stringFormat="%d.%m.%Y %H:%M" r:type="7a0b4390-db18-4e31-a38b-794476e8540b" />
+              </evaluators>
+            </textBlock>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="360" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="130" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="valueindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Value Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="100" height="30" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="98" height="28" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="00.0 °C" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b">
+              <evaluators>
+                <textValueEvaluator varRef="varRef://DefaultConnection/Temp_Sever_Filtered" stringFormat="%4.1f °C" r:type="7a0b4390-db18-4e31-a38b-794476e8540b" />
+              </evaluators>
+            </textBlock>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="400" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="130" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="valueindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Value Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="100" height="30" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="98" height="28" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="00.0 °C" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b">
+              <evaluators>
+                <textValueEvaluator varRef="varRef://DefaultConnection/Temp_Jih_Filtered" stringFormat="%4.1f °C" r:type="7a0b4390-db18-4e31-a38b-794476e8540b" />
+              </evaluators>
+            </textBlock>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="110" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="10" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="530" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="valueindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Value Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="110" height="30" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="108" height="28" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Venku: 00.0 °C" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b">
+              <evaluators>
+                <textValueEvaluator varRef="varRef://DefaultConnection/Temp_Venku" stringFormat="Venku: %4.1f °C" r:type="7a0b4390-db18-4e31-a38b-794476e8540b" />
+              </evaluators>
+            </textBlock>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="110" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="10" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="410" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="valueindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Value Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="110" height="30" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="108" height="28" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Garáž: 00.0 °C" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b">
+              <evaluators>
+                <textValueEvaluator varRef="varRef://DefaultConnection/Garaz_filtered" stringFormat="Garáž: %4.1f °C" r:type="7a0b4390-db18-4e31-a38b-794476e8540b" />
+              </evaluators>
+            </textBlock>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="110" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="10" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="290" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="valueindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Value Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="110" height="30" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="108" height="28" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Obývák: 00.0 °C" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b">
+              <evaluators>
+                <textValueEvaluator varRef="varRef://DefaultConnection/Obyvak_filtered" stringFormat="Obývák: %4.1f °C" r:type="7a0b4390-db18-4e31-a38b-794476e8540b" />
+              </evaluators>
+            </textBlock>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="510" height="380" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="60" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="280" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="chart" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Chart" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="510" height="380" fill="#FFE1484E" cornerRadius="0" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <layoutPanel width="504" height="374" horizontalAlignment="Center" verticalAlignment="Center" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+              <children>
+                <rectangle horizontalAlignment="Stretch" verticalAlignment="Stretch" fill="#FF324F7B" cornerRadius="0" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+                <chart horizontalAlignment="Stretch" verticalAlignment="Stretch" type="line" sampleRate="60000" duration="86340" legend="show" r:type="392c638f-a887-4539-99c8-966f2f444e9d">
+                  <axisCollection>
+                    <yAxis id="Teplota" min="auto" max="auto" r:type="eae8344a-4dd5-4419-886d-0d01b915c21d" />
+                  </axisCollection>
+                  <seriesCollection>
+                    <series name="Venku" color="#FFDA2128" thickness="1" showPoints="false" stringFormat="Venku %4.1f" yAxisRef="Teplota" varRef="varRef://DefaultConnection/Temp_Venku" />
+                    <series name="Obyvak" color="#FFF57F20" thickness="1" showPoints="false" stringFormat="Obyvak %4.1f" yAxisRef="Teplota" varRef="varRef://DefaultConnection/Obyvak_filtered" />
+                    <series name="Garaz" color="#FFFCCC00" thickness="1" showPoints="false" stringFormat="Garáž %4.1f" yAxisRef="Teplota" varRef="varRef://DefaultConnection/Garaz_filtered" />
+                  </seriesCollection>
+                </chart>
+              </children>
+            </layoutPanel>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="50" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <stringMetadata key="name" value="Digital Setter" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <intMetadata key="canvas.y" value="290" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="130" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="digitalsetter" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="100" height="50" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <switch width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" r:type="c5e6625e-0f64-49c3-96ec-fe23933228d4">
+              <evaluators>
+                <boolStateEvaluator defaultState="false" varRef="varRef://DefaultConnection/OVL_SV_Terasa" r:type="d270cb21-585d-4163-a116-471e23099574" />
+              </evaluators>
+              <states>
+                <switchState state="false">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <actions>
+                        <boolSetValueAction event="onLeftDown" value="true" varRef="varRef://DefaultConnection/OVL_SV_Terasa" r:type="24271679-5105-42cc-ad84-6f3e0ba7df41" />
+                      </actions>
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Terasa OFF" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+                <switchState state="true">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <actions>
+                        <boolSetValueAction event="onLeftDown" value="false" varRef="varRef://DefaultConnection/OVL_SV_Terasa" r:type="24271679-5105-42cc-ad84-6f3e0ba7df41" />
+                      </actions>
+                      <children>
+                        <rectangle width="98" height="48" fill="#FF80D22D" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Terasa ON" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+              </states>
+            </switch>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="50" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <stringMetadata key="name" value="Digital Setter" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <intMetadata key="canvas.y" value="290" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="20" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="digitalsetter" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="100" height="50" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <switch width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" r:type="c5e6625e-0f64-49c3-96ec-fe23933228d4">
+              <evaluators>
+                <boolStateEvaluator defaultState="false" varRef="varRef://DefaultConnection/OVL_SV_Predgaraz" r:type="d270cb21-585d-4163-a116-471e23099574" />
+              </evaluators>
+              <states>
+                <switchState state="false">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <actions>
+                        <boolSetValueAction event="onLeftDown" value="true" varRef="varRef://DefaultConnection/OVL_SV_Predgaraz" r:type="24271679-5105-42cc-ad84-6f3e0ba7df41" />
+                      </actions>
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Pred Garazi OFF" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+                <switchState state="true">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <actions>
+                        <boolSetValueAction event="onLeftDown" value="false" varRef="varRef://DefaultConnection/OVL_SV_Predgaraz" r:type="24271679-5105-42cc-ad84-6f3e0ba7df41" />
+                      </actions>
+                      <children>
+                        <rectangle width="98" height="48" fill="#FF80D22D" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Pred Garazi ON" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+              </states>
+            </switch>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="440" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="40" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="text" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Text" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <layoutPanel width="98" height="28" horizontalAlignment="Center" verticalAlignment="Center" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+              <children>
+                <rectangle horizontalAlignment="Stretch" verticalAlignment="Stretch" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+                <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Puda:" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+              </children>
+            </layoutPanel>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="440" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="130" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="valueindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Value Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="100" height="30" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="98" height="28" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="00.0 °C" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b">
+              <evaluators>
+                <textValueEvaluator varRef="varRef://DefaultConnection/Temp_Puda" stringFormat="%4.1f °C" r:type="7a0b4390-db18-4e31-a38b-794476e8540b" />
+              </evaluators>
+            </textBlock>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="120" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="510" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="280" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="valueindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Value Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="120" height="30" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="118" height="28" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="10min Cnt: 00000" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b">
+              <evaluators>
+                <textValueEvaluator varRef="varRef://DefaultConnection/RunCnt" stringFormat="10min Cnt: %5.0f" r:type="7a0b4390-db18-4e31-a38b-794476e8540b" />
+              </evaluators>
+            </textBlock>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="480" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="40" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="text" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Text" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <layoutPanel width="98" height="28" horizontalAlignment="Center" verticalAlignment="Center" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+              <children>
+                <rectangle horizontalAlignment="Stretch" verticalAlignment="Stretch" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+                <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Pracovna:" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+              </children>
+            </layoutPanel>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="210" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="310" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="800" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="valueindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Value Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="210" height="30" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="208" height="28" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Celková spotřeba: 00.000 kWh" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b">
+              <evaluators>
+                <textValueEvaluator varRef="varRef://DefaultConnection/hw.Pro380-Mod_Total_active_energy" stringFormat="Celková spotřeba: %6.3f kWh" r:type="7a0b4390-db18-4e31-a38b-794476e8540b" />
+              </evaluators>
+            </textBlock>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="210" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="120" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="800" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="valueindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Value Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="210" height="30" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="208" height="28" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Aktualní spotřeba Síť: 0.000 kW" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b">
+              <evaluators>
+                <textValueEvaluator varRef="varRef://DefaultConnection/hw.Pro380-Mod_Total_Active_power" stringFormat="Aktualní spotřeba Síť: %5.3f kW" r:type="7a0b4390-db18-4e31-a38b-794476e8540b" />
+              </evaluators>
+            </textBlock>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="520" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="40" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="text" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Text" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <layoutPanel width="98" height="28" horizontalAlignment="Center" verticalAlignment="Center" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+              <children>
+                <rectangle horizontalAlignment="Stretch" verticalAlignment="Stretch" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+                <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Pokoj P+D:" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+              </children>
+            </layoutPanel>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="520" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="130" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="valueindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Value Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="100" height="30" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="98" height="28" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="00.0 °C" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b">
+              <evaluators>
+                <textValueEvaluator varRef="varRef://DefaultConnection/TempPD" stringFormat="%4.1f °C" r:type="7a0b4390-db18-4e31-a38b-794476e8540b" />
+              </evaluators>
+            </textBlock>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="210" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="270" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="800" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="valueindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Value Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="210" height="30" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="208" height="28" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Celková výroba: 00.000 kWh" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b">
+              <evaluators>
+                <textValueEvaluator varRef="varRef://DefaultConnection/hw.SDM120M_FVE_FVE_Energy" stringFormat="Celková výroba: %6.3f kWh" r:type="7a0b4390-db18-4e31-a38b-794476e8540b" />
+              </evaluators>
+            </textBlock>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="210" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="160" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="800" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="valueindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Value Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="210" height="30" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="208" height="28" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Aktualní výroba: 0.000 kW" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b">
+              <evaluators>
+                <textValueEvaluator varRef="varRef://DefaultConnection/FVE_Power" stringFormat="Aktualní výroba: %5.3f kW" r:type="7a0b4390-db18-4e31-a38b-794476e8540b" />
+              </evaluators>
+            </textBlock>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="120" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="10" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="20" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="button" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Link" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <actions>
+            <changePageAction event="onLeftDown" pageId="87474a8b-e170-4c0c-a905-f2fd7684ce39" r:type="aee77571-1a23-4e43-b602-06b40aff41b5" />
+          </actions>
+          <children>
+            <rectangle width="120" height="30" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="118" height="28" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Energie" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="50" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <stringMetadata key="name" value="Digital Setter" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <intMetadata key="canvas.y" value="50" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="20" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="digitalsetter" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="100" height="50" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <switch width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" r:type="c5e6625e-0f64-49c3-96ec-fe23933228d4">
+              <evaluators>
+                <boolStateEvaluator defaultState="false" varRef="varRef://DefaultConnection/main.SV_Dole" r:type="d270cb21-585d-4163-a116-471e23099574" />
+              </evaluators>
+              <states>
+                <switchState state="false">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <actions>
+                        <boolSetValueAction event="onLeftDown" value="true" varRef="varRef://DefaultConnection/main.SV_Dole" r:type="24271679-5105-42cc-ad84-6f3e0ba7df41" />
+                      </actions>
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Světlo Obyvak" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+                <switchState state="true">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <actions>
+                        <boolSetValueAction event="onLeftDown" value="false" varRef="varRef://DefaultConnection/main.SV_Dole" r:type="24271679-5105-42cc-ad84-6f3e0ba7df41" />
+                      </actions>
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Světlo Obyvak" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+              </states>
+            </switch>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="50" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <stringMetadata key="name" value="Digital Setter" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <intMetadata key="canvas.y" value="110" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="20" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="digitalsetter" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="100" height="50" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <switch width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" r:type="c5e6625e-0f64-49c3-96ec-fe23933228d4">
+              <evaluators>
+                <boolStateEvaluator defaultState="" varRef="varRef://DefaultConnection/DI_3_2_virtual" r:type="d270cb21-585d-4163-a116-471e23099574" />
+              </evaluators>
+              <states>
+                <switchState state="false">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <actions>
+                        <boolSetValueAction event="onLeftDown" value="true" varRef="varRef://DefaultConnection/DI_3_2_virtual" r:type="24271679-5105-42cc-ad84-6f3e0ba7df41" />
+                      </actions>
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Světlo Krb" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+                <switchState state="true">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <actions>
+                        <boolSetValueAction event="onLeftDown" value="false" varRef="varRef://DefaultConnection/DI_3_2_virtual" r:type="24271679-5105-42cc-ad84-6f3e0ba7df41" />
+                      </actions>
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Světlo Krb" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+              </states>
+            </switch>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="50" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <stringMetadata key="name" value="Digital Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <intMetadata key="canvas.y" value="50" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="130" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="digitalindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="100" height="50" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <switch width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" r:type="c5e6625e-0f64-49c3-96ec-fe23933228d4">
+              <evaluators>
+                <boolStateEvaluator defaultState="" varRef="varRef://DefaultConnection/hw.Neuron L523_SSR_SvetlaDole" r:type="d270cb21-585d-4163-a116-471e23099574" />
+              </evaluators>
+              <states>
+                <switchState state="false">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="OFF" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+                <switchState state="true">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <children>
+                        <rectangle width="98" height="48" fill="#FF80D22D" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="ON" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+              </states>
+            </switch>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="50" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <stringMetadata key="name" value="Digital Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <intMetadata key="canvas.y" value="110" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="130" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="digitalindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="100" height="50" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <switch width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" r:type="c5e6625e-0f64-49c3-96ec-fe23933228d4">
+              <evaluators>
+                <boolStateEvaluator defaultState="" varRef="varRef://DefaultConnection/hw.Neuron L523_RO_2x01" r:type="d270cb21-585d-4163-a116-471e23099574" />
+              </evaluators>
+              <states>
+                <switchState state="false">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="OFF" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+                <switchState state="true">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <children>
+                        <rectangle width="98" height="48" fill="#FF80D22D" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="ON" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+              </states>
+            </switch>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="50" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <stringMetadata key="name" value="Digital Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <intMetadata key="canvas.y" value="170" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="130" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="digitalindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="100" height="50" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <switch width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" r:type="c5e6625e-0f64-49c3-96ec-fe23933228d4">
+              <evaluators>
+                <boolStateEvaluator defaultState="" varRef="varRef://DefaultConnection/hw.Neuron L523_RO_2x02" r:type="d270cb21-585d-4163-a116-471e23099574" />
+              </evaluators>
+              <states>
+                <switchState state="false">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="OFF" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+                <switchState state="true">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <children>
+                        <rectangle width="98" height="48" fill="#FF80D22D" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="ON" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+              </states>
+            </switch>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="50" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <stringMetadata key="name" value="Digital Setter" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <intMetadata key="canvas.y" value="170" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="20" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="digitalsetter" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="100" height="50" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <switch width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" r:type="c5e6625e-0f64-49c3-96ec-fe23933228d4">
+              <evaluators>
+                <boolStateEvaluator defaultState="" varRef="varRef://DefaultConnection/DI_3_3_virtual" r:type="d270cb21-585d-4163-a116-471e23099574" />
+              </evaluators>
+              <states>
+                <switchState state="false">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <actions>
+                        <boolSetValueAction event="onLeftDown" value="true" varRef="varRef://DefaultConnection/DI_3_3_virtual" r:type="24271679-5105-42cc-ad84-6f3e0ba7df41" />
+                      </actions>
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Světlo Kuchyň" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+                <switchState state="true">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <actions>
+                        <boolSetValueAction event="onLeftDown" value="false" varRef="varRef://DefaultConnection/DI_3_3_virtual" r:type="24271679-5105-42cc-ad84-6f3e0ba7df41" />
+                      </actions>
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Světlo Kuchyň" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+              </states>
+            </switch>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="210" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="230" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="800" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="valueindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Value Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="210" height="30" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="208" height="28" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Denní výroba: 0.000 kWh" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b">
+              <evaluators>
+                <textValueEvaluator varRef="varRef://DefaultConnection/FVE_DayProducing" stringFormat="Denní výroba: %5.3f kWh" r:type="7a0b4390-db18-4e31-a38b-794476e8540b" />
+              </evaluators>
+            </textBlock>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="50" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <stringMetadata key="name" value="Digital Setter" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <intMetadata key="canvas.y" value="230" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="20" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="digitalsetter" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="100" height="50" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <switch width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" r:type="c5e6625e-0f64-49c3-96ec-fe23933228d4">
+              <evaluators>
+                <boolStateEvaluator defaultState="" varRef="varRef://DefaultConnection/DI_3_4_Virtual" r:type="d270cb21-585d-4163-a116-471e23099574" />
+              </evaluators>
+              <states>
+                <switchState state="false">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <actions>
+                        <boolSetValueAction event="onLeftDown" value="true" varRef="varRef://DefaultConnection/DI_3_4_Virtual" r:type="24271679-5105-42cc-ad84-6f3e0ba7df41" />
+                      </actions>
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Světlo Schody" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+                <switchState state="true">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <actions>
+                        <boolSetValueAction event="onLeftDown" value="false" varRef="varRef://DefaultConnection/DI_3_4_Virtual" r:type="24271679-5105-42cc-ad84-6f3e0ba7df41" />
+                      </actions>
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Světlo Schody" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+              </states>
+            </switch>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="50" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <stringMetadata key="name" value="Digital Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <intMetadata key="canvas.y" value="230" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="130" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="digitalindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="100" height="50" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <switch width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" r:type="c5e6625e-0f64-49c3-96ec-fe23933228d4">
+              <evaluators>
+                <boolStateEvaluator defaultState="" varRef="varRef://DefaultConnection/hw.Neuron L523_SSR_SV_HorniChodba" r:type="d270cb21-585d-4163-a116-471e23099574" />
+              </evaluators>
+              <states>
+                <switchState state="false">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="OFF" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+                <switchState state="true">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <children>
+                        <rectangle width="98" height="48" fill="#FF80D22D" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="ON" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+              </states>
+            </switch>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="210" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="80" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="800" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="valueindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Value Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="210" height="30" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="208" height="28" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Celková spotřeba: 0.000 kW" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b">
+              <evaluators>
+                <textValueEvaluator varRef="varRef://DefaultConnection/Power_Consumption" stringFormat="Celková spotřeba: %5.3f kW" r:type="7a0b4390-db18-4e31-a38b-794476e8540b" />
+              </evaluators>
+            </textBlock>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="480" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="130" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="valueindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Value Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="100" height="30" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="98" height="28" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="00.0 °C" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b">
+              <evaluators>
+                <textValueEvaluator varRef="varRef://DefaultConnection/Temp_Pracovna" stringFormat="%4.1f °C" r:type="7a0b4390-db18-4e31-a38b-794476e8540b" />
+              </evaluators>
+            </textBlock>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="210" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="360" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="800" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="valueindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Value Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="210" height="30" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="208" height="28" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Vodoměr: 0 l" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b">
+              <evaluators>
+                <textValueEvaluator varRef="varRef://DefaultConnection/Vodomer_litry" stringFormat="Vodoměr: %1.0f l" r:type="7a0b4390-db18-4e31-a38b-794476e8540b" />
+              </evaluators>
+            </textBlock>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <stringMetadata key="name" value="Digital Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <intMetadata key="canvas.y" value="10" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="180" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="digitalindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="100" height="30" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="98" height="28" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <switch width="98" height="28" horizontalAlignment="Center" verticalAlignment="Center" r:type="c5e6625e-0f64-49c3-96ec-fe23933228d4">
+              <evaluators>
+                <boolStateEvaluator defaultState="" varRef="varRef://DefaultConnection/hw.device_Kotel" r:type="d270cb21-585d-4163-a116-471e23099574" />
+              </evaluators>
+              <states>
+                <switchState state="false">
+                  <content>
+                    <layoutPanel width="98" height="28" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Netopí" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+                <switchState state="true">
+                  <content>
+                    <layoutPanel width="98" height="28" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <children>
+                        <rectangle width="98" height="28" fill="#FF80D22D" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Topí" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+              </states>
+            </switch>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="140" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="470" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="280" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="valueindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Value Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="140" height="30" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="138" height="28" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Kotel vystup: 00.0 °C" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b">
+              <evaluators>
+                <textValueEvaluator varRef="varRef://DefaultConnection/hw.xG18_Kotel_vystup" stringFormat="Kotel vystup: %4.1f °C" r:type="7a0b4390-db18-4e31-a38b-794476e8540b" />
+              </evaluators>
+            </textBlock>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="140" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="470" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="420" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="valueindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="Value Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="140" height="30" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="138" height="28" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Kotel vratka: 00.0 °C" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b">
+              <evaluators>
+                <textValueEvaluator varRef="varRef://DefaultConnection/hw.xG18_Kotel_vratka" stringFormat="Kotel vratka: %4.1f °C" r:type="7a0b4390-db18-4e31-a38b-794476e8540b" />
+              </evaluators>
+            </textBlock>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="30" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <stringMetadata key="name" value="Digital Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <intMetadata key="canvas.y" value="10" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="650" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="digitalindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="100" height="30" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="98" height="28" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <switch width="98" height="28" horizontalAlignment="Center" verticalAlignment="Center" r:type="c5e6625e-0f64-49c3-96ec-fe23933228d4">
+              <evaluators>
+                <boolStateEvaluator defaultState="" varRef="varRef://DefaultConnection/hw.Neuron L523_Rekuperace" r:type="d270cb21-585d-4163-a116-471e23099574" />
+              </evaluators>
+              <states>
+                <switchState state="false">
+                  <content>
+                    <layoutPanel width="98" height="28" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Vetrani Vypnuto" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+                <switchState state="true">
+                  <content>
+                    <layoutPanel width="98" height="28" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <children>
+                        <rectangle width="98" height="28" fill="#FF80D22D" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Větraní" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+              </states>
+            </switch>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="50" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <stringMetadata key="name" value="Digital Setter" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <intMetadata key="canvas.y" value="440" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="820" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="digitalsetter" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="100" height="50" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <switch width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" r:type="c5e6625e-0f64-49c3-96ec-fe23933228d4">
+              <evaluators>
+                <boolStateEvaluator defaultState="" varRef="varRef://DefaultConnection/Zaluzie_Otevrit" r:type="d270cb21-585d-4163-a116-471e23099574" />
+              </evaluators>
+              <states>
+                <switchState state="false">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <actions>
+                        <boolSetValueAction event="onLeftDown" value="true" varRef="varRef://DefaultConnection/Zaluzie_Otevrit" r:type="24271679-5105-42cc-ad84-6f3e0ba7df41" />
+                      </actions>
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Zvednout" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+                <switchState state="true">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <actions>
+                        <boolSetValueAction event="onLeftDown" value="false" varRef="varRef://DefaultConnection/Zaluzie_Otevrit" r:type="24271679-5105-42cc-ad84-6f3e0ba7df41" />
+                      </actions>
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Otevírám" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FF4CBE9D" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+              </states>
+            </switch>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="50" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <stringMetadata key="name" value="Digital Setter" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <intMetadata key="canvas.y" value="500" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="820" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="digitalsetter" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="100" height="50" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <switch width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" r:type="c5e6625e-0f64-49c3-96ec-fe23933228d4">
+              <evaluators>
+                <boolStateEvaluator defaultState="" varRef="varRef://DefaultConnection/Zaluzie_Zavrit" r:type="d270cb21-585d-4163-a116-471e23099574" />
+              </evaluators>
+              <states>
+                <switchState state="false">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <actions>
+                        <boolSetValueAction event="onLeftDown" value="true" varRef="varRef://DefaultConnection/Zaluzie_Zavrit" r:type="24271679-5105-42cc-ad84-6f3e0ba7df41" />
+                      </actions>
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Spustit" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+                <switchState state="true">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <actions>
+                        <boolSetValueAction event="onLeftDown" value="false" varRef="varRef://DefaultConnection/Zaluzie_Zavrit" r:type="24271679-5105-42cc-ad84-6f3e0ba7df41" />
+                      </actions>
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Zavírám" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FF4CBE9D" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+              </states>
+            </switch>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="70" height="50" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <stringMetadata key="name" value="Digital Setter" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <intMetadata key="canvas.y" value="440" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="930" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="digitalsetter" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="70" height="50" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="68" height="48" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <switch width="68" height="48" horizontalAlignment="Center" verticalAlignment="Center" r:type="c5e6625e-0f64-49c3-96ec-fe23933228d4">
+              <evaluators>
+                <boolStateEvaluator defaultState="" varRef="varRef://DefaultConnection/Otevrit_kousek" r:type="d270cb21-585d-4163-a116-471e23099574" />
+              </evaluators>
+              <states>
+                <switchState state="false">
+                  <content>
+                    <layoutPanel width="68" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <actions>
+                        <boolSetValueAction event="onLeftDown" value="true" varRef="varRef://DefaultConnection/Otevrit_kousek" r:type="24271679-5105-42cc-ad84-6f3e0ba7df41" />
+                      </actions>
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Pootočit" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+                <switchState state="true">
+                  <content>
+                    <layoutPanel width="68" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <actions>
+                        <boolSetValueAction event="onLeftDown" value="false" varRef="varRef://DefaultConnection/Otevrit_kousek" r:type="24271679-5105-42cc-ad84-6f3e0ba7df41" />
+                      </actions>
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Pootočeno" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FF4CBE9D" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+              </states>
+            </switch>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="70" height="50" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <stringMetadata key="name" value="Digital Setter" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <intMetadata key="canvas.y" value="500" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="930" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="digitalsetter" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="70" height="50" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="68" height="48" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <switch width="68" height="48" horizontalAlignment="Center" verticalAlignment="Center" r:type="c5e6625e-0f64-49c3-96ec-fe23933228d4">
+              <evaluators>
+                <boolStateEvaluator defaultState="" varRef="varRef://DefaultConnection/Zavrit_kousek" r:type="d270cb21-585d-4163-a116-471e23099574" />
+              </evaluators>
+              <states>
+                <switchState state="false">
+                  <content>
+                    <layoutPanel width="68" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <actions>
+                        <boolSetValueAction event="onLeftDown" value="true" varRef="varRef://DefaultConnection/Zavrit_kousek" r:type="24271679-5105-42cc-ad84-6f3e0ba7df41" />
+                      </actions>
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Pouzavřít" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+                <switchState state="true">
+                  <content>
+                    <layoutPanel width="68" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <actions>
+                        <boolSetValueAction event="onLeftDown" value="false" varRef="varRef://DefaultConnection/Zavrit_kousek" r:type="24271679-5105-42cc-ad84-6f3e0ba7df41" />
+                      </actions>
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="Pouzavřeno" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FF4CBE9D" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+              </states>
+            </switch>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="50" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <stringMetadata key="name" value="Digital Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <intMetadata key="canvas.y" value="470" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="630" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="digitalindicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="100" height="50" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <switch width="98" height="48" horizontalAlignment="Center" verticalAlignment="Center" r:type="c5e6625e-0f64-49c3-96ec-fe23933228d4">
+              <evaluators>
+                <boolStateEvaluator defaultState="" varRef="varRef://DefaultConnection/hw.Neuron L523_PIR_VstupChodba" r:type="d270cb21-585d-4163-a116-471e23099574" />
+              </evaluators>
+              <states>
+                <switchState state="false">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <children>
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="PIR OFF" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+                <switchState state="true">
+                  <content>
+                    <layoutPanel width="98" height="48" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+                      <children>
+                        <rectangle width="98" height="48" fill="#FF80D22D" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+                        <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="PIR ON" font="Open Sans" fontSize="12" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b" />
+                      </children>
+                    </layoutPanel>
+                  </content>
+                </switchState>
+              </states>
+            </switch>
+          </children>
+        </layoutPanel>
+        <layoutPanel width="100" height="40" horizontalAlignment="Stretch" r:type="931b8c7b-8cd6-4ba4-b239-d258ce003c30">
+          <metadata>
+            <intMetadata key="canvas.y" value="530" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <intMetadata key="canvas.x" value="630" r:type="a6bfaac9-3bf7-40e3-bb1c-0c229513e61c" />
+            <stringMetadata key="gadgetName" value="dateTimeIndicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="name" value="DateTime Indicator" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+            <stringMetadata key="tooltip" value="" r:type="5603ec55-f689-4e7e-9622-48b899de8188" />
+          </metadata>
+          <children>
+            <rectangle width="100" height="40" fill="#00FFFFFF" cornerRadius="6" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <rectangle width="98" height="38" horizontalAlignment="Center" verticalAlignment="Center" fill="#FF324F7B" cornerRadius="5" r:type="036b2252-1dd7-485c-a6d8-e8b3c8900d1b" />
+            <image horizontalAlignment="Center" verticalAlignment="Center" stretch="Fill" rotation="0" mirror="None" r:type="05117999-3b9d-49ca-87f9-6a7577a3719f" />
+            <textBlock horizontalAlignment="Center" verticalAlignment="Center" text="24" font="Open Sans" fontSize="24" bold="false" italic="false" color="#FFFFFFFF" r:type="689cd840-a4f4-4080-ac2b-e7e912693b6b">
+              <evaluators>
+                <textValueEvaluator varRef="varRef://DefaultConnection/VypnutiChodba" stringFormat="%S" r:type="7a0b4390-db18-4e31-a38b-794476e8540b" />
+              </evaluators>
+            </textBlock>
+          </children>
+        </layoutPanel>
+      </children>
+    </canvas>
+  </content>
+</page>

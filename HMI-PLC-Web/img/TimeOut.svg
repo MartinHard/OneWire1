@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" width="24" height="24" viewBox="0 0 24.00 24.00" enable-background="new 0 0 24.00 24.00" xml:space="preserve">
+	<rect x="-24" y="24" fill="#009664" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" width="24" height="24"/>
+	<rect x="-24" y="0" fill="#006432" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" width="24" height="24"/>
+	<rect x="0" y="24" fill="#0096FF" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" width="24" height="24"/>
+	<g>
+		<path fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" d="M 9.99994,8L 10,12L 13.4999,12"/>
+		<path fill="none" stroke-width="2" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" d="M 15,16.8997C 13.7295,18.1962 11.9587,19.0007 9.99994,19.0007C 6.13397,19.0007 2.99994,15.8667 2.99994,12.0007C 2.99994,8.13474 6.13397,5.00069 9.99994,5.00069C 11.9587,5.00069 13.7295,5.80518 15,7.10177"/>
+	</g>
+	<line fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#FFFFFF" stroke-opacity="1" x1="18.9999" y1="8" x2="19" y2="13"/>
+	<path fill="#FFFFFF" fill-opacity="1" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" d="M 19.0001,15C 19.5523,15 20.0001,15.4477 20.0001,16C 20.0001,16.5523 19.5523,17 19.0001,17C 18.4478,17 18.0001,16.5523 18.0001,16C 18.0001,15.4477 18.4478,15 19.0001,15 Z "/>
+	<rect x="24" y="0" fill="#230FD2" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" width="24" height="24"/>
+	<rect x="24" y="24" fill="#FFC800" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" width="24" height="24"/>
+</svg>

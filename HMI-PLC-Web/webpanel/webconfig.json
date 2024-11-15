@@ -1,0 +1,761 @@
+{
+  "version": "1.0",
+  "passHashType": "MD5",
+  "credentials": [
+    {
+      "name": "Admin",
+      "pass": "3CCDD68AAA75B1369D150F1AB67BF390",
+      "admin": true
+    },
+    {
+      "name": "Servis",
+      "pass": "7C12DDE79E4D9E37E2DFD58FB9AB69B2"
+    },
+    {
+      "name": "Visitor",
+      "pass": "7D469E5E3949E5A3010D087E3DB2DA06"
+    }
+  ],
+  "schemas": [
+    {
+      "id": "0f0fc63c-5fca-40ef-90ea-88bb7ac52edd",
+      "title": "Uvod",
+      "access": [
+        "Admin",
+        "Servis",
+        "Visitor"
+      ],
+      "writeAccess": [
+        "Admin",
+        "Servis",
+        "Visitor"
+      ],
+      "type": "page"
+    },
+    {
+      "id": "87474a8b-e170-4c0c-a905-f2fd7684ce39",
+      "title": "Energie",
+      "access": [
+        "Admin",
+        "Servis",
+        "Visitor"
+      ],
+      "writeAccess": [
+        "Admin",
+        "Servis",
+        "Visitor"
+      ],
+      "type": "page"
+    }
+  ],
+  "connections": [
+    {
+      "name": "DefaultConnection",
+      "host": "127.0.0.1",
+      "port": 12346,
+      "proxyId": "PRX2CQRYMEM48GUE",
+      "sscpAddress": 1,
+      "user": "admin",
+      "password": "038C0DC8A958FFEA17AF047244FB6960",
+      "variables": [
+        {
+          "name": "systemTime_20636bf6-c082-4a5e-9458-b1f7cc1d6cc0",
+          "commId": 0,
+          "offset": 0,
+          "length": 0,
+          "type": 18,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [
+            "Admin"
+          ]
+        },
+        {
+          "name": "Temp_Sever_Filtered",
+          "commId": 9806,
+          "offset": 0,
+          "length": 4,
+          "type": 13,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ],
+          "historyId": 9806
+        },
+        {
+          "name": "Temp_Jih_Filtered",
+          "commId": 9807,
+          "offset": 0,
+          "length": 4,
+          "type": 13,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ],
+          "historyId": 9807
+        },
+        {
+          "name": "Temp_Venku",
+          "commId": 9805,
+          "offset": 0,
+          "length": 4,
+          "type": 13,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ],
+          "historyId": 9805
+        },
+        {
+          "name": "Garaz_filtered",
+          "commId": 9811,
+          "offset": 0,
+          "length": 4,
+          "type": 13,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ],
+          "historyId": 9811
+        },
+        {
+          "name": "Obyvak_filtered",
+          "commId": 9812,
+          "offset": 0,
+          "length": 4,
+          "type": 13,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ],
+          "historyId": 9812
+        },
+        {
+          "name": "OVL_SV_Terasa",
+          "commId": 9842,
+          "offset": 0,
+          "length": 1,
+          "type": 0,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ]
+        },
+        {
+          "name": "OVL_SV_Predgaraz",
+          "commId": 9850,
+          "offset": 0,
+          "length": 1,
+          "type": 0,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ]
+        },
+        {
+          "name": "Temp_Puda",
+          "commId": 9854,
+          "offset": 0,
+          "length": 4,
+          "type": 13,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ],
+          "historyId": 9854
+        },
+        {
+          "name": "RunCnt",
+          "commId": 9860,
+          "offset": 0,
+          "length": 8,
+          "type": 4,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ],
+          "historyId": 9860
+        },
+        {
+          "name": "hw.Pro380-Mod_Total_active_energy",
+          "commId": 9923,
+          "offset": 0,
+          "length": 4,
+          "type": 13,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ],
+          "historyId": 9923
+        },
+        {
+          "name": "hw.Pro380-Mod_Total_Active_power",
+          "commId": 9939,
+          "offset": 0,
+          "length": 4,
+          "type": 13,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ],
+          "historyId": 9939
+        },
+        {
+          "name": "TempPD",
+          "commId": 10052,
+          "offset": 0,
+          "length": 4,
+          "type": 13,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ]
+        },
+        {
+          "name": "hw.SDM120M_FVE_FVE_Energy",
+          "commId": 10093,
+          "offset": 0,
+          "length": 4,
+          "type": 13,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ],
+          "historyId": 10093
+        },
+        {
+          "name": "FVE_Power",
+          "commId": 10097,
+          "offset": 0,
+          "length": 4,
+          "type": 13,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ],
+          "historyId": 10097
+        },
+        {
+          "name": "main.SV_Dole",
+          "commId": 10112,
+          "offset": 0,
+          "length": 1,
+          "type": 0,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ]
+        },
+        {
+          "name": "DI_3_2_virtual",
+          "commId": 10146,
+          "offset": 0,
+          "length": 1,
+          "type": 0,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ]
+        },
+        {
+          "name": "hw.Neuron L523_SSR_SvetlaDole",
+          "commId": 10099,
+          "offset": 0,
+          "length": 1,
+          "type": 0,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ]
+        },
+        {
+          "name": "hw.Neuron L523_RO_2x01",
+          "commId": 10113,
+          "offset": 0,
+          "length": 1,
+          "type": 0,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ]
+        },
+        {
+          "name": "hw.Neuron L523_RO_2x02",
+          "commId": 10114,
+          "offset": 0,
+          "length": 1,
+          "type": 0,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ]
+        },
+        {
+          "name": "DI_3_3_virtual",
+          "commId": 10145,
+          "offset": 0,
+          "length": 1,
+          "type": 0,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ]
+        },
+        {
+          "name": "FVE_DayProducing",
+          "commId": 10155,
+          "offset": 0,
+          "length": 4,
+          "type": 13,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ],
+          "historyId": 10155
+        },
+        {
+          "name": "DI_3_4_Virtual",
+          "commId": 10162,
+          "offset": 0,
+          "length": 1,
+          "type": 0,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ]
+        },
+        {
+          "name": "hw.Neuron L523_SSR_SV_HorniChodba",
+          "commId": 10161,
+          "offset": 0,
+          "length": 1,
+          "type": 0,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ]
+        },
+        {
+          "name": "Power_Consumption",
+          "commId": 10166,
+          "offset": 0,
+          "length": 4,
+          "type": 13,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ],
+          "historyId": 10166
+        },
+        {
+          "name": "Temp_Pracovna",
+          "commId": 9873,
+          "offset": 0,
+          "length": 4,
+          "type": 13,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ]
+        },
+        {
+          "name": "Vodomer_litry",
+          "commId": 10214,
+          "offset": 0,
+          "length": 2,
+          "type": 2,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ],
+          "historyId": 10214
+        },
+        {
+          "name": "hw.device_Kotel",
+          "commId": 10218,
+          "offset": 0,
+          "length": 1,
+          "type": 0,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ],
+          "historyId": 10218
+        },
+        {
+          "name": "hw.xG18_Kotel_vystup",
+          "commId": 12425,
+          "offset": 0,
+          "length": 4,
+          "type": 13,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ],
+          "historyId": 12425
+        },
+        {
+          "name": "hw.xG18_Kotel_vratka",
+          "commId": 12426,
+          "offset": 0,
+          "length": 4,
+          "type": 13,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ],
+          "historyId": 12426
+        },
+        {
+          "name": "hw.Neuron L523_Rekuperace",
+          "commId": 12448,
+          "offset": 0,
+          "length": 1,
+          "type": 0,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ],
+          "historyId": 12448
+        },
+        {
+          "name": "Zaluzie_Otevrit",
+          "commId": 12464,
+          "offset": 0,
+          "length": 1,
+          "type": 0,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ]
+        },
+        {
+          "name": "Zaluzie_Zavrit",
+          "commId": 12463,
+          "offset": 0,
+          "length": 1,
+          "type": 0,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ]
+        },
+        {
+          "name": "Otevrit_kousek",
+          "commId": 12470,
+          "offset": 0,
+          "length": 1,
+          "type": 0,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ]
+        },
+        {
+          "name": "Zavrit_kousek",
+          "commId": 12469,
+          "offset": 0,
+          "length": 1,
+          "type": 0,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ]
+        },
+        {
+          "name": "hw.Neuron L523_PIR_VstupChodba",
+          "commId": 12439,
+          "offset": 0,
+          "length": 1,
+          "type": 0,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ]
+        },
+        {
+          "name": "VypnutiChodba",
+          "commId": 12476,
+          "offset": 0,
+          "length": 8,
+          "type": 15,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ]
+        },
+        {
+          "name": "SetTemp",
+          "commId": 10219,
+          "offset": 0,
+          "length": 4,
+          "type": 13,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ]
+        },
+        {
+          "name": "RekuperaceRucne",
+          "commId": 12449,
+          "offset": 0,
+          "length": 1,
+          "type": 0,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ]
+        },
+        {
+          "name": "RezimRekuperace",
+          "commId": 12450,
+          "offset": 0,
+          "length": 1,
+          "type": 0,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ]
+        },
+        {
+          "name": "main.T17_Boolean_Scheduler.base",
+          "commId": 12474,
+          "offset": 0,
+          "length": 368,
+          "type": 64,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [ ]
+        },
+        {
+          "name": "main.T17_Boolean_Scheduler.base.tpgvalue",
+          "commId": 12474,
+          "offset": 10,
+          "length": 168,
+          "type": 64,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ]
+        },
+        {
+          "name": "main.T17_Boolean_Scheduler.base.out",
+          "commId": 12474,
+          "offset": 217,
+          "length": 1,
+          "type": 0,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ]
+        },
+        {
+          "name": "main.T17_Boolean_Scheduler.base.defaultvalue",
+          "commId": 12474,
+          "offset": 216,
+          "length": 1,
+          "type": 0,
+          "readAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ],
+          "writeAccess": [
+            "Admin",
+            "Servis",
+            "Visitor"
+          ]
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "key": "ReadSystemConfiguration",
+      "access": [
+        "Admin",
+        "Servis"
+      ]
+    },
+    {
+      "key": "WriteSystemConfiguration",
+      "access": [
+        "Admin"
+      ]
+    },
+    {
+      "key": "ReadAlarms",
+      "access": [
+        "Admin",
+        "Servis"
+      ]
+    },
+    {
+      "key": "AckAlarms",
+      "access": [
+        "Admin"
+      ]
+    },
+    {
+      "key": "SystemLog",
+      "access": [
+        "Admin",
+        "Servis"
+      ]
+    },
+    {
+      "key": "WriteRTC",
+      "access": [
+        "Admin"
+      ]
+    }
+  ]
+}

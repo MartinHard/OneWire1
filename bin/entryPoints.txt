@@ -1,0 +1,423 @@
+$PLC$.$HW_hidden$.$f_transform$
+,$PLC$.$HW_hidden$.$r_transform$
+,$PLC$.$HW_hidden$.$init_transform$
+,$OneWire1$.$main$
+,$OneWire1$.$main$.$init$
+,$base$.$usint$
+,$base$.$uint$
+,$base$.$udint$
+,$base$.$ulint$
+,$base$.$sint$
+,$base$.$int$
+,$base$.$dint$
+,$base$.$lint$
+,$base$.$real$
+,$base$.$lreal$
+,$base$.$string$
+,$OneWire1$.$hw$.$Neuron L523_NPwm1.01_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NPwm1.01_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NPwm1.01_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NForce1_rd_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NForce1_rd_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NForce1_rd_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NVirtual1_rd_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NVirtual1_rd_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NVirtual1_rd_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NULed1.02_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NULed1.02_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NULed1.02_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NULed1_rd_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NULed1_rd_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NULed1_rd_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NPwm1.04_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NPwm1.04_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NPwm1.04_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NShadow1_wr_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NShadow1_wr_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NShadow1_wr_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_SSR_SV_Terasa$
+,$OneWire1$.$hw$.$Neuron L523_SSR_SvetlaDole$
+,$OneWire1$.$hw$.$Neuron L523_SSR_SV_VstupChodba$
+,$OneWire1$.$hw$.$Neuron L523_SSR_SV_HorniChodba$
+,$OneWire1$.$hw$.$Neuron L523_NULed1.01_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NULed1.01_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NULed1.01_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NCnt1.02_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt1.02_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt1.02_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NCnt1.01_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt1.01_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt1.01_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NULed1.04_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NULed1.04_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NULed1.04_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NStorageLife1_rd_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NStorageLife1_rd_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NStorageLife1_rd_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_Nbits_reboot1_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_Nbits_reboot1_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_Nbits_reboot1_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NCnt1.03_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt1.03_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt1.03_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NVirtual1_wr_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NVirtual1_wr_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NVirtual1_wr_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NCnt1_rd_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt1_rd_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt1_rd_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NConfig1_rd_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NConfig1_rd_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NConfig1_rd_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NForce1_wr_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NForce1_wr_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NForce1_wr_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NStatus1_rd_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NStatus1_rd_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NStatus1_rd_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_In1$
+,$OneWire1$.$hw$.$Neuron L523_NPwm1.03_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NPwm1.03_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NPwm1.03_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_Nbits_owoff1_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_Nbits_owoff1_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_Nbits_owoff1_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_OneWireControl$
+,$OneWire1$.$hw$.$Neuron L523_NCnt1.04_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt1.04_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt1.04_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_Nbits_wdboot1_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_Nbits_wdboot1_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_Nbits_wdboot1_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NULed1.03_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NULed1.03_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NULed1.03_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NPWM1_rd_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NPWM1_rd_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NPWM1_rd_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NPwm1.02_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NPwm1.02_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NPwm1.02_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NStatus2_rd_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NStatus2_rd_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NStatus2_rd_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_IN2_1$
+,$OneWire1$.$hw$.$Neuron L523_RO_2.04_r$
+,$OneWire1$.$hw$.$Neuron L523_RO_2.05_r$
+,$OneWire1$.$hw$.$Neuron L523_NAo2_wr_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NAo2_wr_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NAo2_wr_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NShadow2_wr_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NShadow2_wr_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NShadow2_wr_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_RO_2x01$
+,$OneWire1$.$hw$.$Neuron L523_RO_2x02$
+,$OneWire1$.$hw$.$Neuron L523_RO_2x03$
+,$OneWire1$.$hw$.$Neuron L523_SV_PredGaraz$
+,$OneWire1$.$hw$.$Neuron L523_SV_Volne$
+,$OneWire1$.$hw$.$Neuron L523_NCnt2.03_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt2.03_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt2.03_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NCnt2_rd_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt2_rd_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt2_rd_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NCnt2.02_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt2.02_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt2.02_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NForce2_rd_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NForce2_rd_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NForce2_rd_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NCnt2.04_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt2.04_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt2.04_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_Nbits_reboot2_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_Nbits_reboot2_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_Nbits_reboot2_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NCnt2.01_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt2.01_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt2.01_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NForce2_wr_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NForce2_wr_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NForce2_wr_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_Nbits_wdboot2_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_Nbits_wdboot2_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_Nbits_wdboot2_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NConfig2_rd_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NConfig2_rd_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NConfig2_rd_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.14_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.14_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.14_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_Nbits_reboot3_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_Nbits_reboot3_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_Nbits_reboot3_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NForce3_wr_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NForce3_wr_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NForce3_wr_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_ForceOutput_3.07_w$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.16_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.16_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.16_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.15_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.15_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.15_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NShadow3_wr_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NShadow3_wr_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NShadow3_wr_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_SV_ObyvaK_Predni$
+,$OneWire1$.$hw$.$Neuron L523_Zaluzie_P_Otevrit$
+,$OneWire1$.$hw$.$Neuron L523_Zaluzie_P_Zavrit$
+,$OneWire1$.$hw$.$Neuron L523_Cerpadlo_1NP$
+,$OneWire1$.$hw$.$Neuron L523_Rekuperace$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.12_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.12_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.12_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3_rd_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3_rd_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3_rd_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.04_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.04_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.04_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.11_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.11_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.11_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NStatus3_rd_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NStatus3_rd_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NStatus3_rd_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_DI_3_1$
+,$OneWire1$.$hw$.$Neuron L523_DI_3_2$
+,$OneWire1$.$hw$.$Neuron L523_DI_3_3$
+,$OneWire1$.$hw$.$Neuron L523_DI_3_4$
+,$OneWire1$.$hw$.$Neuron L523_Vodomer_IN$
+,$OneWire1$.$hw$.$Neuron L523_PIR_VstupChodba$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.10_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.10_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.10_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.07_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.07_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.07_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.08_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.08_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.08_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_Nbits_wdboot3_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_Nbits_wdboot3_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_Nbits_wdboot3_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.13_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.13_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.13_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.05_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.05_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.05_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NConfig3_rd_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NConfig3_rd_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NConfig3_rd_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.06_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.06_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.06_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.09_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.09_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.09_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.01_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.01_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.01_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NForce3_rd_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NForce3_rd_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NForce3_rd_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.02_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.02_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.02_wr_woch_timestamp$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.03_wr_woch_commblock$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.03_wr_woch_commerror$
+,$OneWire1$.$hw$.$Neuron L523_NCnt3.03_wr_woch_timestamp$
+,$OneWire1$.$hw$.$OneWire_OneWireComErr$
+,$OneWire1$.$hw$.$Garaz_Temperature$
+,$OneWire1$.$hw$.$Puda_Temperature$
+,$OneWire1$.$hw$.$Obyvak_Temperature$
+,$OneWire1$.$hw$.$Pro380-Mod_Serial_number$
+,$OneWire1$.$hw$.$Pro380-Mod_Meter_code$
+,$OneWire1$.$hw$.$Pro380-Mod_Modbus_ID$
+,$OneWire1$.$hw$.$Pro380-Mod_Baud_rate$
+,$OneWire1$.$hw$.$Pro380-Mod_Protocol_version$
+,$OneWire1$.$hw$.$Pro380-Mod_Software_version$
+,$OneWire1$.$hw$.$Pro380-Mod_Harware_version$
+,$OneWire1$.$hw$.$Pro380-Mod_Meter_amps$
+,$OneWire1$.$hw$.$Pro380-Mod_S0_output_rate$
+,$OneWire1$.$hw$.$Pro380-Mod_Combination_code$
+,$OneWire1$.$hw$.$Pro380-Mod_L1_phase_forward_dir$
+,$OneWire1$.$hw$.$Pro380-Mod_LCD_cycle_time$
+,$OneWire1$.$hw$.$Pro380-Mod_Parity_setting$
+,$OneWire1$.$hw$.$Pro380-Mod_Napeti_L1$
+,$OneWire1$.$hw$.$Pro380-Mod_Napeti_L2$
+,$OneWire1$.$hw$.$Pro380-Mod_Napeti_L3$
+,$OneWire1$.$hw$.$Pro380-Mod_Grid_frequency$
+,$OneWire1$.$hw$.$Pro380-Mod_L1_Current$
+,$OneWire1$.$hw$.$Pro380-Mod_L2_Current$
+,$OneWire1$.$hw$.$Pro380-Mod_L3_Current$
+,$OneWire1$.$hw$.$Pro380-Mod_Total_Active_power$
+,$OneWire1$.$hw$.$Pro380-Mod_L1_Active_power$
+,$OneWire1$.$hw$.$Pro380-Mod_L2_Active_power$
+,$OneWire1$.$hw$.$Pro380-Mod_L3_Active_power$
+,$OneWire1$.$hw$.$Pro380-Mod_Total_Reactive_power$
+,$OneWire1$.$hw$.$Pro380-Mod_L1_Reactive_power$
+,$OneWire1$.$hw$.$Pro380-Mod_L2_Reactive_power$
+,$OneWire1$.$hw$.$Pro380-Mod_L3_Reactive_power$
+,$OneWire1$.$hw$.$Pro380-Mod_Total_Apparent_power$
+,$OneWire1$.$hw$.$Pro380-Mod_L1_Apparent_power$
+,$OneWire1$.$hw$.$Pro380-Mod_L2_Apparent_power$
+,$OneWire1$.$hw$.$Pro380-Mod_L3_Apparent_power$
+,$OneWire1$.$hw$.$Pro380-Mod_Power_factor$
+,$OneWire1$.$hw$.$Pro380-Mod_L1_Power_factor$
+,$OneWire1$.$hw$.$Pro380-Mod_L2_Power_factor$
+,$OneWire1$.$hw$.$Pro380-Mod_L3_Power_factor$
+,$OneWire1$.$hw$.$Pro380-Mod_Tariff$
+,$OneWire1$.$hw$.$Pro380-Mod_Total_active_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_T1_total_active_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_T2_total_active_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_L1_total_active_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_L2_total_active_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_L3_total_active_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_Power$
+,$OneWire1$.$hw$.$Pro380-Mod_T1_forward_active_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_L1_forward_active_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_L2_forward_active_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_L3_forward_active_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_T2_forward_active_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_Reverse_active_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_T1_reverse_active_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_T2_reverse_active_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_L1_reverse_active_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_L2_reverse_active_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_L3_reverse_active_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_Forward_reactive_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_T1_reverse_reactive_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_Reverse_reactive_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_L1_forward_reactive_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_L2_forward_reactive_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_L3_forward_reactive_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_T1_forward_reactive_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_L3_total_reactive_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_L2_total_reactive_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_L1_total_reactive_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_L1_reverse_reactive_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_L3_reverse_reactive_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_T2_forward_reactive_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_T2_total_reactive_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_T1_total_reactive_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_Total_reactive_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_L2_reverse_reactive_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_T2_reverse_reactive_energy$
+,$OneWire1$.$hw$.$Pro380-Mod_L2_phase_forward_dir$
+,$OneWire1$.$hw$.$Pro380-Mod_L3_phase_forward_dir$
+,$OneWire1$.$hw$.$device_Kotel$
+,$OneWire1$.$hw$.$device_RO_1.02_w$
+,$OneWire1$.$hw$.$device_RO_1.03_w$
+,$OneWire1$.$hw$.$device_RO_1.04_w$
+,$OneWire1$.$hw$.$device_RO_1.05_w$
+,$OneWire1$.$hw$.$device_RO_1.06_w$
+,$OneWire1$.$hw$.$device_RO_1.07_w$
+,$OneWire1$.$hw$.$device_RO_1.08_w$
+,$OneWire1$.$hw$.$device_RO_1.09_w$
+,$OneWire1$.$hw$.$device_RO_1.10_w$
+,$OneWire1$.$hw$.$device_RO_1.11_w$
+,$OneWire1$.$hw$.$device_RO_1.12_w$
+,$OneWire1$.$hw$.$device_RO_1.13_w$
+,$OneWire1$.$hw$.$device_CNT_1.06_set$
+,$OneWire1$.$hw$.$device_ForceOutput_1.01_r$
+,$OneWire1$.$hw$.$device_ForceOutput_1.02_r$
+,$OneWire1$.$hw$.$device_ForceOutput_1.03_r$
+,$OneWire1$.$hw$.$device_ForceOutput_1.04_r$
+,$OneWire1$.$hw$.$device_ForceOutput_1.05_r$
+,$OneWire1$.$hw$.$device_ForceOutput_1.06_r$
+,$OneWire1$.$hw$.$device_ForceOutput_1.07_r$
+,$OneWire1$.$hw$.$device_ForceOutput_1.08_r$
+,$OneWire1$.$hw$.$device_ForceOutput_1.09_r$
+,$OneWire1$.$hw$.$device_ForceOutput_1.10_r$
+,$OneWire1$.$hw$.$device_ForceOutput_1.11_r$
+,$OneWire1$.$hw$.$device_ForceOutput_1.12_r$
+,$OneWire1$.$hw$.$device_ForceOutput_1.13_r$
+,$OneWire1$.$hw$.$device_ULED_1.02$
+,$OneWire1$.$hw$.$device_ULED_1.01$
+,$OneWire1$.$hw$.$device_ULED_1.03$
+,$OneWire1$.$hw$.$device_CNT_1.07_set$
+,$OneWire1$.$hw$.$device_CNT_1.02_set$
+,$OneWire1$.$hw$.$device_CNT_1.11_set$
+,$OneWire1$.$hw$.$device_CNT_1.12_set$
+,$OneWire1$.$hw$.$device_CNT_1.01_set$
+,$OneWire1$.$hw$.$device_Version_1$
+,$OneWire1$.$hw$.$device_HwVersion_1$
+,$OneWire1$.$hw$.$device_BoardSerial_1$
+,$OneWire1$.$hw$.$device_CNT_1.10_set$
+,$OneWire1$.$hw$.$device_Reboot_1$
+,$OneWire1$.$hw$.$device_CNT_1.03_set$
+,$OneWire1$.$hw$.$device_CNT_1.01$
+,$OneWire1$.$hw$.$device_CNT_1.02$
+,$OneWire1$.$hw$.$device_CNT_1.03$
+,$OneWire1$.$hw$.$device_CNT_1.04$
+,$OneWire1$.$hw$.$device_CNT_1.05$
+,$OneWire1$.$hw$.$device_CNT_1.06$
+,$OneWire1$.$hw$.$device_CNT_1.07$
+,$OneWire1$.$hw$.$device_CNT_1.08$
+,$OneWire1$.$hw$.$device_CNT_1.09$
+,$OneWire1$.$hw$.$device_CNT_1.10$
+,$OneWire1$.$hw$.$device_CNT_1.11$
+,$OneWire1$.$hw$.$device_CNT_1.12$
+,$OneWire1$.$hw$.$device_CNT_1.09_set$
+,$OneWire1$.$hw$.$device_ForceOutput_1.01_w$
+,$OneWire1$.$hw$.$device_ForceOutput_1.02_w$
+,$OneWire1$.$hw$.$device_ForceOutput_1.03_w$
+,$OneWire1$.$hw$.$device_ForceOutput_1.04_w$
+,$OneWire1$.$hw$.$device_ForceOutput_1.05_w$
+,$OneWire1$.$hw$.$device_ForceOutput_1.06_w$
+,$OneWire1$.$hw$.$device_ForceOutput_1.07_w$
+,$OneWire1$.$hw$.$device_ForceOutput_1.08_w$
+,$OneWire1$.$hw$.$device_ForceOutput_1.09_w$
+,$OneWire1$.$hw$.$device_ForceOutput_1.10_w$
+,$OneWire1$.$hw$.$device_ForceOutput_1.11_w$
+,$OneWire1$.$hw$.$device_ForceOutput_1.12_w$
+,$OneWire1$.$hw$.$device_ForceOutput_1.13_w$
+,$OneWire1$.$hw$.$device_DI_1.01$
+,$OneWire1$.$hw$.$device_DI_1.02$
+,$OneWire1$.$hw$.$device_DI_1.03$
+,$OneWire1$.$hw$.$device_DI_1.04$
+,$OneWire1$.$hw$.$device_DI_1.05$
+,$OneWire1$.$hw$.$device_DI_1.06$
+,$OneWire1$.$hw$.$device_DI_1.07$
+,$OneWire1$.$hw$.$device_DI_1.08$
+,$OneWire1$.$hw$.$device_DI_1.09$
+,$OneWire1$.$hw$.$device_DI_1.10$
+,$OneWire1$.$hw$.$device_DI_1.11$
+,$OneWire1$.$hw$.$device_DI_1.12$
+,$OneWire1$.$hw$.$device_RO_1.01_r$
+,$OneWire1$.$hw$.$device_RO_1.02_r$
+,$OneWire1$.$hw$.$device_RO_1.03_r$
+,$OneWire1$.$hw$.$device_RO_1.04_r$
+,$OneWire1$.$hw$.$device_RO_1.05_r$
+,$OneWire1$.$hw$.$device_RO_1.06_r$
+,$OneWire1$.$hw$.$device_RO_1.07_r$
+,$OneWire1$.$hw$.$device_RO_1.08_r$
+,$OneWire1$.$hw$.$device_RO_1.09_r$
+,$OneWire1$.$hw$.$device_RO_1.10_r$
+,$OneWire1$.$hw$.$device_RO_1.11_r$
+,$OneWire1$.$hw$.$device_RO_1.12_r$
+,$OneWire1$.$hw$.$device_RO_1.13_r$
+,$OneWire1$.$hw$.$device_Was_WD_boot_1$
+,$OneWire1$.$hw$.$device_CNT_1.04_set$
+,$OneWire1$.$hw$.$device_CNT_1.08_set$
+,$OneWire1$.$hw$.$device_CNT_1.05_set$
+,$OneWire1$.$hw$.$device_Clear_WD_boot_1$
+,$OneWire1$.$hw$.$xG18_Sever$
+,$OneWire1$.$hw$.$xG18_Garaz$
+,$OneWire1$.$hw$.$xG18_Kotel_vystup$
+,$OneWire1$.$hw$.$xG18_Kotel_vratka$
+,$OneWire1$.$hw$.$xG18_Temperature_CH6$
+,$OneWire1$.$Garaz_filtered$
+,$OneWire1$.$Vodomer_litry$
+,$OneWire1$.$Power_Consumption$
+,$OneWire1$.$Svetla_sviti$
+,$OneWire1$.$FVE_DayProducing$
+,$OneWire1$.$Temp_Puda$
+,$OneWire1$.$Obyvak_filtered$
+,$OneWire1$.$Temp_Venku$
+,$OneWire1$.$FVE_Power$
+,$OneWire1$.$hw$.$SDM120M_FVE_FVE_Energy$
+,$OneWire1$.$RunCnt$

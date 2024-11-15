@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hmiSettings xmlns:r="http://dev.rcware.eu/serialization/references" xmlns="http://dev.rcware.eu/shark-hmi">
+  <culture>en</culture>
+  <defaultUser>Visitor</defaultUser>
+  <capabilities>
+    <logView>true</logView>
+    <alarmView>true</alarmView>
+    <chartView>false</chartView>
+    <systemConfiguration>true</systemConfiguration>
+  </capabilities>
+  <handlers>
+    <schemas>true</schemas>
+    <variables>true</variables>
+  </handlers>
+  <files>
+    <file>img/Arrow-Up.svg</file>
+    <file>img/Arrow-Down.svg</file>
+    <file>img/Gadget-TPG.svg</file>
+    <file>webconfig.json</file>
+    <file>0f0fc63c-5fca-40ef-90ea-88bb7ac52edd.page</file>
+    <file>87474a8b-e170-4c0c-a905-f2fd7684ce39.page</file>
+    <file>hmisettings.xml</file>
+  </files>
+</hmiSettings>

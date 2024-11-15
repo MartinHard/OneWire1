@@ -1,0 +1,4791 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fbdGraph xmlns:r="http://dev.rcware.eu/serialization/references" codeKind="Program" xmlns:n1="http://dev.rcware.eu/metadata" xmlns="http://dev.rcware.eu/shark-ide-2">
+  <bounds>-300,-420,860,4120</bounds>
+  <GeneratorIdCounter>52</GeneratorIdCounter>
+  <nodes>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="194">
+          <desc fullName="$hw$.$neuron l523_ssr_sv_terasa$" module="OneWire1" r:def="1" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="1" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="1" />
+      <translation>480,-200</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>-10</LadderOrder>
+      <Name></Name>
+      <Id>fdf028f8-9497-45dd-9225-4305a303992f</Id>
+    </node>
+    <node name="B86_Filter">
+      <ports>
+        <port o="Out" layout="0">
+          <desc fullName="$lib$.$core$.$v1_0$.$b86_filter$.$eno$" module="Lib.Core" r:def="2" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$lib$.$core$.$v1_0$.$b86_filter$.$en$" module="Lib.Core" r:def="3" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="227">
+          <desc fullName="$lib$.$core$.$v1_0$.$b86_filter$.$in$" module="Lib.Core" r:def="4" />
+          <setting />
+        </port>
+        <port o="In" layout="3">
+          <desc fullName="$lib$.$core$.$v1_0$.$b86_filter$.$ina$" module="Lib.Core" r:def="5" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="4">
+          <desc fullName="$lib$.$core$.$v1_0$.$b86_filter$.$indt$" module="Lib.Core" r:def="6" />
+          <setting visible="false" defval="300" />
+        </port>
+        <port o="Out" layout="5" r:def="182">
+          <desc fullName="$lib$.$core$.$v1_0$.$b86_filter$.$out$" module="Lib.Core" r:def="7" />
+          <setting />
+        </port>
+      </ports>
+      <call fullName="$lib$.$core$.$v1_0$.$b86_filter$" module="Lib.Core" r:def="8" />
+      <field name="B86_Filter" kind="Local" modifiers="None" persistency="Auto">
+        <type fullName="$lib$.$core$.$v1_0$.$b86_filter$" module="Lib.Core" r:def="9" />
+      </field>
+      <translation>-180,-80</translation>
+      <CopyPasteTagProperty>7b83a03c-0ec4-4829-ab50-b412f3027f5c</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries>
+          <n1:entry FieldPath=".$eno$" Guid="827b89d6-c7b4-4244-8273-d4d9d0e5cfa3" />
+          <n1:entry FieldPath=".$en$" Guid="18004c1e-0d93-43a4-b2c7-93451f5a1465" />
+          <n1:entry FieldPath=".$mXT$" Guid="61b5cdfa-9b16-4680-bf06-ad74d0f69897" />
+          <n1:entry FieldPath=".$mXTPrev$" Guid="d82465cb-418c-4aa0-9a93-10a6a6050acd" />
+          <n1:entry FieldPath=".$mXDT$" Guid="9df8601c-9779-4538-b57f-a953d49c5b2b" />
+          <n1:entry FieldPath=".$mXy$" Guid="686af746-28db-4056-819d-6bfd93a8cfef" />
+          <n1:entry FieldPath=".$mXyPrev$" Guid="8bb6278a-7a9c-4bb0-871f-6ea8391a9e7e" />
+          <n1:entry FieldPath=".$mXQ$" Guid="04150198-ea43-4662-a17c-7eee9505b025" />
+          <n1:entry FieldPath=".$mXI$" Guid="2331ecda-3124-4a3d-aa89-ef5a7e727c89" />
+          <n1:entry FieldPath=".$xBuffer$" Guid="b0d98357-f539-4342-9a41-c0a99a2ed89d" />
+          <n1:entry FieldPath=".$dtBuffer$" Guid="1ae974fb-cb36-4738-87c5-732c41a18e53" />
+          <n1:entry FieldPath=".$nBuffer$" Guid="a7999032-15eb-4f59-8ef2-3f4886276e84" />
+          <n1:entry FieldPath=".$Q$" Guid="cd4c5c86-baa5-4975-be99-ed85a52ff9fb" />
+          <n1:entry FieldPath=".$ActValue$" Guid="b05a2b3b-a602-4064-aaba-b4b0bb7b279b" />
+          <n1:entry FieldPath=".$In$" Guid="341e4101-7112-4a4e-a0b8-1a9dff7034fe" />
+          <n1:entry FieldPath=".$InA$" Guid="92a20ac6-0266-47cb-bad7-b64e8130f1b2" />
+          <n1:entry FieldPath=".$InDT$" Guid="a89372ac-7f8b-48c8-a591-5a9c9d84cdeb" />
+          <n1:entry FieldPath=".$Out$" Guid="7b83a03c-0ec4-4829-ab50-b412f3027f5c" />
+        </n1:entries>
+      </CopyPasteChildTagProperty>
+      <Name>B86_Filter</Name>
+      <Id>5cde0bde-046d-482f-b21a-4e69f62760f5</Id>
+    </node>
+    <node name="B86_Filter_1">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="2" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="3" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="332">
+          <desc r:ref="4" />
+          <setting />
+        </port>
+        <port o="In" layout="3">
+          <desc r:ref="5" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="4">
+          <desc r:ref="6" />
+          <setting visible="false" defval="300" />
+        </port>
+        <port o="Out" layout="5" r:def="176">
+          <desc r:ref="7" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="8" />
+      <field name="B86_Filter_1" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="9" />
+      </field>
+      <translation>-180,100</translation>
+      <CopyPasteTagProperty>d438a30b-e4b4-4127-b178-d00d5b924170</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries>
+          <n1:entry FieldPath=".$eno$" Guid="77972a11-ff16-4260-895e-46aa48938188" />
+          <n1:entry FieldPath=".$en$" Guid="fa9cfc11-6a60-4dd2-a65c-50669f1cbd6f" />
+          <n1:entry FieldPath=".$mXT$" Guid="6f88a044-5b35-4518-b05d-4633dc60044d" />
+          <n1:entry FieldPath=".$mXTPrev$" Guid="fe02f166-e8d9-45cb-ad2c-2cbf310579fe" />
+          <n1:entry FieldPath=".$mXDT$" Guid="541f06eb-57d8-4f35-a21a-3ab623a0cbcc" />
+          <n1:entry FieldPath=".$mXy$" Guid="428f4891-cca9-4c7d-b0ab-ae81731949e7" />
+          <n1:entry FieldPath=".$mXyPrev$" Guid="ecf19860-9972-4475-9b40-4a58c1eee0e4" />
+          <n1:entry FieldPath=".$mXQ$" Guid="567fbf30-4193-4487-974f-b5468b5cdeb7" />
+          <n1:entry FieldPath=".$mXI$" Guid="cd0dda6e-7652-4a64-9421-d67c376dd8b5" />
+          <n1:entry FieldPath=".$xBuffer$" Guid="cdba22ed-f6fb-41d7-86c6-f6d24bba402d" />
+          <n1:entry FieldPath=".$dtBuffer$" Guid="7e890d4d-6e72-495c-a043-b0dd35496a63" />
+          <n1:entry FieldPath=".$nBuffer$" Guid="619164c7-e44d-4dc6-b515-4df44a145172" />
+          <n1:entry FieldPath=".$Q$" Guid="51193dfb-d10a-4b98-a899-a2c6f7128fd4" />
+          <n1:entry FieldPath=".$ActValue$" Guid="8fb66b5f-b260-4a40-b0e3-02a29c8b0aee" />
+          <n1:entry FieldPath=".$In$" Guid="6a06fcef-056b-4cd4-9931-dc10940cce72" />
+          <n1:entry FieldPath=".$InA$" Guid="665282e3-c805-4019-a9c3-500394978e7b" />
+          <n1:entry FieldPath=".$InDT$" Guid="e0f3dadc-0c98-4cee-b324-c7688f0e6047" />
+          <n1:entry FieldPath=".$Out$" Guid="d438a30b-e4b4-4127-b178-d00d5b924170" />
+        </n1:entries>
+      </CopyPasteChildTagProperty>
+      <Name>B86_Filter_1</Name>
+      <Id>a167934c-f520-444d-90d5-09121bfb08ce</Id>
+    </node>
+    <node name="B86_Filter_2">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="2" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="3" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="342">
+          <desc r:ref="4" />
+          <setting />
+        </port>
+        <port o="In" layout="3">
+          <desc r:ref="5" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="4">
+          <desc r:ref="6" />
+          <setting visible="false" defval="300" />
+        </port>
+        <port o="Out" layout="5" r:def="178">
+          <desc r:ref="7" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="8" />
+      <field name="B86_Filter_2" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="9" />
+      </field>
+      <translation>-180,260</translation>
+      <CopyPasteTagProperty>d021a310-d321-45c9-a480-c417a4a034e9</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries>
+          <n1:entry FieldPath=".$eno$" Guid="1dea0c45-c3c1-4c1a-9752-209d8f6ab0fa" />
+          <n1:entry FieldPath=".$en$" Guid="1f569afa-2573-4a5d-937b-465bd6788920" />
+          <n1:entry FieldPath=".$mXT$" Guid="bdaf816f-a5c0-450c-86d4-85dd2df0b849" />
+          <n1:entry FieldPath=".$mXTPrev$" Guid="7d7ec577-5863-4b02-b57f-4a3907a1b9dd" />
+          <n1:entry FieldPath=".$mXDT$" Guid="fbc0134e-6e59-490c-bed6-001c98af8c7b" />
+          <n1:entry FieldPath=".$mXy$" Guid="5fb3245f-dc76-4b0c-8378-15ec72752d38" />
+          <n1:entry FieldPath=".$mXyPrev$" Guid="8fa965bf-0d03-4b85-b4fa-13edf46b8f64" />
+          <n1:entry FieldPath=".$mXQ$" Guid="6625a1b3-7bba-450d-9d36-112baf3f3c10" />
+          <n1:entry FieldPath=".$mXI$" Guid="64257918-4ffc-4506-9d39-a0b0eefff9c5" />
+          <n1:entry FieldPath=".$xBuffer$" Guid="c9f31792-c265-4a86-aa49-7d677f5f0ce2" />
+          <n1:entry FieldPath=".$dtBuffer$" Guid="1b548843-0254-44f5-bc58-d5b584cc3361" />
+          <n1:entry FieldPath=".$nBuffer$" Guid="25e4e196-b427-45a3-938e-e98398d94123" />
+          <n1:entry FieldPath=".$Q$" Guid="38212673-a4c3-477b-ba83-224cf7469a55" />
+          <n1:entry FieldPath=".$ActValue$" Guid="0ba18f95-21d0-4d22-bd38-2e1c648d1c30" />
+          <n1:entry FieldPath=".$In$" Guid="7d103803-b581-4c6f-b86c-e298dbbbc8dc" />
+          <n1:entry FieldPath=".$InA$" Guid="4e2065e6-cf10-4934-82b6-512d88e38543" />
+          <n1:entry FieldPath=".$InDT$" Guid="b337014a-89cd-4d1c-93ea-8c8907d3ba1c" />
+          <n1:entry FieldPath=".$Out$" Guid="d021a310-d321-45c9-a480-c417a4a034e9" />
+        </n1:entries>
+      </CopyPasteChildTagProperty>
+      <Name>B86_Filter_2</Name>
+      <Id>ba6a98ef-84b8-4927-8d48-c4876ba327d4</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="177">
+          <desc fullName="$temp_jih_filtered$" module="OneWire1" r:def="10" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="10" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="10" />
+      <translation>480,100</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>5</LadderOrder>
+      <Name></Name>
+      <Id>1d3cd2d5-c4c3-4bd8-ba0b-f55aaa05a47c</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="179">
+          <desc fullName="$temp_sever_filtered$" module="OneWire1" r:def="11" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="11" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="11" />
+      <translation>480,260</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>13</LadderOrder>
+      <Name></Name>
+      <Id>db49d21d-8834-4174-9f8d-062dd89330bc</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="185">
+          <desc fullName="$temp_venku$" module="OneWire1" r:def="12" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="12" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="12" />
+      <translation>480,180</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>9</LadderOrder>
+      <Name></Name>
+      <Id>7693fde8-9f6e-45d5-b3f1-bfb6f428868b</Id>
+    </node>
+    <node name="B86_Filter_0">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="2" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="3" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="338">
+          <desc r:ref="4" />
+          <setting />
+        </port>
+        <port o="In" layout="3">
+          <desc r:ref="5" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="4">
+          <desc r:ref="6" />
+          <setting visible="false" defval="900" />
+        </port>
+        <port o="Out" layout="5" r:def="180">
+          <desc r:ref="7" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="8" />
+      <field name="B86_Filter_0" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="9" />
+      </field>
+      <translation>-180,0</translation>
+      <CopyPasteTagProperty>b0a376e6-e234-461c-a592-8dd128edc5e2</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries>
+          <n1:entry FieldPath=".$eno$" Guid="98c7e0c7-9d7b-42cc-a149-21af22855c19" />
+          <n1:entry FieldPath=".$en$" Guid="886dc024-043c-4600-970f-0db7b0453179" />
+          <n1:entry FieldPath=".$mXT$" Guid="79332260-6f21-497f-b60d-2221561015a8" />
+          <n1:entry FieldPath=".$mXTPrev$" Guid="8b469905-9db4-440f-9606-a238adb252ed" />
+          <n1:entry FieldPath=".$mXDT$" Guid="e8d1460e-0395-4563-84f4-745e37fce001" />
+          <n1:entry FieldPath=".$mXy$" Guid="490065c5-7f10-4d0a-b92e-87fc1efbc4f1" />
+          <n1:entry FieldPath=".$mXyPrev$" Guid="a6646e9f-74a5-4206-ae64-f32ceb88b9a6" />
+          <n1:entry FieldPath=".$mXQ$" Guid="5d869999-c273-4080-964e-d15992fa8ac8" />
+          <n1:entry FieldPath=".$mXI$" Guid="e6c6fc17-d98b-4207-a22d-53b39020131c" />
+          <n1:entry FieldPath=".$xBuffer$" Guid="e082b3cc-453e-4954-b2fe-ffda88c420f5" />
+          <n1:entry FieldPath=".$dtBuffer$" Guid="07efaf43-1b91-4c57-9956-2adce6087e0d" />
+          <n1:entry FieldPath=".$nBuffer$" Guid="c050198b-a47f-4be3-8c16-b3ad3e2a7ff5" />
+          <n1:entry FieldPath=".$Q$" Guid="45940d17-c5fc-42a8-b9da-544f542bcc7e" />
+          <n1:entry FieldPath=".$ActValue$" Guid="7fbb7780-bfd3-4ae6-891d-a592ea8fe5c7" />
+          <n1:entry FieldPath=".$In$" Guid="b24b4035-ceae-4cdb-8d6a-a94a9e0a23a3" />
+          <n1:entry FieldPath=".$InA$" Guid="40837304-2829-4eb6-bc3e-6abb7517cfe4" />
+          <n1:entry FieldPath=".$InDT$" Guid="56f4c92a-ece6-41d7-99eb-328faf15759b" />
+          <n1:entry FieldPath=".$Out$" Guid="b0a376e6-e234-461c-a592-8dd128edc5e2" />
+        </n1:entries>
+      </CopyPasteChildTagProperty>
+      <Name>B86_Filter_0</Name>
+      <Id>313aaf24-34c8-4f4c-91fc-fed5face7d61</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="183">
+          <desc fullName="$obyvak_filtered$" module="OneWire1" r:def="13" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="13" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="13" />
+      <translation>480,-80</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>-4</LadderOrder>
+      <Name></Name>
+      <Id>a0b45855-51f6-443b-9a21-8d5402f791bd</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="181">
+          <desc fullName="$garaz_filtered$" module="OneWire1" r:def="14" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="14" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="14" />
+      <translation>480,0</translation>
+      <Ladder>Right</Ladder>
+      <Name></Name>
+      <Id>a46eeb1c-b649-407d-92dc-fd87985f1340</Id>
+    </node>
+    <node name="sel">
+      <ports>
+        <port o="Out" layout="1" r:def="184">
+          <expr fullName="$sel$" module="base" etype="retval" expr="=&gt;" r:def="86" />
+          <setting />
+          <AssociatedTempVar>tmparg_3</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc fullName="$sel$.$eno$" module="base" r:def="87" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$sel$.$en$" module="base" r:def="88" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="3" r:def="186">
+          <desc fullName="$sel$.$g$" module="base" r:def="89" />
+          <setting />
+        </port>
+        <port o="In" layout="4" r:def="315">
+          <desc fullName="$sel$.$in0$" module="base" r:def="90" />
+          <setting />
+        </port>
+        <port o="In" layout="5" r:def="190">
+          <desc fullName="$sel$.$in1$" module="base" r:def="91" />
+          <setting />
+        </port>
+      </ports>
+      <call fullName="$sel$" module="base" r:def="92" />
+      <translation>140,180</translation>
+      <Name>sel</Name>
+      <Id>66bfe598-58bc-4908-bf14-937592c99c27</Id>
+    </node>
+    <node name="gt_0">
+      <ports>
+        <port o="Out" layout="1" r:def="187">
+          <expr fullName="$gt$" module="base" etype="retval" expr="=&gt;" r:def="131" />
+          <setting />
+          <AssociatedTempVar>tmparg_4</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc fullName="$gt$.$eno$" module="base" r:def="132" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$gt$.$en$" module="base" r:def="133" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="7" r:def="188">
+          <expr fullName="$gt$" module="base" etype="dynin" expr="in1" r:def="134" />
+          <setting />
+        </port>
+        <port o="In" layout="8" r:def="189">
+          <expr fullName="$gt$" module="base" etype="dynin" expr="in2" r:def="135" />
+          <setting />
+        </port>
+      </ports>
+      <call fullName="$gt$" module="base" r:def="136" />
+      <translation>-40,180</translation>
+      <Name>gt_0</Name>
+      <Id>04be8cf4-64ca-49ea-a85c-cb55f5d917b5</Id>
+    </node>
+    <node name="Out_Temp_source">
+      <ports>
+        <port o="In" layout="0" r:def="191">
+          <scope name="Out_Temp_source" r:def="15" />
+        </port>
+        <port o="Out" layout="1">
+          <scope r:ref="15" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <field name="Out_Temp_source" kind="Local" modifiers="None" persistency="Auto">
+        <type fullName="$bool$" module="base" r:def="40" />
+      </field>
+      <translation>480,120</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>6</LadderOrder>
+      <Name>Out_Temp_source</Name>
+      <Id>18a88610-fd0c-4aa4-a152-f0eafb57e25c</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="193">
+          <desc fullName="$hw$.$neuron l523_uled_1.01_w$" module="OneWire1" r:def="16" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="16" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="16" />
+      <translation>480,-320</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>-16</LadderOrder>
+      <Name></Name>
+      <Id>271139bd-48f7-49d3-affa-0724b7575ce8</Id>
+    </node>
+    <node name="BD2_Pulse_Generator">
+      <ports>
+        <port o="Out" layout="0">
+          <desc fullName="$lib$.$core$.$v1_1$.$bd2_pulse_generator$.$eno$" module="Lib.Core" r:def="23" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$lib$.$core$.$v1_1$.$bd2_pulse_generator$.$en$" module="Lib.Core" r:def="24" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2">
+          <desc fullName="$lib$.$core$.$v1_1$.$bd2_pulse_generator$.$enable$" module="Lib.Core" r:def="25" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="3">
+          <desc fullName="$lib$.$core$.$v1_1$.$bd2_pulse_generator$.$ttrue$" module="Lib.Core" r:def="26" />
+          <setting visible="false" defval="t#200ms" />
+        </port>
+        <port o="In" layout="4">
+          <desc fullName="$lib$.$core$.$v1_1$.$bd2_pulse_generator$.$tfalse$" module="Lib.Core" r:def="27" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="5">
+          <desc fullName="$lib$.$core$.$v1_1$.$bd2_pulse_generator$.$pausing$" module="Lib.Core" r:def="28" />
+          <setting visible="false" />
+        </port>
+        <port o="Out" layout="6" r:def="192">
+          <desc fullName="$lib$.$core$.$v1_1$.$bd2_pulse_generator$.$out$" module="Lib.Core" r:def="29" />
+          <setting />
+        </port>
+        <port o="Out" layout="7">
+          <desc fullName="$lib$.$core$.$v1_1$.$bd2_pulse_generator$.$outn$" module="Lib.Core" r:def="30" />
+          <setting />
+        </port>
+        <port o="Out" layout="8">
+          <desc fullName="$lib$.$core$.$v1_1$.$bd2_pulse_generator$.$tres$" module="Lib.Core" r:def="31" />
+          <setting visible="false" />
+        </port>
+      </ports>
+      <call fullName="$lib$.$core$.$v1_1$.$bd2_pulse_generator$" module="Lib.Core" r:def="32" />
+      <field name="BD2_Pulse_Generator" kind="Local" modifiers="None" persistency="Auto">
+        <type fullName="$lib$.$core$.$v1_1$.$bd2_pulse_generator$" module="Lib.Core" r:def="33" />
+      </field>
+      <translation>40,-360</translation>
+      <CopyPasteTagProperty>ac75abdf-b940-4b7c-ba88-773e31c91565</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries>
+          <n1:entry FieldPath=".$eno$" Guid="5f4dfb54-069b-498f-a486-5f603500a97a" />
+          <n1:entry FieldPath=".$en$" Guid="dfb52caa-4e7c-411d-9efa-51cefb38a8dc" />
+          <n1:entry FieldPath=".$PeriodTime$" Guid="57222e15-702a-44ae-8b13-880ab6a50cfc" />
+          <n1:entry FieldPath=".$Period$" Guid="860c98a5-c4bf-404b-9a4e-70b45649a49e" />
+          <n1:entry FieldPath=".$TtrueUse$" Guid="54e93aeb-b0d6-46b6-a52f-c3e0ccb9d051" />
+          <n1:entry FieldPath=".$TfalseUse$" Guid="0e50b9bd-9096-4e1d-b967-9d03f345716e" />
+          <n1:entry FieldPath=".$lastEnable$" Guid="abaef10e-d338-4d2f-bfaf-bfe89eeb43da" />
+          <n1:entry FieldPath=".$Enable$" Guid="b3a217aa-4d41-401c-afe7-46fa2608bcf4" />
+          <n1:entry FieldPath=".$Ttrue$" Guid="6796c8d6-cd29-442c-8be4-7bf3f9de5e35" />
+          <n1:entry FieldPath=".$Tfalse$" Guid="ea3ebc51-5863-4c5f-8467-c02ed855baeb" />
+          <n1:entry FieldPath=".$Pausing$" Guid="cb128868-a341-4db7-aa81-6a9f5cc79664" />
+          <n1:entry FieldPath=".$Out$" Guid="e3103ebb-9b29-49f4-ba51-065e36c91894" />
+          <n1:entry FieldPath=".$OutN$" Guid="db292cae-78ab-4792-9885-4bb53ace3111" />
+          <n1:entry FieldPath=".$Tres$" Guid="ac75abdf-b940-4b7c-ba88-773e31c91565" />
+        </n1:entries>
+      </CopyPasteChildTagProperty>
+      <Name>BD2_Pulse_Generator</Name>
+      <Id>4f34d7f7-61a2-4a90-9e12-25ef5c6536af</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$ovl_sv_terasa$" module="OneWire1" r:def="17" />
+        </port>
+        <port o="Out" layout="1" r:def="195">
+          <desc r:ref="17" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="17" />
+      <translation>-300,-200</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>-10</LadderOrder>
+      <Name></Name>
+      <Id>afb42faa-ef7b-4af8-b3aa-5fd3c7b2f585</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="215">
+          <desc fullName="$hw$.$neuron l523_ssr_svetladole$" module="OneWire1" r:def="18" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="18" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="18" />
+      <translation>480,340</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>17</LadderOrder>
+      <Name></Name>
+      <Id>a6408f0e-0256-46c2-ab8f-68d432ecba35</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$ovl_sv_predgaraz$" module="OneWire1" r:def="19" />
+        </port>
+        <port o="Out" layout="1" r:def="368">
+          <desc r:ref="19" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="19" />
+      <translation>-300,500</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>25</LadderOrder>
+      <Name></Name>
+      <Id>11e692d2-5a98-4e89-87ed-ec18585d1b70</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="367">
+          <desc fullName="$hw$.$neuron l523_sv_predgaraz$" module="OneWire1" r:def="20" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="20" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="20" />
+      <translation>480,480</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>24</LadderOrder>
+      <Name></Name>
+      <Id>12563201-4be1-4267-8bfc-680e25118224</Id>
+    </node>
+    <node name="B86_Filter_4">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="2" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="3" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="225">
+          <desc r:ref="4" />
+          <setting />
+        </port>
+        <port o="In" layout="3">
+          <desc r:ref="5" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="4">
+          <desc r:ref="6" />
+          <setting visible="false" defval="900" />
+        </port>
+        <port o="Out" layout="5" r:def="196">
+          <desc r:ref="7" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="8" />
+      <field name="B86_Filter_4" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="9" />
+      </field>
+      <translation>-120,1420</translation>
+      <CopyPasteTagProperty>59eb4a41-212b-4393-9b7b-ada634a7d73e</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries>
+          <n1:entry FieldPath=".$eno$" Guid="e8d237b6-bb6b-4a68-9b8e-e43cd3bba6b6" />
+          <n1:entry FieldPath=".$en$" Guid="889e1661-9bd6-4665-8930-4aa744992ebe" />
+          <n1:entry FieldPath=".$mXT$" Guid="d5222a82-cca5-4e42-89fe-e3cfc6f00398" />
+          <n1:entry FieldPath=".$mXTPrev$" Guid="f37b8046-16f2-4de2-9194-a5893e6aa0ab" />
+          <n1:entry FieldPath=".$mXDT$" Guid="47a95233-f26d-4fa5-acd5-21629a13ebf5" />
+          <n1:entry FieldPath=".$mXy$" Guid="bd2820f5-a720-425f-8842-70de4cc83ffe" />
+          <n1:entry FieldPath=".$mXyPrev$" Guid="bebd1017-d244-4d2f-954f-455349c5850e" />
+          <n1:entry FieldPath=".$mXQ$" Guid="254c0233-2ac1-4955-9727-4dc3ee4cdd58" />
+          <n1:entry FieldPath=".$mXI$" Guid="7c3f7d91-daee-412d-a3d2-fa39b326e3f4" />
+          <n1:entry FieldPath=".$xBuffer$" Guid="31ad5d86-83f5-445f-9e24-519aa87970f4" />
+          <n1:entry FieldPath=".$dtBuffer$" Guid="9d4f2d27-a00b-4aee-b663-d874b08989b4" />
+          <n1:entry FieldPath=".$nBuffer$" Guid="e6f284b7-9b65-45cf-8f6e-8fe2ca1d9a2a" />
+          <n1:entry FieldPath=".$Q$" Guid="653f2e0b-cfb9-47d2-bb71-eb12c05c11e9" />
+          <n1:entry FieldPath=".$ActValue$" Guid="044b6e49-d7fd-41ae-be6b-156031db7dac" />
+          <n1:entry FieldPath=".$In$" Guid="28a59171-f487-4b6c-b550-c10b165009e3" />
+          <n1:entry FieldPath=".$InA$" Guid="5fcd1ae3-1011-4af4-944a-189cd8d1a641" />
+          <n1:entry FieldPath=".$InDT$" Guid="d6cf5f5b-50c5-49d7-acab-0b0f6c327c34" />
+          <n1:entry FieldPath=".$Out$" Guid="59eb4a41-212b-4393-9b7b-ada634a7d73e" />
+        </n1:entries>
+      </CopyPasteChildTagProperty>
+      <Name>B86_Filter_4</Name>
+      <Id>584cc2bb-cae6-4f14-a697-209d7d71b442</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="197">
+          <desc fullName="$temp_puda$" module="OneWire1" r:def="21" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="21" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="21" />
+      <translation>480,1420</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>71</LadderOrder>
+      <Name></Name>
+      <Id>d263ac8c-9837-4eb0-8971-4d58e4e120f6</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="201">
+          <desc fullName="$runcnt$" module="OneWire1" r:def="22" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="22" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="22" />
+      <translation>480,-260</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>-13</LadderOrder>
+      <Name></Name>
+      <Id>aafb794e-e18f-4bb0-84a7-8c57c6fff8bd</Id>
+    </node>
+    <node name="BD2_Pulse_Generator_0">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="23" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="24" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2">
+          <desc r:ref="25" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="3">
+          <desc r:ref="26" />
+          <setting visible="false" defval="t#200ms" />
+        </port>
+        <port o="In" layout="4">
+          <desc r:ref="27" />
+          <setting visible="false" defval="t#10m" />
+        </port>
+        <port o="In" layout="5">
+          <desc r:ref="28" />
+          <setting visible="false" />
+        </port>
+        <port o="Out" layout="6" r:def="198">
+          <desc r:ref="29" />
+          <setting />
+        </port>
+        <port o="Out" layout="7">
+          <desc r:ref="30" />
+          <setting />
+        </port>
+        <port o="Out" layout="8">
+          <desc r:ref="31" />
+          <setting visible="false" />
+        </port>
+      </ports>
+      <call r:ref="32" />
+      <field name="BD2_Pulse_Generator_0" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="33" />
+      </field>
+      <translation>-120,-260</translation>
+      <CopyPasteTagProperty>ac75abdf-b940-4b7c-ba88-773e31c91565</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries>
+          <n1:entry FieldPath=".$eno$" Guid="5f4dfb54-069b-498f-a486-5f603500a97a" />
+          <n1:entry FieldPath=".$en$" Guid="dfb52caa-4e7c-411d-9efa-51cefb38a8dc" />
+          <n1:entry FieldPath=".$PeriodTime$" Guid="57222e15-702a-44ae-8b13-880ab6a50cfc" />
+          <n1:entry FieldPath=".$Period$" Guid="860c98a5-c4bf-404b-9a4e-70b45649a49e" />
+          <n1:entry FieldPath=".$TtrueUse$" Guid="54e93aeb-b0d6-46b6-a52f-c3e0ccb9d051" />
+          <n1:entry FieldPath=".$TfalseUse$" Guid="0e50b9bd-9096-4e1d-b967-9d03f345716e" />
+          <n1:entry FieldPath=".$lastEnable$" Guid="abaef10e-d338-4d2f-bfaf-bfe89eeb43da" />
+          <n1:entry FieldPath=".$Enable$" Guid="b3a217aa-4d41-401c-afe7-46fa2608bcf4" />
+          <n1:entry FieldPath=".$Ttrue$" Guid="6796c8d6-cd29-442c-8be4-7bf3f9de5e35" />
+          <n1:entry FieldPath=".$Tfalse$" Guid="ea3ebc51-5863-4c5f-8467-c02ed855baeb" />
+          <n1:entry FieldPath=".$Pausing$" Guid="cb128868-a341-4db7-aa81-6a9f5cc79664" />
+          <n1:entry FieldPath=".$Out$" Guid="e3103ebb-9b29-49f4-ba51-065e36c91894" />
+          <n1:entry FieldPath=".$OutN$" Guid="db292cae-78ab-4792-9885-4bb53ace3111" />
+          <n1:entry FieldPath=".$Tres$" Guid="ac75abdf-b940-4b7c-ba88-773e31c91565" />
+        </n1:entries>
+      </CopyPasteChildTagProperty>
+      <Name>BD2_Pulse_Generator_0</Name>
+      <Id>d87c7b80-ef1a-4e36-a3f9-5320ae6ee38d</Id>
+    </node>
+    <node name="BD30_Counter">
+      <ports>
+        <port o="Out" layout="0">
+          <desc fullName="$lib$.$core$.$v1_0$.$bd30_counter$.$eno$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$lib$.$core$.$v1_0$.$bd30_counter$.$en$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="199">
+          <desc fullName="$lib$.$core$.$v1_0$.$bd30_counter$.$bx$" module="Lib.Core" />
+          <setting />
+        </port>
+        <port o="In" layout="3">
+          <desc fullName="$lib$.$core$.$v1_0$.$bd30_counter$.$bxf$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="4">
+          <desc fullName="$lib$.$core$.$v1_0$.$bd30_counter$.$bxd$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="5">
+          <desc fullName="$lib$.$core$.$v1_0$.$bd30_counter$.$bxdf$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="6">
+          <desc fullName="$lib$.$core$.$v1_0$.$bd30_counter$.$br$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="7">
+          <desc fullName="$lib$.$core$.$v1_0$.$bd30_counter$.$minimum$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="8">
+          <desc fullName="$lib$.$core$.$v1_0$.$bd30_counter$.$maximum$" module="Lib.Core" />
+          <setting visible="false" defval="100000" />
+        </port>
+        <port o="In" layout="9">
+          <desc fullName="$lib$.$core$.$v1_0$.$bd30_counter$.$bring$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="Out" layout="10" r:def="200">
+          <desc fullName="$lib$.$core$.$v1_0$.$bd30_counter$.$out$" module="Lib.Core" />
+          <setting />
+        </port>
+      </ports>
+      <call fullName="$lib$.$core$.$v1_0$.$bd30_counter$" module="Lib.Core" />
+      <field name="BD30_Counter" kind="Local" modifiers="None" persistency="Auto">
+        <type fullName="$lib$.$core$.$v1_0$.$bd30_counter$" module="Lib.Core" />
+      </field>
+      <translation>40,-260</translation>
+      <Name>BD30_Counter</Name>
+      <Id>6f0ca8a7-8840-431d-be3b-cd94ffc8ab97</Id>
+    </node>
+    <node name="B86_Filter_5">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="2" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="3" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="308">
+          <desc r:ref="4" />
+          <setting />
+        </port>
+        <port o="In" layout="3">
+          <desc r:ref="5" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="4">
+          <desc r:ref="6" />
+          <setting visible="false" defval="900" />
+        </port>
+        <port o="Out" layout="5" r:def="202">
+          <desc r:ref="7" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="8" />
+      <field name="B86_Filter_5" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="9" />
+      </field>
+      <translation>-120,1500</translation>
+      <CopyPasteTagProperty>2d3a528b-5a93-4105-a6ba-ff3090609014</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries>
+          <n1:entry FieldPath=".$eno$" Guid="bf355827-cbca-46ec-9f68-f8fc6a40bbfd" />
+          <n1:entry FieldPath=".$en$" Guid="0cfa2f8b-8232-4df5-8a8f-33a33ed45881" />
+          <n1:entry FieldPath=".$mXT$" Guid="2d0a0bcf-32cb-45ec-b4f9-64e75702ce66" />
+          <n1:entry FieldPath=".$mXTPrev$" Guid="422321e8-9cd3-46be-8902-0dd66043784b" />
+          <n1:entry FieldPath=".$mXDT$" Guid="f2a01ac9-bc00-4c6d-97bb-9714ac718769" />
+          <n1:entry FieldPath=".$mXy$" Guid="20f5c905-7417-47cd-b757-272a722e66ad" />
+          <n1:entry FieldPath=".$mXyPrev$" Guid="725c4e53-314e-4de7-82ab-9a4674346a90" />
+          <n1:entry FieldPath=".$mXQ$" Guid="34bece57-d719-4fac-854e-5b7fac0649ba" />
+          <n1:entry FieldPath=".$mXI$" Guid="95a4ed86-e470-4a17-86e2-abb44815be57" />
+          <n1:entry FieldPath=".$xBuffer$" Guid="60ab9d63-6703-4f1a-9d3b-78039133dd8e" />
+          <n1:entry FieldPath=".$dtBuffer$" Guid="6f390114-fea0-4bef-bcbb-e9eefa22c8e2" />
+          <n1:entry FieldPath=".$nBuffer$" Guid="8bba1bbb-ec78-43d2-b353-270aa7a715c3" />
+          <n1:entry FieldPath=".$Q$" Guid="cfd000cb-9cad-4814-bc53-3e81a591a2d9" />
+          <n1:entry FieldPath=".$ActValue$" Guid="f0210f5f-77ee-41f9-9cee-eb6613c85852" />
+          <n1:entry FieldPath=".$In$" Guid="2cfb2500-d58b-49bc-8829-01cbce493414" />
+          <n1:entry FieldPath=".$InA$" Guid="92b7dd55-f7c3-4c4e-8898-f5888be7b27e" />
+          <n1:entry FieldPath=".$InDT$" Guid="223ba83b-a350-4d71-9236-3752696e17f3" />
+          <n1:entry FieldPath=".$Out$" Guid="2d3a528b-5a93-4105-a6ba-ff3090609014" />
+        </n1:entries>
+      </CopyPasteChildTagProperty>
+      <Name>B86_Filter_5</Name>
+      <Id>73b47691-b067-408b-abd6-51666cf5350f</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="203">
+          <desc fullName="$temp_pracovna$" module="OneWire1" r:def="34" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="34" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="34" />
+      <translation>480,1500</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>75</LadderOrder>
+      <Name></Name>
+      <Id>c00a8bab-d852-4b0d-832a-f2964f22e2a0</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="204">
+          <desc fullName="$hw$.$neuron l523_uled_1.03_w$" module="OneWire1" r:def="35" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="35" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="35" />
+      <translation>480,-360</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>-18</LadderOrder>
+      <Name></Name>
+      <Id>98a23b36-4c48-4781-80a4-ebb9c63ce05c</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="205">
+          <desc fullName="$hw$.$device_uled_1.01$" module="OneWire1" r:def="36" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="36" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="36" />
+      <translation>480,-380</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>-19</LadderOrder>
+      <Name></Name>
+      <Id>f21f3af9-e95e-4ab8-95c2-6e7163af74fc</Id>
+    </node>
+    <node name="B86_Filter_6">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="2" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="3" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="310">
+          <desc r:ref="4" />
+          <setting />
+        </port>
+        <port o="In" layout="3">
+          <desc r:ref="5" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="4">
+          <desc r:ref="6" />
+          <setting visible="false" defval="900" />
+        </port>
+        <port o="Out" layout="5" r:def="206">
+          <desc r:ref="7" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="8" />
+      <field name="B86_Filter_6" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="9" />
+      </field>
+      <translation>-120,1620</translation>
+      <CopyPasteTagProperty>2d3a528b-5a93-4105-a6ba-ff3090609014</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries>
+          <n1:entry FieldPath=".$eno$" Guid="bf355827-cbca-46ec-9f68-f8fc6a40bbfd" />
+          <n1:entry FieldPath=".$en$" Guid="0cfa2f8b-8232-4df5-8a8f-33a33ed45881" />
+          <n1:entry FieldPath=".$mXT$" Guid="2d0a0bcf-32cb-45ec-b4f9-64e75702ce66" />
+          <n1:entry FieldPath=".$mXTPrev$" Guid="422321e8-9cd3-46be-8902-0dd66043784b" />
+          <n1:entry FieldPath=".$mXDT$" Guid="f2a01ac9-bc00-4c6d-97bb-9714ac718769" />
+          <n1:entry FieldPath=".$mXy$" Guid="20f5c905-7417-47cd-b757-272a722e66ad" />
+          <n1:entry FieldPath=".$mXyPrev$" Guid="725c4e53-314e-4de7-82ab-9a4674346a90" />
+          <n1:entry FieldPath=".$mXQ$" Guid="34bece57-d719-4fac-854e-5b7fac0649ba" />
+          <n1:entry FieldPath=".$mXI$" Guid="95a4ed86-e470-4a17-86e2-abb44815be57" />
+          <n1:entry FieldPath=".$xBuffer$" Guid="60ab9d63-6703-4f1a-9d3b-78039133dd8e" />
+          <n1:entry FieldPath=".$dtBuffer$" Guid="6f390114-fea0-4bef-bcbb-e9eefa22c8e2" />
+          <n1:entry FieldPath=".$nBuffer$" Guid="8bba1bbb-ec78-43d2-b353-270aa7a715c3" />
+          <n1:entry FieldPath=".$Q$" Guid="cfd000cb-9cad-4814-bc53-3e81a591a2d9" />
+          <n1:entry FieldPath=".$ActValue$" Guid="f0210f5f-77ee-41f9-9cee-eb6613c85852" />
+          <n1:entry FieldPath=".$In$" Guid="2cfb2500-d58b-49bc-8829-01cbce493414" />
+          <n1:entry FieldPath=".$InA$" Guid="92b7dd55-f7c3-4c4e-8898-f5888be7b27e" />
+          <n1:entry FieldPath=".$InDT$" Guid="223ba83b-a350-4d71-9236-3752696e17f3" />
+          <n1:entry FieldPath=".$Out$" Guid="2d3a528b-5a93-4105-a6ba-ff3090609014" />
+        </n1:entries>
+      </CopyPasteChildTagProperty>
+      <Name>B86_Filter_6</Name>
+      <Id>b7708691-d97a-40fd-aa6b-17dd57257923</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="207">
+          <desc fullName="$temppd$" module="OneWire1" r:def="37" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="37" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="37" />
+      <translation>480,1620</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>81</LadderOrder>
+      <Name></Name>
+      <Id>1a572081-4575-4f38-9df2-0034ee419e01</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="209">
+          <desc fullName="$hw$.$neuron l523_onewirecontrol$" module="OneWire1" r:def="38" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="38" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="38" />
+      <translation>480,1560</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>78</LadderOrder>
+      <Name></Name>
+      <Id>eebb5102-8592-4278-9e24-b22001eb15a1</Id>
+    </node>
+    <node name="Control">
+      <ports>
+        <port o="In" layout="0">
+          <scope name="Control" r:def="39" />
+        </port>
+        <port o="Out" layout="1" r:def="208">
+          <scope r:ref="39" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <field name="Control" kind="Local" initialValue="True" modifiers="None" persistency="Auto">
+        <type r:ref="40" />
+      </field>
+      <translation>-300,1560</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>78</LadderOrder>
+      <Name>Control</Name>
+      <Id>b332a17b-baaa-4431-a010-243c4668b2ad</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$hw$.$sdm120m_fve_fve_pwr$" module="OneWire1" r:def="41" />
+        </port>
+        <port o="Out" layout="1" r:def="211">
+          <desc r:ref="41" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="41" />
+      <translation>-300,1700</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>85</LadderOrder>
+      <Name></Name>
+      <Id>1bb11055-eaff-424e-a4e0-0c2af87f9b8e</Id>
+    </node>
+    <node name="mul">
+      <ports>
+        <port o="Out" layout="1" r:def="213">
+          <expr fullName="$mul$" module="base" etype="retval" expr="=&gt;" r:def="107" />
+          <setting />
+          <AssociatedTempVar>tmparg_14</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc fullName="$mul$.$eno$" module="base" r:def="108" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$mul$.$en$" module="base" r:def="109" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="7" r:def="210">
+          <expr fullName="$mul$" module="base" etype="dynin" expr="in1" r:def="110" />
+          <setting />
+        </port>
+        <port o="In" layout="8">
+          <expr fullName="$mul$" module="base" etype="dynin" expr="in2" r:def="111" />
+          <setting visible="false" defval="-0.001" />
+        </port>
+      </ports>
+      <call fullName="$mul$" module="base" r:def="112" />
+      <translation>20,1700</translation>
+      <Name>mul</Name>
+      <Id>5329997c-61ed-4a1a-9eec-c9dc487d2eac</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="212">
+          <desc fullName="$fve_power$" module="OneWire1" r:def="42" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="42" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="42" />
+      <translation>480,1700</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>85</LadderOrder>
+      <Name></Name>
+      <Id>96c963dc-a9d9-4831-91fb-bae13f57f184</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$hw$.$neuron l523_di_3_1$" module="OneWire1" r:def="43" />
+        </port>
+        <port o="Out" layout="1" r:def="218">
+          <desc r:ref="43" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="43" />
+      <translation>-300,320</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>16</LadderOrder>
+      <Name></Name>
+      <Id>25717c94-91c0-4ea6-af34-e7c5d9e92442</Id>
+    </node>
+    <node name="SV_Dole">
+      <ports>
+        <port o="In" layout="0">
+          <scope name="SV_Dole" r:def="44" />
+        </port>
+        <port o="Out" layout="1" r:def="222">
+          <scope r:ref="44" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <field name="SV_Dole" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="40" />
+      </field>
+      <translation>-300,380</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>19</LadderOrder>
+      <Name>SV_Dole</Name>
+      <Id>d638ab36-48bb-4bf8-8223-26aee19a7ab1</Id>
+    </node>
+    <node name="Toggle">
+      <ports>
+        <port o="Out" layout="0">
+          <desc fullName="$lib$.$core$.$v1_0$.$toggle$.$eno$" module="Lib.Core" r:def="67" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$lib$.$core$.$v1_0$.$toggle$.$en$" module="Lib.Core" r:def="68" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="217">
+          <desc fullName="$lib$.$core$.$v1_0$.$toggle$.$in$" module="Lib.Core" r:def="69" />
+          <setting />
+        </port>
+        <port o="Out" layout="3" r:def="214">
+          <desc fullName="$lib$.$core$.$v1_0$.$toggle$.$out$" module="Lib.Core" r:def="70" />
+          <setting />
+        </port>
+      </ports>
+      <call fullName="$lib$.$core$.$v1_0$.$toggle$" module="Lib.Core" r:def="71" />
+      <field name="Toggle" kind="Local" modifiers="None" persistency="Auto">
+        <type fullName="$lib$.$core$.$v1_0$.$toggle$" module="Lib.Core" r:def="72" />
+      </field>
+      <translation>120,340</translation>
+      <CopyPasteTagProperty>84b741a6-090a-41ec-b70f-96b21eab2598</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries>
+          <n1:entry FieldPath=".$eno$" Guid="acf606fc-c225-4273-908c-6f7407621729" />
+          <n1:entry FieldPath=".$en$" Guid="8ee33909-e41d-4098-973b-03788bb19165" />
+          <n1:entry FieldPath=".$In$" Guid="8e91ed57-2723-45f2-afe4-6ceac75be12e" />
+          <n1:entry FieldPath=".$Out$" Guid="7caac1eb-3efb-4f09-8986-19a2f54df065" />
+          <n1:entry FieldPath=".$InLast$" Guid="c648035f-2efb-4a96-abab-9bbe4893d304" />
+          <n1:entry FieldPath=".$State$" Guid="84b741a6-090a-41ec-b70f-96b21eab2598" />
+        </n1:entries>
+      </CopyPasteChildTagProperty>
+      <Name>Toggle</Name>
+      <Id>1d25b684-90c1-43ee-8824-954d7ebf40cb</Id>
+    </node>
+    <node name="R_TRIG">
+      <ports>
+        <port o="Out" layout="0">
+          <desc fullName="$r_trig$.$eno$" module="Lib.Iec" r:def="53" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$r_trig$.$en$" module="Lib.Iec" r:def="54" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="223">
+          <desc fullName="$r_trig$.$clk$" module="Lib.Iec" r:def="55" />
+          <setting />
+        </port>
+        <port o="Out" layout="3" r:def="220">
+          <desc fullName="$r_trig$.$q$" module="Lib.Iec" r:def="56" />
+          <setting />
+        </port>
+      </ports>
+      <call fullName="$r_trig$" module="Lib.Iec" r:def="57" />
+      <field name="R_TRIG" kind="Local" modifiers="None" persistency="Auto">
+        <type fullName="$r_trig$" module="Lib.Iec" r:def="58" />
+      </field>
+      <translation>-180,360</translation>
+      <CopyPasteTagProperty>a59aa4f4-d8be-4eea-b272-0e0bf332bb53</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries>
+          <n1:entry FieldPath=".$eno$" Guid="a902b188-d72d-40aa-940a-8fbb6e820b79" />
+          <n1:entry FieldPath=".$en$" Guid="18fa8595-9451-40cc-bcae-7531e8b1776f" />
+          <n1:entry FieldPath=".$CLK$" Guid="555ad70a-698a-4fac-9b48-0cac499cb4ee" />
+          <n1:entry FieldPath=".$Q$" Guid="be4e0a98-7069-4ff7-9f6b-170cf78c13bf" />
+          <n1:entry FieldPath=".$M$" Guid="a59aa4f4-d8be-4eea-b272-0e0bf332bb53" />
+        </n1:entries>
+      </CopyPasteChildTagProperty>
+      <Name>R_TRIG</Name>
+      <Id>29ae761f-2181-4c79-b237-a8c515b4b693</Id>
+    </node>
+    <node name="or">
+      <ports>
+        <port o="Out" layout="1" r:def="216">
+          <expr fullName="$or$" module="base" etype="retval" expr="=&gt;" r:def="59" />
+          <setting />
+          <AssociatedTempVar>tmparg_15</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc fullName="$or$.$eno$" module="base" r:def="60" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$or$.$en$" module="base" r:def="61" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="8" r:def="219">
+          <expr fullName="$or$" module="base" etype="dynin" expr="in1" r:def="62" />
+          <setting />
+        </port>
+        <port o="In" layout="9" r:def="221">
+          <expr fullName="$or$" module="base" etype="dynin" expr="in2" r:def="63" />
+          <setting />
+        </port>
+        <port o="In" layout="10" r:def="242">
+          <expr fullName="$or$" module="base" etype="dynin" expr="in3" r:def="64" />
+          <setting />
+        </port>
+      </ports>
+      <call fullName="$or$" module="base" r:def="65" />
+      <translation>-40,340</translation>
+      <Name>or</Name>
+      <Id>3d86e0ed-e142-4564-a2bf-9da9c22916a7</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$hw$.$garaz_temperature$" module="OneWire1" r:def="45" />
+        </port>
+        <port o="Out" layout="1" r:def="337">
+          <desc r:ref="45" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="45" />
+      <translation>-300,-40</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>-2</LadderOrder>
+      <Name></Name>
+      <Id>333a989f-b7f9-4aca-9ed0-1ce3a2162c74</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$hw$.$sever_temperature$" module="OneWire1" r:def="46" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="46" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="46" />
+      <translation>-300,160</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>8</LadderOrder>
+      <Name></Name>
+      <Id>4cf2528a-ec0d-495b-a30d-68862af29b67</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$hw$.$puda_temperature$" module="OneWire1" r:def="47" />
+        </port>
+        <port o="Out" layout="1" r:def="224">
+          <desc r:ref="47" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="47" />
+      <translation>-300,1420</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>71</LadderOrder>
+      <Name></Name>
+      <Id>124a4f4e-afac-4471-970e-9bdb6cf514e9</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$hw$.$obyvak_temperature$" module="OneWire1" r:def="48" />
+        </port>
+        <port o="Out" layout="1" r:def="226">
+          <desc r:ref="48" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="48" />
+      <translation>-300,-80</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>-4</LadderOrder>
+      <Name></Name>
+      <Id>e360f9ee-9e3e-46d1-8737-141dc4ee8a65</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$hw$.$neuron l523_di_3_2$" module="OneWire1" r:def="49" />
+        </port>
+        <port o="Out" layout="1" r:def="232">
+          <desc r:ref="49" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="49" />
+      <translation>-300,580</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>29</LadderOrder>
+      <Name></Name>
+      <Id>a6f25973-2a88-4fa6-8a3d-f36e91dc946e</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$hw$.$neuron l523_di_3_3$" module="OneWire1" r:def="50" />
+        </port>
+        <port o="Out" layout="1" r:def="246">
+          <desc r:ref="50" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="50" />
+      <translation>-300,740</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>37</LadderOrder>
+      <Name></Name>
+      <Id>cdc0162f-a4c7-466a-950d-8caa30ca4cb2</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$di_3_2_virtual$" module="OneWire1" r:def="51" />
+        </port>
+        <port o="Out" layout="1" r:def="230">
+          <desc r:ref="51" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="51" />
+      <translation>-300,620</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>31</LadderOrder>
+      <Name></Name>
+      <Id>368f0708-aa48-4410-8d01-b9484176dd87</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$di_3_3_virtual$" module="OneWire1" r:def="52" />
+        </port>
+        <port o="Out" layout="1" r:def="228">
+          <desc r:ref="52" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="52" />
+      <translation>-300,780</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>39</LadderOrder>
+      <Name></Name>
+      <Id>e783375d-1538-4cc1-ae26-892c95049a7e</Id>
+    </node>
+    <node name="R_TRIG_0">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="53" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="54" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="231">
+          <desc r:ref="55" />
+          <setting />
+        </port>
+        <port o="Out" layout="3" r:def="234">
+          <desc r:ref="56" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="57" />
+      <field name="R_TRIG_0" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="58" />
+      </field>
+      <translation>-180,620</translation>
+      <CopyPasteTagProperty>a59aa4f4-d8be-4eea-b272-0e0bf332bb53</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries>
+          <n1:entry FieldPath=".$eno$" Guid="a902b188-d72d-40aa-940a-8fbb6e820b79" />
+          <n1:entry FieldPath=".$en$" Guid="18fa8595-9451-40cc-bcae-7531e8b1776f" />
+          <n1:entry FieldPath=".$CLK$" Guid="555ad70a-698a-4fac-9b48-0cac499cb4ee" />
+          <n1:entry FieldPath=".$Q$" Guid="be4e0a98-7069-4ff7-9f6b-170cf78c13bf" />
+          <n1:entry FieldPath=".$M$" Guid="a59aa4f4-d8be-4eea-b272-0e0bf332bb53" />
+        </n1:entries>
+      </CopyPasteChildTagProperty>
+      <Name>R_TRIG_0</Name>
+      <Id>18abcd9c-6ff8-4fb7-8789-e1b0590448ac</Id>
+    </node>
+    <node name="R_TRIG_1">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="53" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="54" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="229">
+          <desc r:ref="55" />
+          <setting />
+        </port>
+        <port o="Out" layout="3" r:def="248">
+          <desc r:ref="56" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="57" />
+      <field name="R_TRIG_1" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="58" />
+      </field>
+      <translation>-180,780</translation>
+      <CopyPasteTagProperty>f9634c27-44c6-4660-a9b9-46daa9ad4dad</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries>
+          <n1:entry FieldPath=".$eno$" Guid="d5aa0456-2d4b-4b75-8905-e315242408cc" />
+          <n1:entry FieldPath=".$en$" Guid="ea6aad9f-c05e-4143-8df7-503e2b9b7fcb" />
+          <n1:entry FieldPath=".$CLK$" Guid="88fe608d-ce94-4707-b2b9-14aa0d8c3e37" />
+          <n1:entry FieldPath=".$Q$" Guid="ea08c571-2529-4ee1-bc34-158a34366a40" />
+          <n1:entry FieldPath=".$M$" Guid="f9634c27-44c6-4660-a9b9-46daa9ad4dad" />
+        </n1:entries>
+      </CopyPasteChildTagProperty>
+      <Name>R_TRIG_1</Name>
+      <Id>f33fc37d-8b76-4052-811b-dbeb5da2df75</Id>
+    </node>
+    <node name="or_0">
+      <ports>
+        <port o="Out" layout="1" r:def="236">
+          <expr r:ref="59" />
+          <setting />
+          <AssociatedTempVar>tmparg_16</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc r:ref="60" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="61" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="8" r:def="233">
+          <expr r:ref="62" />
+          <setting />
+        </port>
+        <port o="In" layout="9" r:def="235">
+          <expr r:ref="63" />
+          <setting />
+        </port>
+        <port o="In" layout="10" r:def="244">
+          <expr r:ref="64" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="65" />
+      <translation>-40,600</translation>
+      <Name>or_0</Name>
+      <Id>1a0fd2d0-90d6-4fab-abbf-0d21bfa9371a</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="239">
+          <desc fullName="$hw$.$neuron l523_ro_2x01$" module="OneWire1" r:def="66" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="66" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="66" />
+      <translation>480,600</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>30</LadderOrder>
+      <Name></Name>
+      <Id>292adbd4-b07d-4304-bc5a-1abb09fff730</Id>
+    </node>
+    <node name="Toggle_0">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="67" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="68" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="237">
+          <desc r:ref="69" />
+          <setting />
+        </port>
+        <port o="Out" layout="3" r:def="238">
+          <desc r:ref="70" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="71" />
+      <field name="Toggle_0" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="72" />
+      </field>
+      <translation>120,600</translation>
+      <CopyPasteTagProperty>7b490125-8fd1-4725-946e-b4a958a16d5e</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries>
+          <n1:entry FieldPath=".$eno$" Guid="48cc9848-45b3-4e7b-a8b3-82c6f6fe5ac9" />
+          <n1:entry FieldPath=".$en$" Guid="b2f6fc60-dd9c-4744-a48b-a05cdfe803a9" />
+          <n1:entry FieldPath=".$In$" Guid="3f5efc69-2188-453c-a9ae-9ae81f55be39" />
+          <n1:entry FieldPath=".$Out$" Guid="c228784e-e7b5-4c49-b10a-4a9a6a48c22c" />
+          <n1:entry FieldPath=".$InLast$" Guid="51705d15-49ca-4fe3-a6d1-f548c2c83723" />
+          <n1:entry FieldPath=".$State$" Guid="7b490125-8fd1-4725-946e-b4a958a16d5e" />
+        </n1:entries>
+      </CopyPasteChildTagProperty>
+      <Name>Toggle_0</Name>
+      <Id>ba74af6e-9d12-4e99-8726-964022978b5a</Id>
+    </node>
+    <node name="F_TRIG">
+      <ports>
+        <port o="Out" layout="0">
+          <desc fullName="$f_trig$.$eno$" module="Lib.Iec" r:def="73" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$f_trig$.$en$" module="Lib.Iec" r:def="74" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="240">
+          <desc fullName="$f_trig$.$clk$" module="Lib.Iec" r:def="75" />
+          <setting />
+        </port>
+        <port o="Out" layout="3" r:def="241">
+          <desc fullName="$f_trig$.$q$" module="Lib.Iec" r:def="76" />
+          <setting />
+        </port>
+      </ports>
+      <call fullName="$f_trig$" module="Lib.Iec" r:def="77" />
+      <field name="F_TRIG" kind="Local" modifiers="None" persistency="Auto">
+        <type fullName="$f_trig$" module="Lib.Iec" r:def="78" />
+      </field>
+      <translation>-180,420</translation>
+      <CopyPasteTagProperty>9ad3f9ca-209c-48ec-b533-f0aac2336ac1</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries>
+          <n1:entry FieldPath=".$eno$" Guid="debe47c5-82e1-428d-a502-9b0631c89a37" />
+          <n1:entry FieldPath=".$en$" Guid="cdb909d6-d0b0-4237-8f18-dc841819c25c" />
+          <n1:entry FieldPath=".$CLK$" Guid="d459f301-a465-4c9e-baca-68a4b2e59701" />
+          <n1:entry FieldPath=".$Q$" Guid="795c3e32-60b0-420f-b183-20bd65a31f65" />
+          <n1:entry FieldPath=".$M$" Guid="9ad3f9ca-209c-48ec-b533-f0aac2336ac1" />
+        </n1:entries>
+      </CopyPasteChildTagProperty>
+      <Name>F_TRIG</Name>
+      <Id>461c01a8-2856-4761-b88d-f527415b6b16</Id>
+    </node>
+    <node name="F_TRIG_0">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="73" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="74" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="245">
+          <desc r:ref="75" />
+          <setting />
+        </port>
+        <port o="Out" layout="3" r:def="243">
+          <desc r:ref="76" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="77" />
+      <field name="F_TRIG_0" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="78" />
+      </field>
+      <translation>-180,680</translation>
+      <CopyPasteTagProperty>9ee520b9-2769-4616-a89f-2795877de9f1</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries>
+          <n1:entry FieldPath=".$eno$" Guid="56ac33aa-cf89-43cb-8c99-6f5ad0a81aaf" />
+          <n1:entry FieldPath=".$en$" Guid="eac573b4-9fde-4eb1-9398-c2b589dfdb7e" />
+          <n1:entry FieldPath=".$CLK$" Guid="f207dda1-e0ab-4dbb-a526-0660cc8a5f9f" />
+          <n1:entry FieldPath=".$Q$" Guid="36843183-abe9-48ee-9372-4a8473009733" />
+          <n1:entry FieldPath=".$M$" Guid="9ee520b9-2769-4616-a89f-2795877de9f1" />
+        </n1:entries>
+      </CopyPasteChildTagProperty>
+      <Name>F_TRIG_0</Name>
+      <Id>54a34b22-6cf0-44bf-812a-c63f214f7701</Id>
+    </node>
+    <node name="or_1">
+      <ports>
+        <port o="Out" layout="1" r:def="253">
+          <expr r:ref="59" />
+          <setting />
+          <AssociatedTempVar>tmparg_17</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc r:ref="60" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="61" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="8" r:def="247">
+          <expr r:ref="62" />
+          <setting />
+        </port>
+        <port o="In" layout="9" r:def="249">
+          <expr r:ref="63" />
+          <setting />
+        </port>
+        <port o="In" layout="10" r:def="252">
+          <expr r:ref="64" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="65" />
+      <translation>-40,760</translation>
+      <Name>or_1</Name>
+      <Id>f4cb1257-2f41-4679-bca4-2695098c5002</Id>
+    </node>
+    <node name="F_TRIG_1">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="73" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="74" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="250">
+          <desc r:ref="75" />
+          <setting />
+        </port>
+        <port o="Out" layout="3" r:def="251">
+          <desc r:ref="76" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="77" />
+      <field name="F_TRIG_1" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="78" />
+      </field>
+      <translation>-180,840</translation>
+      <CopyPasteTagProperty>e70f2853-8732-4fa8-b848-217193fdbb33</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries>
+          <n1:entry FieldPath=".$eno$" Guid="dffa1e29-549a-42ab-9f3c-5a505d883f8c" />
+          <n1:entry FieldPath=".$en$" Guid="89cbe054-00d5-43c6-8b41-82ca15676216" />
+          <n1:entry FieldPath=".$CLK$" Guid="81b1fc67-932f-413f-9550-e385a320c7d8" />
+          <n1:entry FieldPath=".$Q$" Guid="256e9d1c-9fc4-4f8d-8ce1-581655a76501" />
+          <n1:entry FieldPath=".$M$" Guid="e70f2853-8732-4fa8-b848-217193fdbb33" />
+        </n1:entries>
+      </CopyPasteChildTagProperty>
+      <Name>F_TRIG_1</Name>
+      <Id>b996ed95-c64f-4fa0-8d1c-3e17913611d8</Id>
+    </node>
+    <node name="Toggle_1">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="67" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="68" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="254">
+          <desc r:ref="69" />
+          <setting />
+        </port>
+        <port o="Out" layout="3" r:def="255">
+          <desc r:ref="70" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="71" />
+      <field name="Toggle_1" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="72" />
+      </field>
+      <translation>120,760</translation>
+      <CopyPasteTagProperty>a755b8a0-a05b-4a79-8455-71263d6d3e55</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries>
+          <n1:entry FieldPath=".$eno$" Guid="9935731f-c1a4-43cb-a2f4-9d51fa499aef" />
+          <n1:entry FieldPath=".$en$" Guid="9ea9b110-2305-41f5-9904-e32eb9ea542c" />
+          <n1:entry FieldPath=".$In$" Guid="22dec0f7-686e-49e6-a563-d7e1cdaa0580" />
+          <n1:entry FieldPath=".$Out$" Guid="b7546a15-178b-43a6-bd79-b54d80021d55" />
+          <n1:entry FieldPath=".$InLast$" Guid="bf3b9123-cd60-401a-b6c8-bcd75ed9def6" />
+          <n1:entry FieldPath=".$State$" Guid="a755b8a0-a05b-4a79-8455-71263d6d3e55" />
+        </n1:entries>
+      </CopyPasteChildTagProperty>
+      <Name>Toggle_1</Name>
+      <Id>19406293-37ab-4df3-8d04-cdab7e3068ec</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="256">
+          <desc fullName="$hw$.$neuron l523_ro_2x02$" module="OneWire1" r:def="79" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="79" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="79" />
+      <translation>480,760</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>38</LadderOrder>
+      <Name></Name>
+      <Id>931a2353-1003-4d0d-aef4-b3f5b1f39717</Id>
+    </node>
+    <node name="B99_PCTimeNode">
+      <ports>
+        <port o="Out" layout="1">
+          <expr fullName="$lib$.$core$.$v1_0$.$b99_pctimenode$" module="Lib.Core" etype="retval" expr="=&gt;" />
+          <setting visible="false" />
+        </port>
+        <port o="Out" layout="0">
+          <desc fullName="$lib$.$core$.$v1_0$.$b99_pctimenode$.$eno$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$lib$.$core$.$v1_0$.$b99_pctimenode$.$en$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="3">
+          <desc fullName="$lib$.$core$.$v1_0$.$b99_pctimenode$.$local$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="Out" layout="4">
+          <desc fullName="$lib$.$core$.$v1_0$.$b99_pctimenode$.$msec$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="Out" layout="5">
+          <desc fullName="$lib$.$core$.$v1_0$.$b99_pctimenode$.$sec$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="Out" layout="6" r:def="259">
+          <desc fullName="$lib$.$core$.$v1_0$.$b99_pctimenode$.$min$" module="Lib.Core" />
+          <setting />
+          <AssociatedTempVar>tmparg_19</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="7" r:def="257">
+          <desc fullName="$lib$.$core$.$v1_0$.$b99_pctimenode$.$hour$" module="Lib.Core" />
+          <setting />
+          <AssociatedTempVar>tmparg_18</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="8">
+          <desc fullName="$lib$.$core$.$v1_0$.$b99_pctimenode$.$day$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="Out" layout="9">
+          <desc fullName="$lib$.$core$.$v1_0$.$b99_pctimenode$.$wday$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="Out" layout="10">
+          <desc fullName="$lib$.$core$.$v1_0$.$b99_pctimenode$.$mon$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="Out" layout="11">
+          <desc fullName="$lib$.$core$.$v1_0$.$b99_pctimenode$.$year$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="Out" layout="12">
+          <desc fullName="$lib$.$core$.$v1_0$.$b99_pctimenode$.$daylight$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="Out" layout="13">
+          <desc fullName="$lib$.$core$.$v1_0$.$b99_pctimenode$.$remainday$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+      </ports>
+      <call fullName="$lib$.$core$.$v1_0$.$b99_pctimenode$" module="Lib.Core" />
+      <translation>-180,1880</translation>
+      <Name>B99_PCTimeNode</Name>
+      <Id>59affb25-edc8-45e5-a1ae-ac7f5426cc90</Id>
+    </node>
+    <node name="eq">
+      <ports>
+        <port o="Out" layout="1" r:def="263">
+          <expr fullName="$eq$" module="base" etype="retval" expr="=&gt;" r:def="80" />
+          <setting />
+          <AssociatedTempVar>tmparg_21</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc fullName="$eq$.$eno$" module="base" r:def="81" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$eq$.$en$" module="base" r:def="82" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="7" r:def="258">
+          <expr fullName="$eq$" module="base" etype="dynin" expr="in1" r:def="83" />
+          <setting />
+        </port>
+        <port o="In" layout="8">
+          <expr fullName="$eq$" module="base" etype="dynin" expr="in2" r:def="84" />
+          <setting visible="false" defval="0" />
+        </port>
+      </ports>
+      <call fullName="$eq$" module="base" r:def="85" />
+      <translation>0,1960</translation>
+      <Name>eq</Name>
+      <Id>5558442d-352f-4981-809a-d2d256bd5e0b</Id>
+    </node>
+    <node name="eq_0">
+      <ports>
+        <port o="Out" layout="1" r:def="261">
+          <expr r:ref="80" />
+          <setting />
+          <AssociatedTempVar>tmparg_20</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc r:ref="81" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="82" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="7" r:def="260">
+          <expr r:ref="83" />
+          <setting />
+        </port>
+        <port o="In" layout="8">
+          <expr r:ref="84" />
+          <setting visible="false" defval="0" />
+        </port>
+      </ports>
+      <call r:ref="85" />
+      <translation>0,1880</translation>
+      <Name>eq_0</Name>
+      <Id>1ae66429-cd5a-41b0-9559-eff3a30fe7b5</Id>
+    </node>
+    <node name="and">
+      <ports>
+        <port o="Out" layout="1" r:def="268">
+          <expr fullName="$and$" module="base" etype="retval" expr="=&gt;" r:def="150" />
+          <setting />
+          <AssociatedTempVar>tmparg_22</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc fullName="$and$.$eno$" module="base" r:def="151" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$and$.$en$" module="base" r:def="152" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="7" r:def="262">
+          <expr fullName="$and$" module="base" etype="dynin" expr="in1" r:def="153" />
+          <setting />
+        </port>
+        <port o="In" layout="8" r:def="264">
+          <expr fullName="$and$" module="base" etype="dynin" expr="in2" r:def="154" />
+          <setting />
+        </port>
+      </ports>
+      <call fullName="$and$" module="base" r:def="155" />
+      <translation>140,1900</translation>
+      <Name>and</Name>
+      <Id>27e8b26e-0708-4b7e-91c8-b9e654b60240</Id>
+    </node>
+    <node name="sel_0">
+      <ports>
+        <port o="Out" layout="1" r:def="265">
+          <expr r:ref="86" />
+          <setting />
+          <AssociatedTempVar>tmparg_23</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc r:ref="87" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="88" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="3" r:def="267">
+          <desc r:ref="89" />
+          <setting />
+        </port>
+        <port o="In" layout="4" r:def="270">
+          <desc r:ref="90" />
+          <setting />
+        </port>
+        <port o="In" layout="5" r:def="272">
+          <desc r:ref="91" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="92" />
+      <translation>300,1900</translation>
+      <Name>sel_0</Name>
+      <Id>f67eabd7-fd06-4d7e-b8df-103c7064d199</Id>
+    </node>
+    <node name="FVE_EnergyToday">
+      <ports>
+        <port o="In" layout="0" r:def="266">
+          <scope name="FVE_EnergyToday" r:def="93" />
+        </port>
+        <port o="Out" layout="1">
+          <scope r:ref="93" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <field name="FVE_EnergyToday" kind="Local" initialValue="0" modifiers="None" persistency="Retain">
+        <type fullName="$real$" module="base" r:def="94" />
+      </field>
+      <translation>480,1900</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>95</LadderOrder>
+      <Name>FVE_EnergyToday</Name>
+      <Id>7fddf370-61fe-4520-b474-72f1cfe70b07</Id>
+    </node>
+    <node name="FVE_EnergyToday">
+      <ports>
+        <port o="In" layout="0">
+          <scope r:ref="93" />
+        </port>
+        <port o="Out" layout="1" r:def="269">
+          <scope r:ref="93" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <field name="FVE_EnergyToday" kind="Local" initialValue="0" modifiers="None" persistency="Retain">
+        <type r:ref="94" />
+      </field>
+      <translation>-300,1820</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>91</LadderOrder>
+      <Name>FVE_EnergyToday</Name>
+      <Id>795e59b8-7e32-46fe-b74c-64f93c280d4e</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$hw$.$sdm120m_fve_fve_energy$" module="OneWire1" r:def="95" />
+        </port>
+        <port o="Out" layout="1" r:def="271">
+          <desc r:ref="95" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="95" />
+      <translation>-300,2020</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>101</LadderOrder>
+      <CopyPasteTagProperty>5aa713ea-bdd2-4550-b36a-3301f36908b1</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries />
+      </CopyPasteChildTagProperty>
+      <Name></Name>
+      <Id>da0fe2db-d330-46fd-bca4-c2f8efb1cd46</Id>
+    </node>
+    <node name="sub">
+      <ports>
+        <port o="Out" layout="1" r:def="275">
+          <expr fullName="$sub$" module="base" etype="retval" expr="=&gt;" r:def="125" />
+          <setting />
+          <AssociatedTempVar>tmparg_24</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc fullName="$sub$.$eno$" module="base" r:def="126" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$sub$.$en$" module="base" r:def="127" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="7" r:def="274">
+          <expr fullName="$sub$" module="base" etype="dynin" expr="in1" r:def="128" />
+          <setting />
+        </port>
+        <port o="In" layout="8" r:def="278">
+          <expr fullName="$sub$" module="base" etype="dynin" expr="in2" r:def="129" />
+          <setting />
+        </port>
+      </ports>
+      <call fullName="$sub$" module="base" r:def="130" />
+      <translation>-120,2080</translation>
+      <Name>sub</Name>
+      <Id>9e413e9f-f3e3-4245-8fdb-2ad3c07a1ec9</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc r:ref="95" />
+        </port>
+        <port o="Out" layout="1" r:def="273">
+          <desc r:ref="95" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="95" />
+      <translation>-300,2060</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>103</LadderOrder>
+      <CopyPasteTagProperty>5aa713ea-bdd2-4550-b36a-3301f36908b1</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries />
+      </CopyPasteChildTagProperty>
+      <Name></Name>
+      <Id>b8d6d557-bc67-4967-973b-906316b145f0</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="276">
+          <desc fullName="$fve_dayproducing$" module="OneWire1" r:def="96" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="96" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="96" />
+      <translation>480,2080</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>104</LadderOrder>
+      <Name></Name>
+      <Id>517b6231-3e02-422a-92e3-001d84540738</Id>
+    </node>
+    <node name="FVE_EnergyToday">
+      <ports>
+        <port o="In" layout="0">
+          <scope r:ref="93" />
+        </port>
+        <port o="Out" layout="1" r:def="277">
+          <scope r:ref="93" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <field name="FVE_EnergyToday" kind="Local" initialValue="0" modifiers="None" persistency="Retain">
+        <type r:ref="94" />
+      </field>
+      <translation>-300,2100</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>105</LadderOrder>
+      <Name>FVE_EnergyToday</Name>
+      <Id>6c417853-b1cf-408c-b00d-00007684a264</Id>
+    </node>
+    <node name="Toggle_2">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="67" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="68" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="280">
+          <desc r:ref="69" />
+          <setting />
+        </port>
+        <port o="Out" layout="3" r:def="288">
+          <desc r:ref="70" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="71" />
+      <field name="Toggle_2" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="72" />
+      </field>
+      <translation>180,2200</translation>
+      <CopyPasteTagProperty>a755b8a0-a05b-4a79-8455-71263d6d3e55</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries>
+          <n1:entry FieldPath=".$eno$" Guid="9935731f-c1a4-43cb-a2f4-9d51fa499aef" />
+          <n1:entry FieldPath=".$en$" Guid="9ea9b110-2305-41f5-9904-e32eb9ea542c" />
+          <n1:entry FieldPath=".$In$" Guid="22dec0f7-686e-49e6-a563-d7e1cdaa0580" />
+          <n1:entry FieldPath=".$Out$" Guid="b7546a15-178b-43a6-bd79-b54d80021d55" />
+          <n1:entry FieldPath=".$InLast$" Guid="bf3b9123-cd60-401a-b6c8-bcd75ed9def6" />
+          <n1:entry FieldPath=".$State$" Guid="a755b8a0-a05b-4a79-8455-71263d6d3e55" />
+        </n1:entries>
+      </CopyPasteChildTagProperty>
+      <Name>Toggle_2</Name>
+      <Id>44d07692-f819-4a2c-b2ff-a503a5ba43f7</Id>
+    </node>
+    <node name="F_TRIG_2">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="73" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="74" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="291">
+          <desc r:ref="75" />
+          <setting />
+        </port>
+        <port o="Out" layout="3" r:def="281">
+          <desc r:ref="76" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="77" />
+      <field name="F_TRIG_2" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="78" />
+      </field>
+      <translation>-120,2280</translation>
+      <CopyPasteTagProperty>e70f2853-8732-4fa8-b848-217193fdbb33</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries>
+          <n1:entry FieldPath=".$eno$" Guid="dffa1e29-549a-42ab-9f3c-5a505d883f8c" />
+          <n1:entry FieldPath=".$en$" Guid="89cbe054-00d5-43c6-8b41-82ca15676216" />
+          <n1:entry FieldPath=".$CLK$" Guid="81b1fc67-932f-413f-9550-e385a320c7d8" />
+          <n1:entry FieldPath=".$Q$" Guid="256e9d1c-9fc4-4f8d-8ce1-581655a76501" />
+          <n1:entry FieldPath=".$M$" Guid="e70f2853-8732-4fa8-b848-217193fdbb33" />
+        </n1:entries>
+      </CopyPasteChildTagProperty>
+      <Name>F_TRIG_2</Name>
+      <Id>426f5150-95fb-4ebf-80dd-a38dce392112</Id>
+    </node>
+    <node name="or_2">
+      <ports>
+        <port o="Out" layout="1" r:def="279">
+          <expr r:ref="59" />
+          <setting />
+          <AssociatedTempVar>tmparg_25</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc r:ref="60" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="61" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="8" r:def="286">
+          <expr r:ref="62" />
+          <setting />
+        </port>
+        <port o="In" layout="9" r:def="284">
+          <expr r:ref="63" />
+          <setting />
+        </port>
+        <port o="In" layout="10" r:def="282">
+          <expr r:ref="64" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="65" />
+      <translation>20,2200</translation>
+      <Name>or_2</Name>
+      <Id>534dca9b-9712-47c1-b655-2c0188e6b33c</Id>
+    </node>
+    <node name="R_TRIG_2">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="53" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="54" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="290">
+          <desc r:ref="55" />
+          <setting />
+        </port>
+        <port o="Out" layout="3" r:def="283">
+          <desc r:ref="56" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="57" />
+      <field name="R_TRIG_2" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="58" />
+      </field>
+      <translation>-120,2220</translation>
+      <CopyPasteTagProperty>f9634c27-44c6-4660-a9b9-46daa9ad4dad</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries>
+          <n1:entry FieldPath=".$eno$" Guid="d5aa0456-2d4b-4b75-8905-e315242408cc" />
+          <n1:entry FieldPath=".$en$" Guid="ea6aad9f-c05e-4143-8df7-503e2b9b7fcb" />
+          <n1:entry FieldPath=".$CLK$" Guid="88fe608d-ce94-4707-b2b9-14aa0d8c3e37" />
+          <n1:entry FieldPath=".$Q$" Guid="ea08c571-2529-4ee1-bc34-158a34366a40" />
+          <n1:entry FieldPath=".$M$" Guid="f9634c27-44c6-4660-a9b9-46daa9ad4dad" />
+        </n1:entries>
+      </CopyPasteChildTagProperty>
+      <Name>R_TRIG_2</Name>
+      <Id>5675137a-e687-4b49-bdaf-83360e62c742</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$hw$.$neuron l523_di_3_4$" module="OneWire1" r:def="97" />
+        </port>
+        <port o="Out" layout="1" r:def="285">
+          <desc r:ref="97" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="97" />
+      <translation>-300,2180</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>109</LadderOrder>
+      <Name></Name>
+      <Id>a97ee98b-7e1c-4709-a43a-733c1996ef08</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="287">
+          <desc fullName="$hw$.$neuron l523_ssr_sv_hornichodba$" module="OneWire1" r:def="98" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="98" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="98" />
+      <translation>480,2200</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>110</LadderOrder>
+      <Name></Name>
+      <Id>7fd579ce-0d37-40ac-9c06-363f841f24ca</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$di_3_4_virtual$" module="OneWire1" r:def="99" />
+        </port>
+        <port o="Out" layout="1" r:def="289">
+          <desc r:ref="99" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="99" />
+      <translation>-300,2240</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>112</LadderOrder>
+      <Name></Name>
+      <Id>01699c2f-7cf1-4a63-8dd0-e188ec6af196</Id>
+    </node>
+    <node name="or_3">
+      <ports>
+        <port o="Out" layout="1" r:def="300">
+          <expr r:ref="59" />
+          <setting />
+          <AssociatedTempVar>tmparg_26</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc r:ref="60" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="61" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="12" r:def="293">
+          <expr r:ref="62" />
+          <setting />
+        </port>
+        <port o="In" layout="13" r:def="295">
+          <expr r:ref="63" />
+          <setting />
+        </port>
+        <port o="In" layout="14" r:def="297">
+          <expr r:ref="64" />
+          <setting />
+        </port>
+        <port o="In" layout="15" r:def="299">
+          <expr fullName="$or$" module="base" etype="dynin" expr="in4" />
+          <setting />
+        </port>
+        <port o="In" layout="16" r:def="312">
+          <expr fullName="$or$" module="base" etype="dynin" expr="in5" />
+          <setting />
+        </port>
+        <port o="In" layout="17" r:def="314">
+          <expr fullName="$or$" module="base" etype="dynin" expr="in6" />
+          <setting />
+        </port>
+        <port o="In" layout="18" r:def="346">
+          <expr fullName="$or$" module="base" etype="dynin" expr="in7" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="65" />
+      <translation>-100,2360</translation>
+      <Name>or_3</Name>
+      <Id>553cedb8-c9b9-4d34-a5e4-03d6514a5532</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc r:ref="98" />
+        </port>
+        <port o="Out" layout="1" r:def="292">
+          <desc r:ref="98" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="98" />
+      <translation>-300,2360</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>118</LadderOrder>
+      <Name></Name>
+      <Id>ff8cb946-1f03-41a5-82f5-e4ae8be13b57</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc r:ref="1" />
+        </port>
+        <port o="Out" layout="1" r:def="294">
+          <desc r:ref="1" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="1" />
+      <translation>-300,2380</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>119</LadderOrder>
+      <Name></Name>
+      <Id>d0091284-3ef0-44ad-bf4e-830f07c67ad4</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc r:ref="66" />
+        </port>
+        <port o="Out" layout="1" r:def="296">
+          <desc r:ref="66" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="66" />
+      <translation>-300,2400</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>120</LadderOrder>
+      <Name></Name>
+      <Id>c72570bf-1f9c-40f0-8821-6ee5d4317264</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc r:ref="79" />
+        </port>
+        <port o="Out" layout="1" r:def="298">
+          <desc r:ref="79" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="79" />
+      <translation>-300,2420</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>121</LadderOrder>
+      <Name></Name>
+      <Id>4fbad65a-f3b8-466f-9101-5d493997a156</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="301">
+          <desc fullName="$svetla_sviti$" module="OneWire1" r:def="100" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="100" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="100" />
+      <translation>480,2400</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>120</LadderOrder>
+      <Name></Name>
+      <Id>479f8151-7383-4954-80e2-73ff22228908</Id>
+    </node>
+    <node name="add">
+      <ports>
+        <port o="Out" layout="1" r:def="303">
+          <expr fullName="$add$" module="base" etype="retval" expr="=&gt;" />
+          <setting />
+          <AssociatedTempVar>tmparg_27</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc fullName="$add$.$eno$" module="base" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$add$.$en$" module="base" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="7" r:def="302">
+          <expr fullName="$add$" module="base" etype="dynin" expr="in1" />
+          <setting />
+        </port>
+        <port o="In" layout="8" r:def="306">
+          <expr fullName="$add$" module="base" etype="dynin" expr="in2" />
+          <setting />
+        </port>
+      </ports>
+      <call fullName="$add$" module="base" />
+      <translation>200,1760</translation>
+      <Name>add</Name>
+      <Id>cd241eee-1cf3-4283-855c-df7b8b29f51a</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="304">
+          <desc fullName="$power_consumption$" module="OneWire1" r:def="101" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="101" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="101" />
+      <translation>480,1760</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>88</LadderOrder>
+      <Name></Name>
+      <Id>32d1db76-c847-408b-88f6-4e8523a0452c</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$hw$.$pro380-mod_total_active_power$" module="OneWire1" r:def="102" />
+        </port>
+        <port o="Out" layout="1" r:def="305">
+          <desc r:ref="102" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="102" />
+      <translation>-300,1780</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>89</LadderOrder>
+      <Name></Name>
+      <Id>ed4e0de8-52ce-40b9-97ae-0f49894dd9fd</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$hw$.$xg18_kotel_vratka$" module="OneWire1" r:def="103" />
+        </port>
+        <port o="Out" layout="1" r:def="307">
+          <desc r:ref="103" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="103" />
+      <translation>-300,1500</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>75</LadderOrder>
+      <Name></Name>
+      <Id>4f595416-bb5e-4b2b-a103-bbade29ba576</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$hw$.$xg18_kotel_vystup$" module="OneWire1" r:def="104" />
+        </port>
+        <port o="Out" layout="1" r:def="309">
+          <desc r:ref="104" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="104" />
+      <translation>-300,1620</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>81</LadderOrder>
+      <Name></Name>
+      <Id>78c97f1a-e206-45fa-8092-6b82a4699d9d</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc r:ref="20" />
+        </port>
+        <port o="Out" layout="1" r:def="311">
+          <desc r:ref="20" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="20" />
+      <translation>-300,2440</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>122</LadderOrder>
+      <Name></Name>
+      <Id>e7bbe84a-c860-4256-a6d8-fecb3588b79c</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc r:ref="1" />
+        </port>
+        <port o="Out" layout="1" r:def="313">
+          <desc r:ref="1" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="1" />
+      <translation>-300,2460</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>123</LadderOrder>
+      <Name></Name>
+      <Id>31ae946f-ad43-430c-a9ab-33bb02059dff</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$hw$.$neuron l523_vodomer_in$" module="OneWire1" r:def="105" />
+        </port>
+        <port o="Out" layout="1" r:def="316">
+          <desc r:ref="105" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="105" />
+      <translation>-300,2580</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>129</LadderOrder>
+      <Name></Name>
+      <Id>c23cbbfa-1937-471b-946f-56925422e297</Id>
+    </node>
+    <node name="F_TRIG_3">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="73" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="74" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="317">
+          <desc r:ref="75" />
+          <setting />
+        </port>
+        <port o="Out" layout="3" r:def="319">
+          <desc r:ref="76" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="77" />
+      <field name="F_TRIG_3" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="78" />
+      </field>
+      <translation>-160,2560</translation>
+      <Name>F_TRIG_3</Name>
+      <Id>2c48fb98-42bd-4627-9eb4-a5e80eb75b1c</Id>
+    </node>
+    <node name="R_TRIG_3">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="53" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="54" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="318">
+          <desc r:ref="55" />
+          <setting />
+        </port>
+        <port o="Out" layout="3" r:def="321">
+          <desc r:ref="56" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="57" />
+      <field name="R_TRIG_3" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="58" />
+      </field>
+      <translation>-160,2620</translation>
+      <Name>R_TRIG_3</Name>
+      <Id>6c113c81-ce1c-4ef7-afe4-6a7c51f0ce8a</Id>
+    </node>
+    <node name="CTU">
+      <ports>
+        <port o="Out" layout="0">
+          <desc fullName="$ctu$.$eno$" module="Lib.Iec" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$ctu$.$en$" module="Lib.Iec" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="324">
+          <desc fullName="$ctu$.$cu$" module="Lib.Iec" />
+          <setting />
+        </port>
+        <port o="In" layout="3">
+          <desc fullName="$ctu$.$r$" module="Lib.Iec" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="4">
+          <desc fullName="$ctu$.$pv$" module="Lib.Iec" />
+          <setting visible="false" />
+        </port>
+        <port o="Out" layout="5">
+          <desc fullName="$ctu$.$q$" module="Lib.Iec" />
+          <setting />
+        </port>
+        <port o="Out" layout="6" r:def="327">
+          <desc fullName="$ctu$.$cv$" module="Lib.Iec" />
+          <setting />
+        </port>
+      </ports>
+      <call fullName="$ctu$" module="Lib.Iec" />
+      <field name="CTU" kind="Local" modifiers="None" persistency="Auto">
+        <type fullName="$ctu$" module="Lib.Iec" />
+      </field>
+      <translation>140,2580</translation>
+      <Name>CTU</Name>
+      <Id>f34b35bf-c017-4a40-aee6-292769fd5fd1</Id>
+    </node>
+    <node name="or_4">
+      <ports>
+        <port o="Out" layout="1" r:def="323">
+          <expr r:ref="59" />
+          <setting />
+          <AssociatedTempVar>tmparg_28</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc r:ref="60" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="61" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="7" r:def="320">
+          <expr r:ref="62" />
+          <setting />
+        </port>
+        <port o="In" layout="8" r:def="322">
+          <expr r:ref="63" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="65" />
+      <translation>0,2580</translation>
+      <Name>or_4</Name>
+      <Id>e72dad55-3f36-4356-812e-a42d99596089</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="330">
+          <desc fullName="$vodomer_litry$" module="OneWire1" r:def="106" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="106" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="106" />
+      <translation>480,2600</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>130</LadderOrder>
+      <Name></Name>
+      <Id>18ac301a-a74d-44c0-a104-4dcb2fb0e546</Id>
+    </node>
+    <node name="mul_0">
+      <ports>
+        <port o="Out" layout="1" r:def="329">
+          <expr r:ref="107" />
+          <setting />
+          <AssociatedTempVar>tmparg_29</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc r:ref="108" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="109" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="7" r:def="328">
+          <expr r:ref="110" />
+          <setting />
+        </port>
+        <port o="In" layout="8" r:def="326">
+          <expr r:ref="111" />
+          <setting defval="10" />
+        </port>
+      </ports>
+      <call r:ref="112" />
+      <translation>280,2600</translation>
+      <Name>mul_0</Name>
+      <Id>941142df-eb4a-45bf-89e0-a8db69761c4f</Id>
+    </node>
+    <node name="Vodomer_konstanta">
+      <ports>
+        <port o="In" layout="0">
+          <scope name="Vodomer_konstanta" r:def="113" />
+        </port>
+        <port o="Out" layout="1" r:def="325">
+          <scope r:ref="113" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <field name="Vodomer_konstanta" kind="Local" initialValue="5" modifiers="None" persistency="Auto">
+        <type fullName="$int$" module="base" />
+      </field>
+      <translation>-300,2660</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>133</LadderOrder>
+      <Name>Vodomer_konstanta</Name>
+      <Id>e0424f4d-6382-4b3a-8ff0-d918df552255</Id>
+    </node>
+    <node name="dummy_jih">
+      <ports>
+        <port o="In" layout="0">
+          <scope name="dummy_jih" r:def="114" />
+        </port>
+        <port o="Out" layout="1" r:def="331">
+          <scope r:ref="114" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <field name="dummy_jih" kind="Local" initialValue="5" modifiers="None" persistency="Auto">
+        <type r:ref="94" />
+      </field>
+      <translation>-300,100</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>5</LadderOrder>
+      <Name>dummy_jih</Name>
+      <Id>422b16a6-459a-4671-b857-18ad294b4362</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$settemp$" module="OneWire1" r:def="115" />
+        </port>
+        <port o="Out" layout="1" r:def="335">
+          <desc r:ref="115" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="115" />
+      <translation>-300,2800</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>140</LadderOrder>
+      <Name></Name>
+      <Id>207f5faa-2cd0-4d99-a5a8-3f38a00aa172</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc r:ref="13" />
+        </port>
+        <port o="Out" layout="1" r:def="333">
+          <desc r:ref="13" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="13" />
+      <translation>-300,2780</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>139</LadderOrder>
+      <Name></Name>
+      <Id>f32f52d2-d517-4465-a637-2225afcb775c</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="350">
+          <desc fullName="$hw$.$device_kotel$" module="OneWire1" r:def="116" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="116" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="116" />
+      <translation>480,2780</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>139</LadderOrder>
+      <Name></Name>
+      <Id>c6e7dce3-3412-4eb6-a866-d07572e52fef</Id>
+    </node>
+    <node name="B31_Reverse_On_Off_Control_Sequence">
+      <ports>
+        <port o="Out" layout="0">
+          <desc fullName="$lib$.$core$.$v1_1$.$b30_on_off_control_sequence$.$eno$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$lib$.$core$.$v1_1$.$b30_on_off_control_sequence$.$en$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="334">
+          <desc fullName="$lib$.$core$.$v1_1$.$b30_on_off_control_sequence$.$x$" module="Lib.Core" />
+          <setting />
+        </port>
+        <port o="In" layout="3" r:def="336">
+          <desc fullName="$lib$.$core$.$v1_1$.$b30_on_off_control_sequence$.$w$" module="Lib.Core" />
+          <setting />
+        </port>
+        <port o="In" layout="4">
+          <desc fullName="$lib$.$core$.$v1_1$.$b30_on_off_control_sequence$.$controllertype$" module="Lib.Core" />
+          <setting visible="false" defval="$lib$.$core$.$v1_0$.$controllertype$#Heating" />
+        </port>
+        <port o="In" layout="5">
+          <desc fullName="$lib$.$core$.$v1_1$.$b30_on_off_control_sequence$.$enabled$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="6" r:def="344">
+          <desc fullName="$lib$.$core$.$v1_1$.$b30_on_off_control_sequence$.$xp$" module="Lib.Core" />
+          <setting defval="0.5" />
+        </port>
+        <port o="In" layout="7">
+          <desc fullName="$lib$.$core$.$v1_1$.$b30_on_off_control_sequence$.$off$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="Out" layout="8" r:def="347">
+          <desc fullName="$lib$.$core$.$v1_1$.$b30_on_off_control_sequence$.$out$" module="Lib.Core" />
+          <setting />
+        </port>
+      </ports>
+      <call fullName="$lib$.$core$.$v1_1$.$b31_reverse_on_off_control_sequence$" module="Lib.Core" />
+      <field name="B31_Reverse_On_Off_Control_Sequence" kind="Local" modifiers="None" persistency="Auto">
+        <type fullName="$lib$.$core$.$v1_1$.$b31_reverse_on_off_control_sequence$" module="Lib.Core" />
+      </field>
+      <translation>-120,2780</translation>
+      <Name>B31_Reverse_On_Off_Control_Sequence</Name>
+      <Id>cabd8799-9402-43d5-a470-c2025a0ea019</Id>
+    </node>
+    <node name="TOF">
+      <ports>
+        <port o="Out" layout="0">
+          <desc fullName="$tof$.$eno$" module="Lib.Iec" r:def="166" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$tof$.$en$" module="Lib.Iec" r:def="167" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="351">
+          <desc fullName="$tof$.$in$" module="Lib.Iec" r:def="168" />
+          <setting />
+        </port>
+        <port o="In" layout="3">
+          <desc fullName="$tof$.$pt$" module="Lib.Iec" r:def="169" />
+          <setting visible="false" defval="t#5m" />
+        </port>
+        <port o="Out" layout="4" r:def="339">
+          <desc fullName="$tof$.$q$" module="Lib.Iec" r:def="170" />
+          <setting />
+        </port>
+        <port o="Out" layout="5">
+          <desc fullName="$tof$.$et$" module="Lib.Iec" r:def="171" />
+          <setting visible="false" />
+        </port>
+      </ports>
+      <call fullName="$tof$" module="Lib.Iec" r:def="172" />
+      <field name="TOF" kind="Local" modifiers="None" persistency="Auto">
+        <type fullName="$tof$" module="Lib.Iec" r:def="173" />
+      </field>
+      <translation>160,2820</translation>
+      <Name>TOF</Name>
+      <Id>40375f77-e3a4-41cc-bd24-29e751776733</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="340">
+          <desc fullName="$hw$.$neuron l523_cerpadlo_1np$" module="OneWire1" r:def="117" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="117" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="117" />
+      <translation>480,2820</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>141</LadderOrder>
+      <Name></Name>
+      <Id>151b5456-aeac-44a8-a76a-646df16f8e77</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="411">
+          <desc fullName="$hw$.$neuron l523_rekuperace$" module="OneWire1" r:def="118" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="118" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="118" />
+      <translation>480,3080</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>154</LadderOrder>
+      <Name></Name>
+      <Id>d80d1f84-6750-44a4-acaf-e0c0adf2606a</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$fwversion$" module="OneWire1" r:def="119" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="119" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="119" />
+      <translation>-300,-280</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>-14</LadderOrder>
+      <Name></Name>
+      <Id>fd79c4ab-5095-4c2f-8ec2-4539fbd333e7</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$hw$.$xg18_sever$" module="OneWire1" r:def="120" />
+        </port>
+        <port o="Out" layout="1" r:def="341">
+          <desc r:ref="120" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="120" />
+      <translation>-300,260</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>13</LadderOrder>
+      <Name></Name>
+      <Id>d5ef6bb5-e86e-48b3-8bc0-3fed57cdd5d3</Id>
+    </node>
+    <node name="TempHysteresis">
+      <ports>
+        <port o="In" layout="0">
+          <scope name="TempHysteresis" r:def="121" />
+        </port>
+        <port o="Out" layout="1" r:def="343">
+          <scope r:ref="121" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <field name="TempHysteresis" kind="Local" initialValue="0.5" modifiers="None" persistency="Auto">
+        <type r:ref="94" />
+      </field>
+      <translation>-300,2820</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>141</LadderOrder>
+      <Name>TempHysteresis</Name>
+      <Id>9a3b1426-e3b8-4596-af2d-1dd6e073669c</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$hw$.$neuron l523_ssr_sv_vstupchodba$" module="OneWire1" r:def="122" />
+        </port>
+        <port o="Out" layout="1" r:def="345">
+          <desc r:ref="122" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="122" />
+      <translation>-300,2480</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>124</LadderOrder>
+      <Name></Name>
+      <Id>d55c9ad5-5ffe-453d-82d1-fb230085a569</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="416">
+          <desc r:ref="122" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="122" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="122" />
+      <translation>480,900</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>45</LadderOrder>
+      <Name></Name>
+      <Id>4e4a267f-f7e3-4b5f-8678-aaabc8ec3d0f</Id>
+    </node>
+    <node name="BD12_SwitchOnDelay">
+      <ports>
+        <port o="Out" layout="0">
+          <desc fullName="$lib$.$core$.$v1_1$.$bd12_switchondelay$.$eno$" module="Lib.Core" r:def="138" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$lib$.$core$.$v1_1$.$bd12_switchondelay$.$en$" module="Lib.Core" r:def="139" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="348">
+          <desc fullName="$lib$.$core$.$v1_1$.$bd12_switchondelay$.$in$" module="Lib.Core" r:def="140" />
+          <setting />
+        </port>
+        <port o="In" layout="3">
+          <desc fullName="$lib$.$core$.$v1_1$.$bd12_switchondelay$.$reset$" module="Lib.Core" r:def="141" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="4">
+          <desc fullName="$lib$.$core$.$v1_1$.$bd12_switchondelay$.$ton$" module="Lib.Core" r:def="142" />
+          <setting visible="false" defval="t#15m" />
+        </port>
+        <port o="In" layout="5">
+          <desc fullName="$lib$.$core$.$v1_1$.$bd12_switchondelay$.$ignorestartedge$" module="Lib.Core" r:def="143" />
+          <setting visible="false" />
+        </port>
+        <port o="Out" layout="6" r:def="349">
+          <desc fullName="$lib$.$core$.$v1_1$.$bd12_switchondelay$.$out$" module="Lib.Core" r:def="144" />
+          <setting />
+        </port>
+        <port o="Out" layout="7">
+          <desc fullName="$lib$.$core$.$v1_1$.$bd12_switchondelay$.$tres$" module="Lib.Core" r:def="145" />
+          <setting visible="false" />
+        </port>
+      </ports>
+      <call fullName="$lib$.$core$.$v1_1$.$bd12_switchondelay$" module="Lib.Core" r:def="146" />
+      <field name="BD12_SwitchOnDelay" kind="Local" modifiers="None" persistency="Auto">
+        <type fullName="$lib$.$core$.$v1_1$.$bd12_switchondelay$" module="Lib.Core" r:def="147" />
+      </field>
+      <translation>20,2780</translation>
+      <Name>BD12_SwitchOnDelay</Name>
+      <Id>3e7e0611-e95f-4f3a-a69e-6ed24ef2e8ca</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$rezimrekuperace$" module="OneWire1" r:def="123" />
+        </port>
+        <port o="Out" layout="1" r:def="403">
+          <desc r:ref="123" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="123" />
+      <translation>-300,2960</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>148</LadderOrder>
+      <Name></Name>
+      <Id>35447624-2a74-46e1-9020-c9ed14bb2593</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$rekuperacerucne$" module="OneWire1" r:def="124" />
+        </port>
+        <port o="Out" layout="1" r:def="408">
+          <desc r:ref="124" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="124" />
+      <translation>-300,2980</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>149</LadderOrder>
+      <Name></Name>
+      <Id>5025d92a-a830-4fbc-9c77-2e7077b50570</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc r:ref="12" />
+        </port>
+        <port o="Out" layout="1" r:def="360">
+          <desc r:ref="12" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="12" />
+      <translation>-300,3040</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>152</LadderOrder>
+      <Name></Name>
+      <Id>38f9515f-c2ad-4f4a-8e34-3d61e3b0582a</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc r:ref="13" />
+        </port>
+        <port o="Out" layout="1" r:def="363">
+          <desc r:ref="13" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="13" />
+      <translation>-300,3060</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>153</LadderOrder>
+      <Name></Name>
+      <Id>a1ff3b4c-df85-4345-87d7-376b49903130</Id>
+    </node>
+    <node name="sub_0">
+      <ports>
+        <port o="Out" layout="1" r:def="352">
+          <expr r:ref="125" />
+          <setting />
+          <AssociatedTempVar>tmparg_30</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc r:ref="126" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="127" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="7" r:def="361">
+          <expr r:ref="128" />
+          <setting />
+        </port>
+        <port o="In" layout="8" r:def="364">
+          <expr r:ref="129" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="130" />
+      <translation>-120,3040</translation>
+      <Name>sub_0</Name>
+      <Id>68a50005-4734-428c-b013-dde53f7fc997</Id>
+    </node>
+    <node name="le">
+      <ports>
+        <port o="Out" layout="1" r:def="354">
+          <expr fullName="$le$" module="base" etype="retval" expr="=&gt;" />
+          <setting />
+          <AssociatedTempVar>tmparg_31</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc fullName="$le$.$eno$" module="base" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$le$.$en$" module="base" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="7" r:def="353">
+          <expr fullName="$le$" module="base" etype="dynin" expr="in1" />
+          <setting />
+        </port>
+        <port o="In" layout="8" r:def="359">
+          <expr fullName="$le$" module="base" etype="dynin" expr="in2" />
+          <setting />
+        </port>
+      </ports>
+      <call fullName="$le$" module="base" />
+      <translation>0,3080</translation>
+      <Name>le</Name>
+      <Id>9c584f40-c30f-4533-917b-91f848c58819</Id>
+    </node>
+    <node name="RS">
+      <ports>
+        <port o="Out" layout="0">
+          <desc fullName="$rs$.$eno$" module="Lib.Iec" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$rs$.$en$" module="Lib.Iec" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="355">
+          <desc fullName="$rs$.$s$" module="Lib.Iec" />
+          <setting />
+        </port>
+        <port o="In" layout="3" r:def="357">
+          <desc fullName="$rs$.$r1$" module="Lib.Iec" />
+          <setting />
+        </port>
+        <port o="Out" layout="4" r:def="401">
+          <desc fullName="$rs$.$q1$" module="Lib.Iec" />
+          <setting />
+        </port>
+      </ports>
+      <call fullName="$rs$" module="Lib.Iec" />
+      <field name="RS" kind="Local" modifiers="None" persistency="Auto">
+        <type fullName="$rs$" module="Lib.Iec" />
+      </field>
+      <translation>120,3120</translation>
+      <Name>RS</Name>
+      <Id>09f9405b-1461-453a-ac01-03c8acdd049c</Id>
+    </node>
+    <node name="gt">
+      <ports>
+        <port o="Out" layout="1" r:def="356">
+          <expr r:ref="131" />
+          <setting />
+          <AssociatedTempVar>tmparg_34</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc r:ref="132" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="133" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="7" r:def="362">
+          <expr r:ref="134" />
+          <setting />
+        </port>
+        <port o="In" layout="8" r:def="365">
+          <expr r:ref="135" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="136" />
+      <translation>0,3180</translation>
+      <Name>gt</Name>
+      <Id>3dbc5f77-6ec0-4f7e-a1e2-84bc32498f51</Id>
+    </node>
+    <node name="RozdilVstupu">
+      <ports>
+        <port o="In" layout="0">
+          <scope name="RozdilVstupu" r:def="137" />
+        </port>
+        <port o="Out" layout="1" r:def="358">
+          <scope r:ref="137" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <field name="RozdilVstupu" kind="Local" initialValue="-2" modifiers="None" persistency="Auto">
+        <type r:ref="94" />
+      </field>
+      <translation>-300,3100</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>155</LadderOrder>
+      <Name>RozdilVstupu</Name>
+      <Id>a337d0db-7132-4f60-a437-0c581623e8b8</Id>
+    </node>
+    <node name="or_5">
+      <ports>
+        <port o="Out" layout="1" r:def="366">
+          <expr r:ref="59" />
+          <setting />
+          <AssociatedTempVar>tmparg_35</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc r:ref="60" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="61" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="7" r:def="373">
+          <expr r:ref="62" />
+          <setting />
+        </port>
+        <port o="In" layout="8" r:def="369">
+          <expr r:ref="63" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="65" />
+      <translation>200,480</translation>
+      <Name>or_5</Name>
+      <Id>135e5423-0ecf-403a-b689-af96e909d3da</Id>
+    </node>
+    <node name="BD12_SwitchOnDelay_0">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="138" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="139" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="374">
+          <desc r:ref="140" />
+          <setting />
+        </port>
+        <port o="In" layout="3">
+          <desc r:ref="141" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="4">
+          <desc r:ref="142" />
+          <setting visible="false" defval="t#3s" />
+        </port>
+        <port o="In" layout="5">
+          <desc r:ref="143" />
+          <setting visible="false" />
+        </port>
+        <port o="Out" layout="6" r:def="370">
+          <desc r:ref="144" />
+          <setting />
+        </port>
+        <port o="Out" layout="7">
+          <desc r:ref="145" />
+          <setting visible="false" />
+        </port>
+      </ports>
+      <call r:ref="146" />
+      <field name="BD12_SwitchOnDelay_0" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="147" />
+      </field>
+      <translation>-40,460</translation>
+      <Name>BD12_SwitchOnDelay_0</Name>
+      <Id>3111b5d6-c8e5-47aa-9eb7-826b0d254ce6</Id>
+    </node>
+    <node name="Toggle_3">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="67" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="68" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="371">
+          <desc r:ref="69" />
+          <setting />
+        </port>
+        <port o="Out" layout="3" r:def="372">
+          <desc r:ref="70" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="71" />
+      <field name="Toggle_3" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="72" />
+      </field>
+      <translation>80,460</translation>
+      <CopyPasteTagProperty>7b490125-8fd1-4725-946e-b4a958a16d5e</CopyPasteTagProperty>
+      <CopyPasteChildTagProperty type="ESG.SharkPLC.IDE.Definitions.BaseComamndImplFbdEditor+ChildrenMetadataTags" asm="ESG.SharkPLC.IDE.FbdEditor">
+        <n1:entries>
+          <n1:entry FieldPath=".$eno$" Guid="48cc9848-45b3-4e7b-a8b3-82c6f6fe5ac9" />
+          <n1:entry FieldPath=".$en$" Guid="b2f6fc60-dd9c-4744-a48b-a05cdfe803a9" />
+          <n1:entry FieldPath=".$In$" Guid="3f5efc69-2188-453c-a9ae-9ae81f55be39" />
+          <n1:entry FieldPath=".$Out$" Guid="c228784e-e7b5-4c49-b10a-4a9a6a48c22c" />
+          <n1:entry FieldPath=".$InLast$" Guid="51705d15-49ca-4fe3-a6d1-f548c2c83723" />
+          <n1:entry FieldPath=".$State$" Guid="7b490125-8fd1-4725-946e-b4a958a16d5e" />
+        </n1:entries>
+      </CopyPasteChildTagProperty>
+      <Name>Toggle_3</Name>
+      <Id>bb9059a5-cf22-443e-8357-b57e9ef18c35</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$zaluzie_otevrit$" module="OneWire1" r:def="148" />
+        </port>
+        <port o="Out" layout="1" r:def="382">
+          <desc r:ref="148" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="148" />
+      <translation>-300,3340</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>167</LadderOrder>
+      <Name></Name>
+      <Id>e1934a3d-6598-4500-bb05-20c17a4f8063</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$zaluzie_zavrit$" module="OneWire1" r:def="149" />
+        </port>
+        <port o="Out" layout="1" r:def="383">
+          <desc r:ref="149" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="149" />
+      <translation>-300,3540</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>177</LadderOrder>
+      <Name></Name>
+      <Id>33d0fadc-09df-4691-b576-b0442fb8afa8</Id>
+    </node>
+    <node name="and_0">
+      <ports>
+        <port o="Out" layout="1" r:def="375">
+          <expr r:ref="150" />
+          <setting />
+          <AssociatedTempVar>tmparg_37</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc r:ref="151" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="152" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="7" r:def="388">
+          <expr r:ref="153" />
+          <setting />
+        </port>
+        <port o="In" layout="8" r:def="378">
+          <expr r:ref="154" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="155" />
+      <translation>220,3340</translation>
+      <Name>and_0</Name>
+      <Id>08ec04c9-d0b1-4f49-b705-b71b2926f4b7</Id>
+    </node>
+    <node name="not">
+      <ports>
+        <port o="Out" layout="1" r:def="377">
+          <expr fullName="$not$" module="base" etype="retval" expr="=&gt;" r:def="158" />
+          <setting />
+          <AssociatedTempVar>tmparg_36</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc fullName="$not$.$eno$" module="base" r:def="159" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$not$.$en$" module="base" r:def="160" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="3" r:def="384">
+          <desc fullName="$not$.$in$" module="base" r:def="161" />
+          <setting />
+        </port>
+      </ports>
+      <call fullName="$not$" module="base" r:def="162" />
+      <translation>60,3420</translation>
+      <Name>not</Name>
+      <Id>4453c8f6-fff8-4624-9165-3dd5323674ce</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="376">
+          <desc fullName="$hw$.$neuron l523_zaluzie_p_otevrit$" module="OneWire1" r:def="156" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="156" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="156" />
+      <translation>480,3340</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>167</LadderOrder>
+      <Name></Name>
+      <Id>a0a58296-2a66-4a06-9cd3-80e4cbf3f9f5</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="386">
+          <desc fullName="$hw$.$neuron l523_zaluzie_p_zavrit$" module="OneWire1" r:def="157" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="157" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="157" />
+      <translation>480,3500</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>175</LadderOrder>
+      <Name></Name>
+      <Id>bd332205-41a8-4dfa-9e92-5bfebe691f7a</Id>
+    </node>
+    <node name="and_1">
+      <ports>
+        <port o="Out" layout="1" r:def="385">
+          <expr r:ref="150" />
+          <setting />
+          <AssociatedTempVar>tmparg_38</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc r:ref="151" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="152" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="7" r:def="379">
+          <expr r:ref="153" />
+          <setting />
+        </port>
+        <port o="In" layout="8" r:def="391">
+          <expr r:ref="154" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="155" />
+      <translation>220,3500</translation>
+      <Name>and_1</Name>
+      <Id>43d00539-b1bd-4fe6-980a-137a71670e5d</Id>
+    </node>
+    <node name="not_0">
+      <ports>
+        <port o="Out" layout="1" r:def="380">
+          <expr r:ref="158" />
+          <setting />
+          <AssociatedTempVar>tmparg_39</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc r:ref="159" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="160" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="3" r:def="381">
+          <desc r:ref="161" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="162" />
+      <translation>60,3500</translation>
+      <Name>not_0</Name>
+      <Id>6a33a01b-d751-4b9f-a348-9a9037759779</Id>
+    </node>
+    <node name="or_6">
+      <ports>
+        <port o="Out" layout="1" r:def="387">
+          <expr r:ref="59" />
+          <setting />
+          <AssociatedTempVar>tmparg_40</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc r:ref="60" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="61" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="7" r:def="396">
+          <expr r:ref="62" />
+          <setting />
+        </port>
+        <port o="In" layout="8" r:def="389">
+          <expr r:ref="63" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="65" />
+      <translation>60,3320</translation>
+      <Name>or_6</Name>
+      <Id>74226af6-907a-494f-bf5d-564f8db33cf5</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$otevrit_kousek$" module="OneWire1" r:def="163" />
+        </port>
+        <port o="Out" layout="1" r:def="393">
+          <desc r:ref="163" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="163" />
+      <translation>-300,3280</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>164</LadderOrder>
+      <Name></Name>
+      <Id>8e8bd1fa-9b05-423f-b383-fb3a3a06802f</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$zavrit_kousek$" module="OneWire1" r:def="164" />
+        </port>
+        <port o="Out" layout="1" r:def="397">
+          <desc r:ref="164" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="164" />
+      <translation>-300,3640</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>182</LadderOrder>
+      <Name></Name>
+      <Id>779095a4-6fdd-4dad-87ef-75234da82d36</Id>
+    </node>
+    <node name="or_7">
+      <ports>
+        <port o="Out" layout="1" r:def="390">
+          <expr r:ref="59" />
+          <setting />
+          <AssociatedTempVar>tmparg_41</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc r:ref="60" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="61" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="7" r:def="392">
+          <expr r:ref="62" />
+          <setting />
+        </port>
+        <port o="In" layout="8" r:def="400">
+          <expr r:ref="63" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="65" />
+      <translation>60,3580</translation>
+      <Name>or_7</Name>
+      <Id>a283f9e8-1aab-41f9-aefc-4922458c8b64</Id>
+    </node>
+    <node name="BD2_Pulse_Generator_1">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="23" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="24" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="394">
+          <desc r:ref="25" />
+          <setting />
+        </port>
+        <port o="In" layout="3">
+          <desc r:ref="26" />
+          <setting visible="false" defval="t#500ms" />
+        </port>
+        <port o="In" layout="4">
+          <desc r:ref="27" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="5">
+          <desc r:ref="28" />
+          <setting visible="false" defval="False" />
+        </port>
+        <port o="Out" layout="6" r:def="395">
+          <desc r:ref="29" />
+          <setting />
+        </port>
+        <port o="Out" layout="7">
+          <desc r:ref="30" />
+          <setting />
+        </port>
+        <port o="Out" layout="8">
+          <desc r:ref="31" />
+          <setting visible="false" />
+        </port>
+      </ports>
+      <call r:ref="32" />
+      <field name="BD2_Pulse_Generator_1" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="33" />
+      </field>
+      <translation>-140,3280</translation>
+      <Name>BD2_Pulse_Generator_1</Name>
+      <Id>103a3df7-7f7f-47bb-b059-83ee745dbf2a</Id>
+    </node>
+    <node name="BD2_Pulse_Generator_2">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="23" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="24" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="398">
+          <desc r:ref="25" />
+          <setting />
+        </port>
+        <port o="In" layout="3">
+          <desc r:ref="26" />
+          <setting visible="false" defval="t#500ms" />
+        </port>
+        <port o="In" layout="4">
+          <desc r:ref="27" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="5">
+          <desc r:ref="28" />
+          <setting visible="false" />
+        </port>
+        <port o="Out" layout="6" r:def="399">
+          <desc r:ref="29" />
+          <setting />
+        </port>
+        <port o="Out" layout="7">
+          <desc r:ref="30" />
+          <setting />
+        </port>
+        <port o="Out" layout="8">
+          <desc r:ref="31" />
+          <setting visible="false" />
+        </port>
+      </ports>
+      <call r:ref="32" />
+      <field name="BD2_Pulse_Generator_2" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="33" />
+      </field>
+      <translation>-140,3640</translation>
+      <Name>BD2_Pulse_Generator_2</Name>
+      <Id>0bbeabad-9194-47c3-abf0-ba2196e7f507</Id>
+    </node>
+    <node name="sel_1">
+      <ports>
+        <port o="Out" layout="1" r:def="412">
+          <expr r:ref="86" />
+          <setting />
+          <AssociatedTempVar>tmparg_43</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc r:ref="87" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="88" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="3" r:def="404">
+          <desc r:ref="89" />
+          <setting />
+        </port>
+        <port o="In" layout="4" r:def="409">
+          <desc r:ref="90" />
+          <setting />
+        </port>
+        <port o="In" layout="5" r:def="402">
+          <desc r:ref="91" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="92" />
+      <translation>260,3080</translation>
+      <Name>sel_1</Name>
+      <Id>8b6b38ab-30e6-49ee-8833-2e0204abd362</Id>
+    </node>
+    <node name="or_8">
+      <ports>
+        <port o="Out" layout="1" r:def="410">
+          <expr r:ref="59" />
+          <setting />
+          <AssociatedTempVar>tmparg_42</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="0">
+          <desc r:ref="60" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="61" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="7" r:def="406">
+          <expr r:ref="62" />
+          <setting />
+        </port>
+        <port o="In" layout="8" r:def="407">
+          <expr r:ref="63" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="65" />
+      <translation>120,3020</translation>
+      <Name>or_8</Name>
+      <Id>c88dd8b5-9da5-4a0f-968c-b3df2d40e6ec</Id>
+    </node>
+    <node name="T17_Boolean_Scheduler">
+      <ports>
+        <port o="Out" layout="0">
+          <desc fullName="$lib$.$hvac$.$v1_0$.$t17_boolean_scheduler_base$.$eno$" module="Lib.Hvac" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc fullName="$lib$.$hvac$.$v1_0$.$t17_boolean_scheduler_base$.$en$" module="Lib.Hvac" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2">
+          <desc fullName="$lib$.$hvac$.$v1_0$.$t17_boolean_scheduler_base$.$currenttime$" module="Lib.Hvac" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="3">
+          <desc fullName="$lib$.$hvac$.$v1_0$.$t17_boolean_scheduler_base$.$defaultvalue$" module="Lib.Hvac" />
+          <setting visible="false" />
+        </port>
+        <port o="Out" layout="4" r:def="405">
+          <desc fullName="$lib$.$hvac$.$v1_0$.$t17_boolean_scheduler_base$.$out$" module="Lib.Hvac" />
+          <setting />
+        </port>
+      </ports>
+      <call fullName="$lib$.$hvac$.$v1_0$.$t17_boolean_scheduler$" module="Lib.Hvac" />
+      <field name="T17_Boolean_Scheduler" kind="Local" initialValue="(tpgvalue := [(starttime := 0, state := False), (starttime := 480, state := True), (starttime := 600, state := False), (starttime := 1320, state := True), (starttime := 1420, state := False), (starttime := 1920, state := True), (starttime := 2040, state := False), (starttime := 2760, state := True), (starttime := 2860, state := False), (starttime := 3360, state := True), (starttime := 3480, state := False), (starttime := 4200, state := True), (starttime := 4300, state := False), (starttime := 4800, state := True), (starttime := 4920, state := False), (starttime := 5640, state := True), (starttime := 5740, state := False), (starttime := 6240, state := True), (starttime := 6360, state := False), (starttime := 7080, state := True), (starttime := 7180, state := False), (starttime := 7680, state := True), (starttime := 7800, state := False), (starttime := 8520, state := True), (starttime := 8620, state := False), (starttime := 9120, state := True), (starttime := 9240, state := False), (starttime := 9960, state := True), (starttime := 10060, state := False), 13((starttime := 65535, state := False))],exceptions := [10((starttime := 0, endtime := 0, state := False))])" modifiers="None" persistency="Auto">
+        <type fullName="$lib$.$hvac$.$v1_0$.$t17_boolean_scheduler$" module="Lib.Hvac" />
+      </field>
+      <translation>0,2920</translation>
+      <Name>T17_Boolean_Scheduler</Name>
+      <Id>4188fa3e-c549-4151-848c-b0ac5a2d575f</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc fullName="$hw$.$neuron l523_pir_vstupchodba$" module="OneWire1" r:def="165" />
+        </port>
+        <port o="Out" layout="1" r:def="430">
+          <desc r:ref="165" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="165" />
+      <translation>-300,900</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>45</LadderOrder>
+      <Name></Name>
+      <Id>fbb06786-79d5-4325-9631-805ceccb5a99</Id>
+    </node>
+    <node name="TOF_0">
+      <ports>
+        <port o="Out" layout="0">
+          <desc r:ref="166" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="0">
+          <desc r:ref="167" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2" r:def="420">
+          <desc r:ref="168" />
+          <setting />
+        </port>
+        <port o="In" layout="3">
+          <desc r:ref="169" />
+          <setting visible="false" defval="t#1m" />
+        </port>
+        <port o="Out" layout="4" r:def="415">
+          <desc r:ref="170" />
+          <setting />
+        </port>
+        <port o="Out" layout="5" r:def="414">
+          <desc r:ref="171" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="172" />
+      <field name="TOF_0" kind="Local" modifiers="None" persistency="Auto">
+        <type r:ref="173" />
+      </field>
+      <translation>360,900</translation>
+      <Name>TOF_0</Name>
+      <Id>f24a1a46-ffea-4dd8-9772-2561d7c66895</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0" r:def="413">
+          <desc fullName="$vypnutichodba$" module="OneWire1" r:def="174" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="174" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="174" />
+      <translation>480,920</translation>
+      <Ladder>Right</Ladder>
+      <LadderOrder>46</LadderOrder>
+      <Name></Name>
+      <Id>f8e61d33-61b6-40fb-a13f-89f9b45e01c2</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc r:ref="18" />
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="18" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="18" />
+      <translation>-300,880</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>44</LadderOrder>
+      <Name></Name>
+      <Id>b03e2011-e24a-402d-b2a3-0b6a4994ace0</Id>
+    </node>
+    <node name="">
+      <ports>
+        <port o="In" layout="0">
+          <desc r:ref="122" />
+        </port>
+        <port o="Out" layout="1" r:def="421">
+          <desc r:ref="122" />
+        </port>
+      </ports>
+      <isGet>true</isGet>
+      <isSet>true</isSet>
+      <ref r:ref="122" />
+      <translation>-300,960</translation>
+      <Ladder>Left</Ladder>
+      <LadderOrder>48</LadderOrder>
+      <Id>24a3fed0-ae67-458f-82b8-94c2e35b1952</Id>
+    </node>
+    <node name="MonostableFlipFlop">
+      <ports>
+        <port o="Out" layout="0">
+          <desc fullName="$lib$.$core$.$v1_0$.$monostableflipflop$.$eno$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="1">
+          <desc fullName="$lib$.$core$.$v1_0$.$monostableflipflop$.$en$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2">
+          <desc fullName="$lib$.$core$.$v1_0$.$monostableflipflop$.$delay$" module="Lib.Core" />
+          <setting visible="false" defval="t#4s" />
+        </port>
+        <port o="Out" layout="3" r:def="425">
+          <desc fullName="$lib$.$core$.$v1_0$.$monostableflipflop$.$out$" module="Lib.Core" />
+          <setting />
+        </port>
+        <port o="Out" layout="4">
+          <desc fullName="$lib$.$core$.$v1_0$.$monostableflipflop$.$tres$" module="Lib.Core" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="5" r:def="424">
+          <desc fullName="$lib$.$core$.$v1_0$.$monostableflipflop$.$in$" module="Lib.Core" r:def="175" />
+          <setting />
+        </port>
+        <port o="Out" layout="6">
+          <desc r:ref="175" />
+          <setting />
+        </port>
+      </ports>
+      <call fullName="$lib$.$core$.$v1_0$.$monostableflipflop$" module="Lib.Core" />
+      <field name="MonostableFlipFlop" kind="Local" modifiers="None" persistency="Auto">
+        <type fullName="$lib$.$core$.$v1_0$.$monostableflipflop$" module="Lib.Core" />
+      </field>
+      <translation>-80,940</translation>
+      <Name>MonostableFlipFlop</Name>
+      <Id>802d758d-d051-4909-a5ba-aa8d1832bf5d</Id>
+    </node>
+    <node name="and_2">
+      <ports>
+        <port o="Out" layout="0" r:def="418">
+          <expr r:ref="150" />
+          <setting />
+          <AssociatedTempVar>tmparg_44</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="151" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2">
+          <desc r:ref="152" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="7" r:def="429">
+          <expr r:ref="153" />
+          <setting />
+        </port>
+        <port o="In" layout="8" r:def="427">
+          <expr r:ref="154" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="155" />
+      <translation>140,900</translation>
+      <Name>and_2</Name>
+      <Id>15eb4c63-4870-4968-aa90-18e9e0bfe98d</Id>
+    </node>
+    <node name="to_bool">
+      <ports>
+        <port o="Out" layout="0" r:def="419">
+          <expr fullName="$to_bool$" module="base" etype="retval" expr="=&gt;" />
+          <setting />
+          <AssociatedTempVar>tmparg_49</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="1">
+          <desc fullName="$to_bool$.$eno$" module="base" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2">
+          <desc fullName="$to_bool$.$en$" module="base" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="3" r:def="417">
+          <desc fullName="$to_bool$.$in1$" module="base" />
+          <setting />
+        </port>
+      </ports>
+      <call fullName="$to_bool$" module="base" />
+      <translation>260,900</translation>
+      <Name>to_bool</Name>
+      <Id>d33752d9-c726-480c-8c0b-37c271c3a3fe</Id>
+    </node>
+    <node name="not_1">
+      <ports>
+        <port o="Out" layout="0" r:def="423">
+          <expr r:ref="158" />
+          <setting />
+          <AssociatedTempVar>tmparg_50</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="159" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2">
+          <desc r:ref="160" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="3" r:def="422">
+          <desc r:ref="161" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="162" />
+      <translation>-180,960</translation>
+      <Name>not_1</Name>
+      <Id>780350b6-1eac-448e-a14c-448f872134e6</Id>
+    </node>
+    <node name="not_2">
+      <ports>
+        <port o="Out" layout="0" r:def="428">
+          <expr r:ref="158" />
+          <setting />
+          <AssociatedTempVar>tmparg_51</AssociatedTempVar>
+        </port>
+        <port o="Out" layout="1">
+          <desc r:ref="159" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="2">
+          <desc r:ref="160" />
+          <setting visible="false" />
+        </port>
+        <port o="In" layout="3" r:def="426">
+          <desc r:ref="161" />
+          <setting />
+        </port>
+      </ports>
+      <call r:ref="162" />
+      <translation>20,960</translation>
+      <Name>not_2</Name>
+      <Id>6484d061-c46a-4a7a-91a7-e9c17658936a</Id>
+    </node>
+  </nodes>
+  <links>
+    <link>
+      <fromPort r:ref="176" />
+      <toPort r:ref="177" />
+    </link>
+    <link>
+      <fromPort r:ref="178" />
+      <toPort r:ref="179" />
+    </link>
+    <link>
+      <fromPort r:ref="180" />
+      <toPort r:ref="181" />
+    </link>
+    <link>
+      <fromPort r:ref="182" />
+      <toPort r:ref="183" />
+      <LinkControlPoints>
+        <item />
+        <item value="-50,-70" />
+        <item value="-50,-110" />
+      </LinkControlPoints>
+    </link>
+    <link>
+      <fromPort r:ref="184" />
+      <toPort r:ref="185" />
+    </link>
+    <link>
+      <fromPort r:ref="186" />
+      <toPort r:ref="187" />
+    </link>
+    <link>
+      <fromPort r:ref="176" />
+      <toPort r:ref="188" />
+    </link>
+    <link>
+      <fromPort r:ref="189" />
+      <toPort r:ref="178" />
+    </link>
+    <link>
+      <fromPort r:ref="190" />
+      <toPort r:ref="178" />
+      <LinkControlPoints>
+        <item />
+        <item value="80,230" />
+        <item value="80,270" />
+      </LinkControlPoints>
+    </link>
+    <link>
+      <fromPort r:ref="187" />
+      <toPort r:ref="191" />
+      <LinkControlPoints>
+        <item />
+        <item value="120,190" />
+        <item value="120,130" />
+      </LinkControlPoints>
+    </link>
+    <link>
+      <fromPort r:ref="192" />
+      <toPort r:ref="193" />
+    </link>
+    <link>
+      <fromPort r:ref="194" />
+      <toPort r:ref="195" />
+    </link>
+    <link>
+      <fromPort r:ref="196" />
+      <toPort r:ref="197" />
+    </link>
+    <link>
+      <fromPort r:ref="198" />
+      <toPort r:ref="199" />
+    </link>
+    <link>
+      <fromPort r:ref="200" />
+      <toPort r:ref="201" />
+    </link>
+    <link>
+      <fromPort r:ref="202" />
+      <toPort r:ref="203" />
+    </link>
+    <link>
+      <fromPort r:ref="192" />
+      <toPort r:ref="204" />
+    </link>
+    <link>
+      <fromPort r:ref="192" />
+      <toPort r:ref="205" />
+    </link>
+    <link>
+      <fromPort r:ref="206" />
+      <toPort r:ref="207" />
+    </link>
+    <link>
+      <fromPort r:ref="208" />
+      <toPort r:ref="209" />
+    </link>
+    <link>
+      <fromPort r:ref="210" />
+      <toPort r:ref="211" />
+    </link>
+    <link>
+      <fromPort r:ref="212" />
+      <toPort r:ref="213" />
+    </link>
+    <link>
+      <fromPort r:ref="214" />
+      <toPort r:ref="215" />
+    </link>
+    <link>
+      <fromPort r:ref="216" />
+      <toPort r:ref="217" />
+    </link>
+    <link>
+      <fromPort r:ref="218" />
+      <toPort r:ref="219" />
+      <LinkControlPoints>
+        <item />
+        <item value="-80,330" />
+        <item value="-80,350" />
+      </LinkControlPoints>
+    </link>
+    <link>
+      <fromPort r:ref="220" />
+      <toPort r:ref="221" />
+    </link>
+    <link>
+      <fromPort r:ref="222" />
+      <toPort r:ref="223" />
+    </link>
+    <link>
+      <fromPort r:ref="224" />
+      <toPort r:ref="225" />
+    </link>
+    <link>
+      <fromPort r:ref="226" />
+      <toPort r:ref="227" />
+    </link>
+    <link>
+      <fromPort r:ref="228" />
+      <toPort r:ref="229" />
+    </link>
+    <link>
+      <fromPort r:ref="230" />
+      <toPort r:ref="231" />
+    </link>
+    <link>
+      <fromPort r:ref="232" />
+      <toPort r:ref="233" />
+      <LinkControlPoints>
+        <item />
+        <item value="-70,590" />
+        <item value="-70,610" />
+      </LinkControlPoints>
+    </link>
+    <link>
+      <fromPort r:ref="234" />
+      <toPort r:ref="235" />
+    </link>
+    <link>
+      <fromPort r:ref="236" />
+      <toPort r:ref="237" />
+    </link>
+    <link>
+      <fromPort r:ref="238" />
+      <toPort r:ref="239" />
+    </link>
+    <link>
+      <fromPort r:ref="222" />
+      <toPort r:ref="240" />
+    </link>
+    <link>
+      <fromPort r:ref="241" />
+      <toPort r:ref="242" />
+      <LinkControlPoints>
+        <item />
+        <item value="-60,450" />
+        <item value="-60,390" />
+      </LinkControlPoints>
+    </link>
+    <link>
+      <fromPort r:ref="243" />
+      <toPort r:ref="244" />
+    </link>
+    <link>
+      <fromPort r:ref="230" />
+      <toPort r:ref="245" />
+    </link>
+    <link>
+      <fromPort r:ref="246" />
+      <toPort r:ref="247" />
+      <LinkControlPoints>
+        <item />
+        <item value="-80,750" />
+        <item value="-80,770" />
+      </LinkControlPoints>
+    </link>
+    <link>
+      <fromPort r:ref="248" />
+      <toPort r:ref="249" />
+    </link>
+    <link>
+      <fromPort r:ref="228" />
+      <toPort r:ref="250" />
+    </link>
+    <link>
+      <fromPort r:ref="251" />
+      <toPort r:ref="252" />
+    </link>
+    <link>
+      <fromPort r:ref="253" />
+      <toPort r:ref="254" />
+    </link>
+    <link>
+      <fromPort r:ref="255" />
+      <toPort r:ref="256" />
+    </link>
+    <link>
+      <fromPort r:ref="257" />
+      <toPort r:ref="258" />
+    </link>
+    <link>
+      <fromPort r:ref="259" />
+      <toPort r:ref="260" />
+    </link>
+    <link>
+      <fromPort r:ref="261" />
+      <toPort r:ref="262" />
+    </link>
+    <link>
+      <fromPort r:ref="263" />
+      <toPort r:ref="264" />
+    </link>
+    <link>
+      <fromPort r:ref="265" />
+      <toPort r:ref="266" />
+    </link>
+    <link>
+      <fromPort r:ref="267" />
+      <toPort r:ref="268" />
+    </link>
+    <link>
+      <fromPort r:ref="269" />
+      <toPort r:ref="270" />
+      <LinkControlPoints>
+        <item />
+        <item value="260,1810" />
+        <item value="260,1930" />
+      </LinkControlPoints>
+    </link>
+    <link>
+      <fromPort r:ref="271" />
+      <toPort r:ref="272" />
+      <LinkControlPoints>
+        <item />
+        <item value="260,2030" />
+        <item value="260,1950" />
+      </LinkControlPoints>
+    </link>
+    <link>
+      <fromPort r:ref="273" />
+      <toPort r:ref="274" />
+    </link>
+    <link>
+      <fromPort r:ref="275" />
+      <toPort r:ref="276" />
+    </link>
+    <link>
+      <fromPort r:ref="277" />
+      <toPort r:ref="278" />
+    </link>
+    <link>
+      <fromPort r:ref="279" />
+      <toPort r:ref="280" />
+    </link>
+    <link>
+      <fromPort r:ref="281" />
+      <toPort r:ref="282" />
+    </link>
+    <link>
+      <fromPort r:ref="283" />
+      <toPort r:ref="284" />
+    </link>
+    <link>
+      <fromPort r:ref="285" />
+      <toPort r:ref="286" />
+      <LinkControlPoints>
+        <item />
+        <item value="-10,2190" />
+        <item value="-10,2210" />
+      </LinkControlPoints>
+    </link>
+    <link>
+      <fromPort r:ref="287" />
+      <toPort r:ref="288" />
+    </link>
+    <link>
+      <fromPort r:ref="289" />
+      <toPort r:ref="290" />
+    </link>
+    <link>
+      <fromPort r:ref="289" />
+      <toPort r:ref="291" />
+    </link>
+    <link>
+      <fromPort r:ref="292" />
+      <toPort r:ref="293" />
+    </link>
+    <link>
+      <fromPort r:ref="294" />
+      <toPort r:ref="295" />
+    </link>
+    <link>
+      <fromPort r:ref="296" />
+      <toPort r:ref="297" />
+    </link>
+    <link>
+      <fromPort r:ref="298" />
+      <toPort r:ref="299" />
+    </link>
+    <link>
+      <fromPort r:ref="300" />
+      <toPort r:ref="301" />
+    </link>
+    <link>
+      <fromPort r:ref="302" />
+      <toPort r:ref="213" />
+    </link>
+    <link>
+      <fromPort r:ref="303" />
+      <toPort r:ref="304" />
+    </link>
+    <link>
+      <fromPort r:ref="305" />
+      <toPort r:ref="306" />
+    </link>
+    <link>
+      <fromPort r:ref="307" />
+      <toPort r:ref="308" />
+    </link>
+    <link>
+      <fromPort r:ref="309" />
+      <toPort r:ref="310" />
+    </link>
+    <link>
+      <fromPort r:ref="311" />
+      <toPort r:ref="312" />
+    </link>
+    <link>
+      <fromPort r:ref="313" />
+      <toPort r:ref="314" />
+    </link>
+    <link>
+      <fromPort r:ref="178" />
+      <toPort r:ref="315" />
+      <LinkControlPoints>
+        <item />
+        <item value="60,270" />
+        <item value="60,210" />
+      </LinkControlPoints>
+    </link>
+    <link>
+      <fromPort r:ref="316" />
+      <toPort r:ref="317" />
+    </link>
+    <link>
+      <fromPort r:ref="318" />
+      <toPort r:ref="316" />
+    </link>
+    <link>
+      <fromPort r:ref="319" />
+      <toPort r:ref="320" />
+    </link>
+    <link>
+      <fromPort r:ref="321" />
+      <toPort r:ref="322" />
+    </link>
+    <link>
+      <fromPort r:ref="323" />
+      <toPort r:ref="324" />
+    </link>
+    <link>
+      <fromPort r:ref="325" />
+      <toPort r:ref="326" />
+      <LinkControlPoints>
+        <item />
+        <item value="240,2670" />
+        <item value="240,2630" />
+      </LinkControlPoints>
+    </link>
+    <link>
+      <fromPort r:ref="327" />
+      <toPort r:ref="328" />
+    </link>
+    <link>
+      <fromPort r:ref="329" />
+      <toPort r:ref="330" />
+    </link>
+    <link>
+      <fromPort r:ref="331" />
+      <toPort r:ref="332" />
+    </link>
+    <link>
+      <fromPort r:ref="333" />
+      <toPort r:ref="334" />
+    </link>
+    <link>
+      <fromPort r:ref="335" />
+      <toPort r:ref="336" />
+    </link>
+    <link>
+      <fromPort r:ref="337" />
+      <toPort r:ref="338" />
+    </link>
+    <link>
+      <fromPort r:ref="339" />
+      <toPort r:ref="340" />
+    </link>
+    <link>
+      <fromPort r:ref="341" />
+      <toPort r:ref="342" />
+    </link>
+    <link>
+      <fromPort r:ref="343" />
+      <toPort r:ref="344" />
+    </link>
+    <link>
+      <fromPort r:ref="345" />
+      <toPort r:ref="346" />
+    </link>
+    <link>
+      <fromPort r:ref="347" />
+      <toPort r:ref="348" />
+    </link>
+    <link>
+      <fromPort r:ref="349" />
+      <toPort r:ref="350" />
+    </link>
+    <link>
+      <fromPort r:ref="349" />
+      <toPort r:ref="351" />
+    </link>
+    <link>
+      <fromPort r:ref="352" />
+      <toPort r:ref="353" />
+    </link>
+    <link>
+      <fromPort r:ref="354" />
+      <toPort r:ref="355" />
+    </link>
+    <link>
+      <fromPort r:ref="356" />
+      <toPort r:ref="357" />
+    </link>
+    <link>
+      <fromPort r:ref="358" />
+      <toPort r:ref="359" />
+    </link>
+    <link>
+      <fromPort r:ref="360" />
+      <toPort r:ref="361" />
+    </link>
+    <link>
+      <fromPort r:ref="360" />
+      <toPort r:ref="362" />
+      <LinkControlPoints>
+        <item />
+        <item value="-140,3050" />
+        <item value="-140,3210" />
+      </LinkControlPoints>
+    </link>
+    <link>
+      <fromPort r:ref="363" />
+      <toPort r:ref="364" />
+    </link>
+    <link>
+      <fromPort r:ref="363" />
+      <toPort r:ref="365" />
+      <LinkControlPoints>
+        <item />
+        <item value="-160,3070" />
+        <item value="-160,3230" />
+      </LinkControlPoints>
+    </link>
+    <link>
+      <fromPort r:ref="366" />
+      <toPort r:ref="367" />
+    </link>
+    <link>
+      <fromPort r:ref="368" />
+      <toPort r:ref="369" />
+    </link>
+    <link>
+      <fromPort r:ref="370" />
+      <toPort r:ref="371" />
+    </link>
+    <link>
+      <fromPort r:ref="372" />
+      <toPort r:ref="373" />
+    </link>
+    <link>
+      <fromPort r:ref="218" />
+      <toPort r:ref="374" />
+      <LinkControlPoints>
+        <item />
+        <item value="-80,330" />
+        <item value="-80,470" />
+      </LinkControlPoints>
+    </link>
+    <link>
+      <fromPort r:ref="375" />
+      <toPort r:ref="376" />
+    </link>
+    <link>
+      <fromPort r:ref="377" />
+      <toPort r:ref="378" />
+    </link>
+    <link>
+      <fromPort r:ref="379" />
+      <toPort r:ref="380" />
+    </link>
+    <link>
+      <fromPort r:ref="381" />
+      <toPort r:ref="382" />
+    </link>
+    <link>
+      <fromPort r:ref="383" />
+      <toPort r:ref="384" />
+      <LinkControlPoints>
+        <item />
+        <item value="-120,3550" />
+        <item value="-120,3410" />
+      </LinkControlPoints>
+    </link>
+    <link>
+      <fromPort r:ref="385" />
+      <toPort r:ref="386" />
+    </link>
+    <link>
+      <fromPort r:ref="387" />
+      <toPort r:ref="388" />
+    </link>
+    <link>
+      <fromPort r:ref="382" />
+      <toPort r:ref="389" />
+    </link>
+    <link>
+      <fromPort r:ref="390" />
+      <toPort r:ref="391" />
+    </link>
+    <link>
+      <fromPort r:ref="383" />
+      <toPort r:ref="392" />
+    </link>
+    <link>
+      <fromPort r:ref="393" />
+      <toPort r:ref="394" />
+    </link>
+    <link>
+      <fromPort r:ref="395" />
+      <toPort r:ref="396" />
+    </link>
+    <link>
+      <fromPort r:ref="397" />
+      <toPort r:ref="398" />
+    </link>
+    <link>
+      <fromPort r:ref="399" />
+      <toPort r:ref="400" />
+    </link>
+    <link>
+      <fromPort r:ref="401" />
+      <toPort r:ref="402" />
+    </link>
+    <link>
+      <fromPort r:ref="403" />
+      <toPort r:ref="404" />
+      <LinkControlPoints>
+        <item />
+        <item value="240,2970" />
+        <item value="240,3090" />
+      </LinkControlPoints>
+    </link>
+    <link>
+      <fromPort r:ref="405" />
+      <toPort r:ref="406" />
+    </link>
+    <link>
+      <fromPort r:ref="407" />
+      <toPort r:ref="408" />
+      <LinkControlPoints>
+        <item />
+        <item value="90,3050" />
+        <item value="90,2990" />
+      </LinkControlPoints>
+    </link>
+    <link>
+      <fromPort r:ref="409" />
+      <toPort r:ref="410" />
+    </link>
+    <link>
+      <fromPort r:ref="411" />
+      <toPort r:ref="412" />
+    </link>
+    <link>
+      <fromPort r:ref="413" />
+      <toPort r:ref="414" />
+    </link>
+    <link>
+      <fromPort r:ref="415" />
+      <toPort r:ref="416" />
+      <LinkControlPoints>
+        <item />
+        <item value="410,950" />
+        <item value="410,910" />
+      </LinkControlPoints>
+    </link>
+    <link>
+      <fromPort r:ref="417" />
+      <toPort r:ref="418" />
+    </link>
+    <link>
+      <fromPort r:ref="419" />
+      <toPort r:ref="420" />
+    </link>
+    <link>
+      <fromPort r:ref="421" />
+      <toPort r:ref="422" />
+    </link>
+    <link>
+      <fromPort r:ref="423" />
+      <toPort r:ref="424" />
+    </link>
+    <link>
+      <fromPort r:ref="425" />
+      <toPort r:ref="426" />
+    </link>
+    <link>
+      <fromPort r:ref="427" />
+      <toPort r:ref="428" />
+    </link>
+    <link>
+      <fromPort r:ref="429" />
+      <toPort r:ref="430" />
+    </link>
+  </links>
+  <notes>
+    <note>
+      <translation>-220,-400</translation>
+      <Width>160</Width>
+      <Height>100</Height>
+      <Title>Note title</Title>
+      <Text>Temp Jih: 20D9246230D
+Temp Sever: 20E9177F72E
+Garaz: 202924688E2</Text>
+      <Color>#FFFFFFCC</Color>
+    </note>
+    <note>
+      <translation>240,200</translation>
+      <Width>140</Width>
+      <Title>Note title</Title>
+      <Text>Vratit teplotu Jih do Selectoru až bude fungovat
+</Text>
+      <Color>#FFFFFFCC</Color>
+    </note>
+    <note>
+      <translation>120,2500</translation>
+      <Width>140</Width>
+      <Title>Vodoměr</Title>
+      <Text>Vodoměr má 10l na pulz</Text>
+      <Color>#FFFFFFCC</Color>
+    </note>
+  </notes>
+</fbdGraph>

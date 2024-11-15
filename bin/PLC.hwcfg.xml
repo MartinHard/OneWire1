@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<hwconfiguration version="2">
+  <runtime>
+    <lwip>
+      <ipv4 mode="static" ipaddress="192.168.1.121" mask="255.255.255.0">
+        <gateway>192.168.1.1</gateway>
+        <dns>192.168.1.1</dns>
+      </ipv4>
+      <ipv6 />
+    </lwip>
+    <advanced niccount="1">
+      <nic type="wlan" name="wlan0" enabled="False">
+        <ipv4 mode="static" />
+        <ipv6 />
+        <ssid>essid</ssid>
+        <wifisecurity type="open" password="" />
+      </nic>
+    </advanced>
+    <configservice enabled="true" port="8010" />
+    <httpservice enabled="true" port="80" />
+    <sscp>
+      <slaveaddress>1</slaveaddress>
+      <groupscount>5</groupscount>
+      <groupvariablecount>20</groupvariablecount>
+      <tcp enabled="true" port="12346" />
+      <serial enabled="false" port="1" baudrate="115200" mode="0" />
+      <ssl enabled="false" port="12347" />
+      <users>
+        <user name="admin">
+          <level>255</level>
+          <password>#B:3,140,13,200,169,88,255,234,23,175,4,114,68,251,105,96</password>
+        </user>
+        <user name="user">
+          <level>128</level>
+          <password>#B:3,140,13,200,169,88,255,234,23,175,4,114,68,251,105,96</password>
+        </user>
+        <user name="readonly">
+          <level>16</level>
+          <password>#B:3,140,13,200,169,88,255,234,23,175,4,114,68,251,105,96</password>
+        </user>
+      </users>
+    </sscp>
+    <rcwaredb enabled="true">
+      <urls>
+        <url protocol="https" host="db.unipi.technology" path="/plc/save" port="443" username="unipi_01738" password="TFcZxhSuv8" certificatevalidation="false" />
+      </urls>
+      <updateperiod>1</updateperiod>
+    </rcwaredb>
+    <proxy enabled="true">
+      <proxyid>PRX2CQRYMEM48GUE</proxyid>
+      <urls>
+        <url protocol="https" host="proxy.unipi.technology" path="/" port="6678" certificatevalidation="false" />
+      </urls>
+      <keepalive>10</keepalive>
+    </proxy>
+    <sshservice enabled="false">
+      <port>22</port>
+      <password>unipi.technology</password>
+    </sshservice>
+  </runtime>
+  <timetransformation utcoffset="3600" count="20">
+    <daylights>
+      <daylight year="2020" start="7606800" end="25754400" daylightoffset="3600" />
+      <daylight year="2021" start="7434000" end="26186400" daylightoffset="3600" />
+      <daylight year="2022" start="7347600" end="26100000" daylightoffset="3600" />
+      <daylight year="2023" start="7261200" end="26013600" daylightoffset="3600" />
+      <daylight year="2024" start="7779600" end="25927200" daylightoffset="3600" />
+      <daylight year="2025" start="7606800" end="25754400" daylightoffset="3600" />
+      <daylight year="2026" start="7520400" end="25668000" daylightoffset="3600" />
+      <daylight year="2027" start="7434000" end="26186400" daylightoffset="3600" />
+      <daylight year="2028" start="7347600" end="26100000" daylightoffset="3600" />
+      <daylight year="2029" start="7174800" end="25927200" daylightoffset="3600" />
+      <daylight year="2030" start="7693200" end="25840800" daylightoffset="3600" />
+      <daylight year="2031" start="7606800" end="25754400" daylightoffset="3600" />
+      <daylight year="2032" start="7520400" end="26272800" daylightoffset="3600" />
+      <daylight year="2033" start="7347600" end="26100000" daylightoffset="3600" />
+      <daylight year="2034" start="7261200" end="26013600" daylightoffset="3600" />
+      <daylight year="2035" start="7174800" end="25927200" daylightoffset="3600" />
+      <daylight year="2036" start="7693200" end="25840800" daylightoffset="3600" />
+      <daylight year="2037" start="7520400" end="25668000" daylightoffset="3600" />
+      <daylight year="2038" start="7434000" end="26186400" daylightoffset="3600" />
+      <daylight year="2039" start="7347600" end="26100000" daylightoffset="3600" />
+    </daylights>
+    <ntp>
+      <urls>
+        <url protocol="ntp" host="tik.cesnet.cz" path="/" port="123" certificatevalidation="false" />
+      </urls>
+      <keepalive>5</keepalive>
+    </ntp>
+  </timetransformation>
+  <memorylayout>
+    <sdcard useforhistory="false" historysize="16384" />
+  </memorylayout>
+  <enablenetdrivers>false</enablenetdrivers>
+  <cloudAccess enabled="false">
+    <urls>
+      <url protocol="tcps" host="cloudaccess.mervis.info" path="/" port="23010" priority="0" certificatevalidation="false" />
+    </urls>
+    <items>
+      <item enabled="false" id="" username="" password="" ipaddress="127.0.0.1" port="80" />
+    </items>
+  </cloudAccess>
+</hwconfiguration>

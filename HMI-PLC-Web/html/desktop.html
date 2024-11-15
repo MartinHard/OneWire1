@@ -1,0 +1,892 @@
+<script type="text/ng-template" id="html/templates/PanelCtrl.html">
+<div class="webpanel-mainpage" ng-class="activeViewClass">
+   <webpanel-header></webpanel-header>
+   <div class="panels" ng-show="panelView" ng-class="{textView: panelType == 'text' }">
+   </div>
+   <log-view is-visible="logView" ng-if="ESGVisionConfig.ShowLogView && WebpanelData.features.log"></log-view>
+   <graph-view is-visible="graphView" ng-if="ESGVisionConfig.ShowGraphView && WebpanelData.features.graph"></graph-view>
+   <alarms-view is-visible="alarmsView" ng-if="ESGVisionConfig.ShowAlarmsView"></alarms-view>
+   <system-config-view is-visible="systemConfigView" ng-if="ESGVisionConfig.ShowSystemConfigView"></system-config-view>
+   <webpanel-footer></webpanel-footer>
+   <div class="main-tab-view-bottom-line" ng-model-fixed-scroll="0">
+     <div class="main-tab-line"></div>
+   </div>
+   <div class="container-line-left" ng-model-fixed-scroll="0"><div class="color-line"></div></div>
+   <div class="container-line-right" ng-model-fixed-scroll="765"><div class="color-line"></div></div>
+   <div class="container-background"></div>   
+</div>
+</script>
+<script type="text/ng-template" id="html/templates/esgDropdownTemplate.html">
+    <div class="dropdown">
+        <a class="btn-ico dropdown-toggle-scrollable" esg-is-clickable>
+            <span ng-show="showIco == false || showIco == null" class="labelButton">{{value[displayProperty]}}</span>
+            <i ng-show="showIco == true" class="icon-energo" ng-class="icoClass"></i>
+            <span class="caret"></span>
+        </a>
+        <div class="dropdown-menu">
+          <div ng-click="searchClick($event)" class="search" ng-hide="hideSearch">
+               <input ng-model="searchDelay" type="text" esg-i18n="placeholder:Filter" esg-mouseenter="setActiveRow(-1)" ng-keydown="handleKeydown($event)" rc-ware-handle-global-key-down> 
+               <button ng-show="browser.id != 'MSIE'" class="btn-ico ico-close" ng-click="clearInput()">
+                 <i class="icon-energo-clear-search icon-energo" esg-is-clickable=""></i>
+               </button>
+            </div> 
+            <div class="dropdown-menu-scrollable ipad-scroll" scrollable-element>  
+              
+              <div class="sub-ipad-scroll">
+                <ul>
+                  <li ng-repeat="(key, item) in listValuesFilteredArray" ng-click="setValue(item)" ng-class="{selected: addClass($index, item)}" esg-mouseenter="itemMouseover($index, key)" esg-is-clickable>
+                    <a ng-bind-html="highlightSafeHtml(item[displayProperty])" ng-class="{{itemClass}}"></a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+</script>
+<script type="text/ng-template" id="html/templates/modules/tpg/tpg.wpTpgDisplayExceptionTemplate.html">
+<div class="tpg-body ipad-scroll tpg-display-exceptions">
+    <div class="sub-ipad-scroll"> <!-- scroll -->
+        <table class="table table-condensed table-sortable tableTpg">
+            <tbody class="tpg-table-body">
+                <tr ng-repeat="(key,tpg) in tpgArray | orderBy:['timeYearFrom','timeMinutesFrom']">
+                    <td>
+                        <wp-tpg-time-select-exception wp-tpg="tpg" wp-disable-selection-time="!userSettingItem" tpg-value-changed="tpgValueChanged"></wp-tpg-time-select-exception>
+                    </td>
+                    <td ng-show="wpTpgType!='boolean'" class="tpg-td-middle">
+                        <span ng-show="wpSourceType == 't18_real_scheduler'">
+                          <wp-tpg-value-real select-value="tpg.value" disable-modification="!userSettingItem" tpg-value-changed="tpgValueChanged" min="tpgSettings.min" max="tpgSettings.max" step="tpgSettings.step"></wp-tpg-value-real>
+                        </span>
+                        <!-- <input ng-show="wpSourceType == 't19_int_scheduler'" type="text" ng-model="tpg.value" ng-model-input-onblur ng-change="updateValueInput(tpg)" value="{{tpg.value.toFixed(0)}}" ></input> -->
+                        <span ng-hide="wpSourceType == 't18_real_scheduler'">
+                          <wp-tpg-value-select select-value="tpg.value" select-possible-values="tpgPossibleValues" disable-selection="!userSettingItem" tpg-value-changed="tpgValueChanged"></wp-tpg-value-select>
+                        </span>
+                        <!--<input ng-show="wpSourceType == 't17_boolean_scheduler'" type="text" ng-model="tpg.value" value="tpg.value"></input>-->
+                    </td>
+                    <!-- <td ng-click="wpTpgItemChangeValue(tpg)" class="{{tpgValueClass(tpg.value)}} tpgValue" ng-show="wpTpgType=='boolean'">{{tpg.value}}</td> -->
+                    <td class="delete-item"><button class="btn" ng-click="wpTpgItemDelete(tpg)" ng-show="userSettingItem == true">
+                        <i class="icon-remove"></i>
+                    </button></td>
+                </tr>
+                <tr ng-show="tpgArray.length == 0">
+                    <td class="tpg-no-case" esg-i18n="No exceptions"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="tpgAddItem" ng-show="userSettingItem == true">
+    <form>
+        <table class="table table-condensed table-sortable tableTpg">
+            <tbody class="tpg-table-body">
+              <tr>
+                <td>
+                    <wp-tpg-time-select-exception wp-tpg="tpgNewItem" is-new="true"></wp-tpg-time-select-exception>
+                </td>
+                <!-- <td ng-click="wpTpgItemChangeValue(tpgNewItem)" class="{{tpgValueClass(tpgNewItem.value)}} tpgValue" ng-show="wpTpgType=='boolean'"> {{tpgNewItem.value}} </td> -->
+                <td ng-show="wpTpgType!='boolean'" class="tpg-td-middle">
+                    <span ng-show="wpSourceType == 't18_real_scheduler'">
+                        <wp-tpg-value-real select-value="tpgNewItem.value" disable-modification="!userSettingItem" min="tpgSettings.min" max="tpgSettings.max" step="tpgSettings.step"></wp-tpg-value-real>
+                    </span>
+                    <!-- <input class="thinner" ng-show="wpSourceType == 't19_int_scheduler'" type="text" ng-model="tpgNewItem.value" placeholder="Value" ng-model-input-onblur ng-change="updateValueInput(tpgNewItem)" value="{{tpgNewItem.value.toFixed(0)}}" ></input> -->
+                    <span ng-hide="wpSourceType == 't18_real_scheduler'">
+                        <wp-tpg-value-select select-value="tpgNewItem.value" select-possible-values="tpgPossibleValues"></wp-tpg-value-select>
+                    </span>
+                    <!-- <input class="thinner" ng-show="wpSourceType == 't17_boolean_scheduler'" type="text" ng-model="tpgNewItem.value" placeholder="Value">-->
+                </td>
+                <td class="tpg-add">
+                    <button class="btn" ng-click="wpTpgAddItem()" esg-i18n="Add"></button>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+</script>
+<script type="text/ng-template" id="html/templates/modules/tpg/tpg.wpTpgDisplayRegularTemplate.html">
+<div class="tpg-body ipad-scroll">
+    <div class="sub-ipad-scroll"> <!-- scroll -->
+        <table class="table table-condensed tableTpg">
+            <tbody class="tpg-table-body">
+                <tr ng-repeat="(key,tpg) in tpgArray | orderBy:'timeMinutes'">
+                    <td>
+                        <wp-tpg-time-select-regular wp-tpg="tpg" items-day-week="itemsDayWeek" wp-disable-selection-time="!userSettingItem" tpg-value-changed="tpgValueChanged"></wp-tpg-time-select-regular>
+                    </td>
+                    <td ng-show="wpTpgType!='boolean'" class="tpg-td-middle">
+                        <span ng-show="wpSourceType == 't18_real_scheduler'">
+                            <wp-tpg-value-real select-value="tpg.value" disable-modification="!userSettingItem" tpg-value-changed="tpgValueChanged" min="tpgSettings.min" max="tpgSettings.max" step="tpgSettings.step"></wp-tpg-value-real>
+                        </span>
+                        <!--  item value select show if user can change and set tpg item -->
+                        <span ng-hide="wpSourceType == 't18_real_scheduler'">
+                            <wp-tpg-value-select select-value="tpg.value" select-possible-values="tpgPossibleValues" disable-selection="!userSettingItem" tpg-value-changed="tpgValueChanged"></wp-tpg-value-select>
+                        </span>
+                        <!--<input ng-show="wpSourceType == 't17_boolean_scheduler' " type="text" ng-model="tpg.value"></input>-->
+                    </td>
+                    <!-- <td ng-click="wpTpgItemChangeValue(tpg)" class="{{tpgValueClass(tpg.value)}} tpgValue" ng-show="wpTpgType=='boolean'">{{tpg.value}}</td> -->
+                    <td class="delete-item">
+                        <button class="btn" ng-click="wpTpgItemDelete(tpg)" ng-show="userSettingItem == true">
+                            <i class="icon-remove"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr ng-show="tpgArray.length == 0">
+                    <td class="tpg-no-case" esg-i18n="No events"></td>
+                </tr>
+            </tbody>
+       </table>
+    </div>
+</div>
+<div class="tpgAddItem" ng-show="userSettingItem == true"> <!-- add --> 
+    <form>
+        <table class="table table-condensed table-sortable tableTpg">
+            <tbody class="tpg-table-body"><tr>
+            <td>
+                <wp-tpg-time-select-regular wp-tpg="newTpg" items-day-week="itemsDayWeek" min="tpgSettings.min" max="tpgSettings.max" step="tpgSettings.step"></wp-tpg-time-select-regular>
+            </td>
+            <!-- <td ng-click="wpTpgItemChangeValue(newTpg)" class="{{tpgValueClass(newTpg.value)}} tpgValue" ng-show="wpTpgType=='boolean'" style="margin: 0px 10px;">
+                '{{newTpg.value}}'
+            </td> -->
+            <td ng-show="wpTpgType!='boolean'" class="tpg-td-middle">
+                <span ng-show="wpSourceType == 't18_real_scheduler'">
+                    <wp-tpg-value-real select-value="newTpg.value" disable-modification="!userSettingItem" min="tpgSettings.min" max="tpgSettings.max" step="tpgSettings.step"></wp-tpg-value-real>
+                </span>
+                <!--  <input ng-show="wpSourceType == 't19_int_scheduler'" type="text" ng-model="newTpg.value" class="thinner" placeholder="Value" ng-model-input-onblur ng-change="updateValueInput(newTpg)" value="{{newTpg.value.toFixed(0)}}" ></input> -->
+                <span ng-hide="wpSourceType == 't18_real_scheduler'">
+                    <wp-tpg-value-select select-value="newTpg.value" select-possible-values="tpgPossibleValues"></wp-tpg-value-select>
+                </span>
+                <!-- <input ng-show="wpSourceType == 't17_boolean_scheduler'" type="text" ng-model="newTpg.value" class="thinner" placeholder="Value" ></input>-->
+            <td class="tpg-add">
+            <button class="btn" ng-click="wpTpgAddItem()" esg-i18n="Add"></button>
+            </td>
+        </tr>
+        </tbody></table>
+    </form>
+</div>
+</script>
+<script type="text/ng-template" id="html/templates/modules/tpg/tpg.wpTpgDrawSelectTemplate.html">
+<div>
+
+
+<table class="wp-tpg-draw-select" ng-class="{selectionActive: userSettingItem == true}">
+<tbody>
+    <tr>
+        <td></td>
+        <td colspan="25" >
+<div class="hours-titles">
+        <div class="hour-00">00</div>
+        <div class="hour-01">01</div>
+        <div class="hour-02">02</div>
+        <div class="hour-03">03</div>
+        <div class="hour-04">04</div>
+        <div class="hour-05">05</div>
+        <div class="hour-06">06</div>
+        <div class="hour-07">07</div>
+        <div class="hour-08">08</div>
+        <div class="hour-09">09</div>
+        <div class="hour-10">10</div>
+        <div class="hour-11">11</div>
+        <div class="hour-12">12</div>
+        <div class="hour-13">13</div>
+        <div class="hour-14">14</div>
+        <div class="hour-15">15</div>
+        <div class="hour-16">16</div>
+        <div class="hour-17">17</div>
+        <div class="hour-18">18</div>
+        <div class="hour-19">19</div>
+        <div class="hour-20">20</div>
+        <div class="hour-21">21</div>
+        <div class="hour-22">22</div>
+        <div class="hour-23">23</div>
+        <div class="hour-24">24</div>
+    </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="day-title">{{itemsDayWeek[0].title}}</td>
+        <td colspan="25" rowspan="7">
+            <div class="canvas-background" id="canvas-background-tpg"></div>
+            <div class="canvas-tpg">
+                <canvas id="myCanvasTpgData" class="base" width="624" height="224"></canvas>
+                <canvas id="myCanvas" class="base" width="624" height="224"></canvas>
+                <canvas id="myCanvasBasicInfo" class="base" width="624" height="224"></canvas>
+                <canvas id="myCanvasSelection" class="base" width="624" height="224"></canvas>
+                <!-- <div ng-show="wpTpgType=='boolean'" ng-click="changeNewTpgValue()" class="{{newTpgValueClass(newTpgValue)}} tpgValue" style="margin: 0px 10px;">
+                    '{{newTpgValue}}'
+                </div> -->
+            </div>
+        </td>
+    </tr>
+    <tr><td class="day-title">{{itemsDayWeek[1].title}}</td></tr>
+    <tr><td class="day-title">{{itemsDayWeek[2].title}}</td></tr>
+    <tr><td class="day-title">{{itemsDayWeek[3].title}}</td></tr>
+    <tr><td class="day-title">{{itemsDayWeek[4].title}}</td></tr>
+    <tr><td class="day-title">{{itemsDayWeek[5].title}}</td></tr>
+    <tr><td class="day-title">{{itemsDayWeek[6].title}}</td></tr>
+    <tr ng-show="userSettingItem == true">
+    <td colspan="26" class="row-with-selectors">
+        <div ng-show="wpTpgType!='boolean'" class="tpgValue tpgEditorSettings">
+          <span ng-show="wpSourceType == 't18_real_scheduler'">
+              <wp-tpg-value-real select-value="newTpgValue" class="select-value" min="tpgSettings.min" max="tpgSettings.max" step="tpgSettings.step"></wp-tpg-value-real>
+          </span>
+          <span ng-hide="wpSourceType == 't18_real_scheduler'">
+              <wp-tpg-value-select select-value="newTpgValue" select-possible-values="tpgPossibleValues" class="select-value"></wp-tpg-value-select>
+          </span>
+          <div class="select-round-time">
+              <span esg-i18n="Round time:" class="title"></span>
+              <wp-tpg-value-select select-value="tpgRoundTo" select-possible-values="tpgRoundToValues"></wp-tpg-value-select>
+          </div>
+
+          <!--  <div class="dropdown dropdown-align">
+              <a class="btn-ico dropdown-toggle-scrollable">
+              <span class="labelButton"><span esg-i18n="Round time"></span>: {{tpgRoundToValues[tpgRoundTo].title}}</span>
+              <span class="caret"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-scrollable" make-dropdown-scrollable style="margin-left: 129px;">
+              <div class="sub-ipad-scroll">
+                  <ul>
+                  <li ng-repeat="item in tpgRoundToValues | orderBy:'weight'">
+                      <a ng-click="setAlign(item)">{{item.title}}</a>
+                  </li>
+                  </ul>
+              </div>
+              </div>
+          </div> -->
+
+      </div>
+  </td>
+</tr>
+</tbody>
+</table>
+</div>
+</script>
+<script type="text/ng-template" id="html/templates/modules/tpg/tpg.wpTpgTimeSelectExceptionTemplate.html">
+<div>
+    <span class="time-title"><span esg-i18n="From"></span>:</span>
+
+    <!-- datepicker -->
+
+    <div class="input-append bootstrap-datepicker" ng-show="disableSelectionTime == false">
+        <input type="text" ng-model="dateFrom" class="date-from-to" esg-datepicker="{{dateOptions}}" ng-class="{'errorDate':errorDate.from}">
+        <span class="add-on" data-toggle="datepicker"><i class="icon-calendar"></i></span>
+    </div>
+
+    <!-- show date if pickers are disabled -->
+
+    <span type="text" ng-show="disableSelectionTime == true" class="disable-datepicker">{{dateFrom}}</span>
+    <span class="add-on-disable-datepicker" ng-show="disableSelectionTime == true"><i class="icon-calendar"></i></span>
+
+    <!-- timepicker -->
+
+    <div class="input-append bootstrap-timepicker" ng-show="disableSelectionTime == false">
+        <input type="text" ng-model="timeFrom" esg-timepicker class="time-from-to" data-show-meridian="false" data-minute-step="1">
+        <span class="add-on"><i class="icon-time"></i></span>
+    </div>
+
+    <!-- <timepicker ng-model="timeFrom" hour-step="1" minute-step="1" show-meridian="false" modal-backdrop="true"></timepicker> -->
+
+    <!-- show time if pickers are disabled -->
+
+    <span type="text" ng-show="disableSelectionTime == true" class="disable-timepicker">{{timeFrom}}</span>
+    <span class="add-on-disable-timepicker" ng-show="disableSelectionTime == true"><i class="icon-time"></i></span>
+    <span class="time-title"><span esg-i18n="To"></span>:</span>
+
+    <!-- datepicker -->
+
+    <div class="input-append bootstrap-datepicker" ng-show="disableSelectionTime == false">
+        <input type="text" esg-datepicker="{{dateOptions}}" ng-model="dateTo" class="date-from-to" ng-class="{'errorDate':errorDate.to}">
+        <span class="add-on" data-toggle="datepicker"><i class="icon-calendar"></i></span>
+    </div>
+
+    <!-- show date if pickers are disabled -->
+
+    <span type="text" ng-show="disableSelectionTime == true" class="disable-datepicker">{{dateTo}}</span>
+    <span class="add-on-disable-datepicker" ng-show="disableSelectionTime == true"><i class="icon-calendar"></i></span>
+
+    <!-- timepicker -->
+
+    <div class="input-append bootstrap-timepicker" ng-show="disableSelectionTime == false">
+        <input type="text" ng-model="timeTo" esg-timepicker class="time-from-to" data-show-meridian="false" data-minute-step="1">
+        <span class="add-on"><i class="icon-time"></i></span>
+    </div>
+
+    <!-- show time if pickers are disabled -->
+
+    <span type="text" ng-show="disableSelectionTime == true" class="disable-timepicker">{{timeTo}}</span>
+    <span class="add-on-disable-timepicker" ng-show="disableSelectionTime == true"><i class="icon-time"></i></span>
+</div>
+</script>
+<script type="text/ng-template" id="html/templates/modules/tpg/tpg.wpTpgTimeSelectRegularTemplate.html">
+    <wp-tpg-value-select select-value="wpTpgIdDay" select-possible-values="itemsDayWeek" class="wp-tpg-value-select" disable-selection="wpDisableSelectionTime"></wp-tpg-value-select>
+    <div class="input-append bootstrap-timepicker" ng-show="disableSelectionTime == false">
+        <input type="text" ng-model="time" esg-timepicker class="time-from-to" data-show-meridian="false" data-minute-step="1">
+        <span class="add-on"><i class="icon-time"></i></span>
+    </div>
+    <span type="text" ng-show="disableSelectionTime == true" class="disable-timepicker">{{time}}</span>
+    <span class="add-on-disable-timepicker" ng-show="disableSelectionTime == true"><i class="icon-time"></i></span>
+</script>
+<script type="text/ng-template" id="html/templates/modules/tpg/tpg.wpTpgValueRealTemplate.html">
+    <!--<span style="display: inline-block;">{{min}}</span>-->
+    <button ng-show="disableModificationValue == false" esg-is-clickable ng-click="decreaseValue()" style="width: 16px;" class="btn btn-primary set-modal-button">-</button>
+    <input ng-show="disableModificationValue == false" type="text" ng-model="selectValue" class="wp-tpg-value-real" ng-model-input-onblur-tpg ng-change="updateValueInput()" ng-style="inputStyle"></input>
+    <button ng-show="disableModificationValue == false" esg-is-clickable ng-click="increaseValue()" style="width: 16px;" class="btn btn-primary set-modal-button">+</button>
+    <!--<span style="display: inline-block;">{{max}}</span>-->
+    <span ng-show="disableModificationValue == true" class="value-select-title-disable">{{selectValue}}</span>
+</script>
+<script type="text/ng-template" id="html/templates/modules/tpg/tpg.wpTpgValueSelectTemplate.html">
+    <span class="select-background" ng-class="{selectDisable: disableSelectionElem == true}"> 
+        <!-- fixme firefox display arrow -->
+        <span ng-show="disableSelectionElem == false">
+          <select style="{{selectStyle}}"> <!-- | orderBy:'weight':true  -->
+            <option ng-repeat="(key,item) in selectPossibleValuesItem" value="{{key}}" ng-selected="isSelected(item)" ng-hide="showOption(item)" weight="{{item.weight}}">{{item.title}}</option>
+          </select>
+        </span>
+        <span ng-show="disableSelectionElem == true" class="value-select-title-disable">{{actualSelectValueTitle}}</span>
+    </span>
+</script>
+<script type="text/ng-template" id="html/templates/modules/taskBar/taskBar.progressBarElementTemplate.html">
+    <div>
+        <span>{{barData.title}}: </span>
+        <span>{{barData.getProgressRound()}}%</span>
+        <span class="task-bar-terminate" ng-show="barData.shouldBeTerminated" ng-click="terminateTask()">X</span>
+    </div>
+</script>
+<script type="text/ng-template" id="html/templates/modules/taskBar/taskBar.progressBarShortElementTemplate.html">
+  <div class="progress-bar-short-element">
+    <div class="download" title="{{barData.title}}">
+      <i></i>
+    </div>
+    <div class="progress-element">                                                                                                                                               
+      <div ng-class="{unknownProgress: barData.disablePercent == true, active: barData.disablePercent == false}" class="progress-bar-animation" ng-style="myStyle"></div>
+      <div ng-if="barData.progress != null && barData.error != true && barData.terminate != true" class="bar-text"> {{barData.getProgressRound()}}% </div>
+      <div ng-if="barData.error == true" esg-i18n="error" class="bar-text bar-terminate"></div>
+      <div ng-if="barData.terminate == true" esg-i18n="closing" class="bar-text bar-terminate"></div>
+    </div>
+    <button esg-is-clickable="" class="btn-ico ico-close" esg-i18n="title:Cancel" ng-click="barData.terminateAction()">
+      <i class="icon-energo-close icon-energo"></i>
+    </button>
+  </div>
+</script>
+<script type="text/ng-template" id="html/templates/modules/taskBar/taskBar.progressBarShortWrapperTemplate.html">
+  <div class="progress-bar-short-wrapper" ng-if="activeBar != null">
+    <progress-bar-short-element bar-data="activeBar"></progress-bar-short-element>
+  </div>
+</script>
+<script type="text/ng-template" id="html/templates/modules/taskBar/taskBar.progressBarWrapperTemplate.html">
+  <div class="progress-bar-wrapper" ng-show="EsgTaskBar.progressBars.length > 0">
+      <ul>
+          <li ng-repeat="bar in EsgTaskBar.progressBars">
+              <progress-bar-element bar-data="bar"></progress-bar-element>
+              <ul>
+                  <li ng-repeat="subBar in bar.subBars" >
+                      <progress-bar-element bar-data="subBar"></progress-bar-element>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+  </div>
+</script>
+<script type="text/ng-template" id="html/desktop/ModalWindows/modalWindow.userLogin.html">
+<div class="modal-center" make-modal-window-scrollable>
+  <div class="modal-header">
+    <h1 esg-i18n="User login"></h1>
+  </div>
+  <div class="modal-body">
+    <input id="username" name="UserName" ng-model="UserName" type="text" esg-i18n="placeholder:Username" class="input-block-level ng-valid ng-dirty" placeholder="Username" style="margin-bottom: 16px;">
+    <input id="userpassword" name="UserPassword" ng-model="UserPassword" type="password" esg-i18n="placeholder:Password" class="input-block-level ng-valid ng-dirty" placeholder="Password">
+    
+    <div class="text-information error-message" esg-i18n="{{message}}" ng-show="message != null"></div>
+  </div>
+  <div class="modal-footer">
+    <button esg-is-clickable ng-click="login(result)" class="btn btn-primary close-modal-button" esg-i18n="Log in"></button>
+    <button esg-is-clickable ng-click="close(result)" class="btn btn-primary close-modal-button" esg-i18n="Close" ng-show="canClose"></button>
+  </div>
+</div>
+</script>
+<script type="text/ng-template" id="html/desktop/ModalWindows/modalWindow.tpgEditor.html">
+<div class="modal-center modal-tpg {{ipadClass}}" make-modal-window-scrollable>
+  <div class="modal-header">
+    <h1>{{title}}</h1>
+    <h2>{{dp.getDpPathVisualTree(true,false)}}</h2>
+  </div>
+  <div class="modal-body">
+
+    <tabset>
+      <tab select="showDrawEditor()">
+        <tab-heading esg-i18n="TPG"></tab-heading>
+        <wp-tpg-draw-select wp-tpg-type="wpTpgType" tpg-values="tpgValues" wp-tpg-array="tpgRegularArray" tpg-is-visible="isVisible" new-tpg-value="tpgItemNewValue" wp-source-type="wpSourceType" tpg-possible-values="tpgPossibleValues" items-day-week="itemsDayWeek" tpg-round-to="tpgEditorRoundTo" tpg-round-to-values="tpgEditorRoundToValues" user-setting-item="userSettingsActive" error-message="message" tpg-settings="tpgSettings" is-visible="showDrawEditorVal"></wp-tpg-draw-select>
+        <div class="text-information-block" ng-class="{'error-message': tpgSettings.transitions > itemsLimit}">{{itemsTransitionsMessage.text}}</div>
+      </tab>
+      <tab select="hideDrawEditor()">
+        <tab-heading esg-i18n="Table view"></tab-heading>
+        <wp-tpg-display-regular wp-tpg-type="wpTpgType" tpg-item-new-value-default="tpgItemNewValue" tpg-array="tpgRegularArray" items-day-week="itemsDayWeek" wp-source-type="wpSourceType" tpg-values="tpgValues" tpg-possible-values="tpgPossibleValues" user-setting-item="userSettingsActive" error-message="message" tpg-settings="tpgSettings"></wp-tpg-display-regular>
+        <div class="text-information-block" ng-show="userSettingsActive" ng-class="{'error-message': tpgSettings.transitions > itemsLimit}">{{itemsTransitionsMessage.text}}</div>
+     </tab>
+      <tab disabled="tpgExceptionDisabled()" ng-hide="tpgExceptionDisabled()" select="hideDrawEditor()">
+        <tab-heading esg-i18n="Exceptions"></tab-heading>
+        <wp-tpg-display-exception wp-tpg-type="wpTpgType" tpg-item-new-value-default="tpgItemNewValue" tpg-array="tpgExceptionArray" wp-source-type="wpSourceType" tpg-possible-values="tpgPossibleValues" user-setting-item="userSettingsActive" error-message="message" tpg-settings="tpgSettings"></wp-tpg-display-exception>
+        <div class="text-information-block" ng-show="userSettingsActive" ng-class="{'error-message': tpgSettings.exceptions > exceptionsLimit}">{{exceptionLimitMessage.text}}</div>
+      </tab>
+    </tabset>
+  </div>
+  <div class="modal-footer">
+    <div class="text-information">{{message.value}}</div>
+    <button esg-is-clickable ng-click="save(result)" class="btn btn-primary set-modal-button" ng-hide="userSettingsActive == false" esg-i18n="Set"></button>
+    <button esg-is-clickable ng-click="close(result)" class="btn btn-primary close-modal-button" ng-hide="userSettingsActive == false" esg-i18n="Cancel"></button>
+    <button esg-is-clickable ng-click="close(result)" class="btn btn-primary close-modal-button" ng-hide="userSettingsActive == true" esg-i18n="Close"></button>
+  </div>
+</div>
+</script>
+<script type="text/ng-template" id="html/desktop/ModalWindows/modalWindow.dateTimeEdit.html">
+<div class="modal-center {{ipadClass}}" make-modal-window-scrollable>
+  <div class="modal-header">
+    <h1>{{title | i18n}}</h1>
+    <h2>{{dp.getDpPathVisualTree(true,false)}}</h2>
+  </div>
+  <div class="modal-body">
+    <!-- datepicker -->
+
+    <div class="input-append bootstrap-datepicker" ng-show="showDate">
+        <input type="text" ng-model="dateFrom.value" class="date-from-to" esg-datepicker="{{dateOptions}}" ng-class="{'errorDate':errorDate.from}">
+        <span class="add-on" data-toggle="datepicker"><i class="icon-calendar"></i></span>
+    </div>
+
+    <!-- timepicker -->
+
+    <div class="input-append bootstrap-timepicker" ng-show="showTime">
+        <input type="text" ng-model="timeFrom.value" esg-timepicker class="time-from-to" data-show-meridian="false" data-minute-step="1" data-show-seconds="true" data-second-step="1">
+        <span class="add-on"><i class="icon-time"></i></span>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <div class="text-information" ng-hide="message.length == 0">{{message.value}}</div>
+    <button esg-is-clickable ng-click="save(result)" class="btn btn-primary set-modal-button" esg-i18n="Set"></button>
+    <button esg-is-clickable ng-click="close(result)" class="btn btn-primary close-modal-button" esg-i18n="Cancel"></button>
+  </div>
+</div>
+</script>
+<script type="text/ng-template" id="html/desktop/ModalWindows/modalWindow.graphExport.html">
+<div class="modal-center modal-graph-additional-settings" make-modal-window-scrollable>
+  <div class="modal-header">
+    <h1 esg-i18n="History data export"></h1>
+  </div>
+  <div class="modal-body">
+    <div>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <span esg-i18n="Export graph as"></span>:
+            </td>
+            <td>
+              <button class="exportButton" esg-is-clickable ng-click="settingsFunctions.exportAsPng()" esg-i18n="PNG image"></button>
+              <button class="exportButton" esg-is-clickable ng-click="settingsFunctions.exportAsCSV()" esg-i18n="CSV file"></button>
+              <!--<div class="exportButton">
+                <a class="btn-ico dropdown-toggle-scrollable">
+                  <span>{{currentEquidistantInterval.name | i18n }}</span>
+                  <span class="caretSelect"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-scrollable ipad-scroll">
+                  <div class="sub-ipad-scroll">
+                   <ul>
+                    <li ng-repeat="interval in equidistantIntervals track by $index">
+                      <a ng-click="setEquidistantInterval($index)">{{ interval.name | i18n }}</a>
+                    </li>
+                   </ul>
+                  </div>
+                </div>
+              </div>
+              <button class="exportButton select" esg-is-clickable ng-click="settingsFunctions.exportAsCSVEquidistant(currentEquidistantInterval)" esg-i18n="CSV Equidistant"></button>-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button esg-is-clickable ng-click="close(result)" class="btn btn-primary" esg-i18n="Close"></button>
+  </div>
+</div>
+</script>
+<script type="text/ng-template" id="html/desktop/modalWindow/modalWindow.changeRangeTable.html">
+<div class="modal-center" make-modal-window-scrollable>
+  <div class="modal-header">
+    <h1><span esg-i18n="Change date range"></span> - <span esg-i18n="{{title}}"></span></h1>
+  </div>
+  <div class="modal-body">
+    <div esg-i18n="From:"></div>
+    <div class="input-append bootstrap-datepicker">
+      <input type="text" class="date-from-to" ng-model="graphDateFrom" esg-datepicker="{{dateOptions}}">
+      <span class="add-on" data-toggle="datepicker"><i class="icon-calendar"></i></span>
+    </div>
+    <div class="input-append">
+      <input type="text" class="time-from-to" ng-model="timeFrom" esg-timepicker data-show-meridian="false" data-minute-step="1">
+      <span class="add-on"><i class="icon-time"></i></span>
+    </div>
+    <div esg-i18n="To:"></div>
+    <div class="input-append bootstrap-datepicker">
+      <input type="text" class="date-from-to" ng-model="graphDateTo" esg-datepicker="{{dateOptions}}">
+      <span class="add-on" data-toggle="datepicker"><i class="icon-calendar"></i></span>
+    </div>
+    <div class="input-append">
+      <input type="text" class="time-from-to" ng-model="timeTo" esg-timepicker data-show-meridian="false" data-minute-step="1">
+      <span class="add-on"><i class="icon-time"></i></span>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button ng-click="setDefault()" class="btn btn-primary default-range" esg-i18n="Set default range"></button>
+    <button ng-click="set(result)" class="btn btn-primary" esg-i18n="Set"></button>
+    <button ng-click="close(result)" class="btn btn-primary" esg-i18n="Cancel"></button>
+  </div>
+</div>
+</script>
+<script type="text/ng-template" id="html/desktop/ModalWindows/modalWindow.init.html">
+<div class="modal-center {{ipadClass}}" make-modal-window-scrollable>
+  <div class="modal-header">
+    <h1>{{dpName}}</h1>
+    <h2>{{title}}</h2>
+  </div>
+  <div class="modal-body">
+    <p ng-hide="!valueMinShow() && !valueMaxShow()">
+      <span esg-i18n="Allowed values"></span>: 
+      <span ng-show="valueMinShow()"><strong ng-if="valueType != 'cf56eb71-1737-44d1-9c24-73f0728fd58b'">{{valueMin}}</strong><strong ng-if="valueType == 'cf56eb71-1737-44d1-9c24-73f0728fd58b'">{{valueMin | formatTimeSpanNiceString}}</strong> Min</span>
+      <span ng-show="valueMinShow() && valueMaxShow()"> / </span>
+      <span ng-show="valueMaxShow()"><strong ng-if="valueType != 'cf56eb71-1737-44d1-9c24-73f0728fd58b'">{{valueMax}}</strong><strong ng-if="valueType == 'cf56eb71-1737-44d1-9c24-73f0728fd58b'">{{valueMax | formatTimeSpanNiceString}}</strong> Max</span>
+    </p>
+
+    <input type="text" ng-model="value.inputValue" ng-change="updateValueFromInput()" class="modal-window-init-input" />
+    
+    <esg-slider ng-if="valueType.value != 'text'" ng-show="valueMinShow() && valueMaxShow()" slider-value="value.value" min="valueMin" max="valueMax"></esg-slider>
+
+    <div class="modal-window-timespan" ng-if="valueType.value == 'timespan'">
+      <div>
+        <!--<label for="modal-timespan-yr" esg-i18n="Years"></label>
+        <label for="modal-timespan-month" esg-i18n="Months"></label>-->
+        <label for="modal-timespan-day" esg-i18n="Days"></label>
+        <label for="modal-timespan-hour" esg-i18n="Hours"></label>
+        <label for="modal-timespan-min" esg-i18n="Minutes"></label>
+       <label for="modal-timespan-sec" esg-i18n="Seconds"></label>
+      </div>
+      <div>
+        <!--<input type="number" min="0" ng-if="valueType == 'cf56eb71-1737-44d1-9c24-73f0728fd58b'" ng-model="timespan.years" class="modal-window-init-input timespan" id="modal-timespan-yr" ng-change="resetValue()"/>
+        <input type="number" min="0" ng-if="valueType == 'cf56eb71-1737-44d1-9c24-73f0728fd58b'" ng-model="timespan.months" class="modal-window-init-input timespan" id="modal-timespan-month" ng-change="resetValue()"/>-->
+        <input type="number" min="0" ng-model="timespan.days" class="modal-window-init-input timespan" id="modal-timespan-day" ng-change="changeValue()"/>
+        <input type="number" min="0" ng-model="timespan.hours" class="modal-window-init-input timespan" id="modal-timespan-hour" ng-change="changeValue()"/>
+        <input type="number" min="0" ng-model="timespan.minutes" class="modal-window-init-input timespan" id="modal-timespan-min" ng-change="changeValue()"/>
+        <input type="number" min="0" ng-model="timespan.seconds" class="modal-window-init-input timespan" id="modal-timespan-sec" ng-change="changeValue()"/>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <div class="text-information error-message" ng-hide="message.length == 0">{{message.value}}</div>
+    <button esg-is-clickable ng-click="save(result)" class="btn btn-primary set-modal-button" esg-i18n="Set"></button>
+    <button esg-is-clickable ng-click="close(result)" class="btn btn-primary close-modal-button" esg-i18n="Cancel"></button>
+  </div>
+</div>
+</script>
+<script type="text/ng-template" id="html/desktop/ModalWindows/modalWindow.digitalSetter.html">
+<div class="modal-center {{ipadClass}}" make-modal-window-scrollable>
+  <div class="modal-header">
+    <h1>{{dpName}}</h1>
+    <h2>{{title}}</h2>
+  </div>
+  <div class="modal-body">
+    
+    <p><span esg-i18n="Actual Value"></span>: {{value.value}}</p>
+    <div class="actions-buttons">
+      
+      <span ng-repeat="action in statesDefinition">
+        <button esg-is-clickable class="btn-ico-mini" ng-click="actionButtonClicked(action)" ng-class="{activeButton: buttonIsActive(action) == true}">{{action.label}}</button>
+      </span>
+      
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button esg-is-clickable ng-click="close(result)" class="btn btn-primary close-modal-button" esg-i18n="Cancel"></button>
+  </div>
+</div>
+</script>
+<script type="text/ng-template" id="html/desktop/modalWindow/modalWindow.about.html">
+<div class="modal-center  ipad-scroll" make-modal-window-scrollable >
+  <div class="sub-ipad-scroll">
+    <div>
+  <div class="modal-header">
+    <h1><span esg-i18n="About"></span> - {{ ESGVisionConfig.AppTitle }}</h1>
+  </div>
+  <div class="modal-body">
+           Copyright &copy; 2018-{{actualYear}} {{ESGVisionConfig.AppCopyright}}<br />
+           <span esg-i18n="Version"></span>: {{ESGVisionConfig.AppVersion}}<br />
+           <div>
+            <br /><span esg-i18n="Full browser information"></span>:<br />{{navigator.userAgent}}
+            <br /><br /><span esg-i18n="Logged in as"></span>: {{WebpanelActualUser.user.name}}
+           </div>
+         <br />
+        
+        
+        <div esg-i18n="Licences:"></div>
+        <div class="licences-external">
+          <accordion close-others="true">
+            <accordion-group heading="- jQuery" is-open="false">
+                <pre>
+                    <a href="https://jquery.org/license" target="_blank">https://jquery.org/license</a>
+                </pre>
+            </accordion-group>
+          
+            <accordion-group heading="- AngularJS" is-open="false">
+              <pre>The MIT License
+
+    Copyright (c) 2010-2012 Google, Inc. http://angularjs.org
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+    THE SOFTWARE.The MIT License</pre>
+            </accordion-group>
+            <accordion-group heading="- Jed" is-open="false">
+    <pre>
+              <a href="http://www.wtfpl.net">Jed</a>
+    </pre>
+            </accordion-group>
+            <accordion-group heading="- Flot" is-open="false">
+              <pre>Copyright (c) 2007-2013 IOLA and Ole Laursen
+
+    Permission is hereby granted, free of charge, to any person
+    obtaining a copy of this software and associated documentation
+    files (the "Software"), to deal in the Software without
+    restriction, including without limitation the rights to use,
+    copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the
+    Software is furnished to do so, subject to the following
+    conditions:
+
+    The above copyright notice and this permission notice shall be
+    included in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+    OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+    NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+    HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+    WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+    OTHER DEALINGS IN THE SOFTWARE.</pre>
+            </accordion-group>
+   <accordion-group heading="- sprintf" is-open="false">
+    <pre>
+    Copyright (c) 2010 Jakob Westhoff
+ 
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+    </pre>
+    </accordion-group>
+    <accordion-group heading="- big number" is-open="false">
+    <pre>
+    Copyright (c) 2012 Michael Mclaughlin <M8ch88l@gmail.com>
+ 
+   MIT Licence
+    </pre>
+    </accordion-group>
+    <accordion-group heading="- date" is-open="false">
+    <pre>
+    Copyright 2010 Matthew Eernisse (mde@fleegix.org)
+
+    http://www.apache.org/licenses/LICENSE-2.0
+    </accordion-group>
+
+          </accordion>
+
+    
+     
+
+        </div>
+
+    </div>
+     <div class="modal-footer">
+       <button ng-click="close(result)" class="btn btn-primary" esg-i18n="Close" esg-is-clickable></button>
+     </div>
+    </div>
+</div>
+</script>
+<script type="text/ng-template" id="html/templates/viewTableTemplate.html">
+  <div class="table-filter-sort ">
+      <div class="table-head" ng-model-fixed-scroll="4">
+          <div class="table-labels">
+              <div ng-repeat="column in tableStructure.column" ng:click="ChangeSorting(column.id)" ng-class="{sortable: column.sortable}" ng-style="tableElementsSize[column.id]" esg-i18n="title:Change table sorting">{{column.name}}
+                  <i class="icon" ng:class="ClassSelectedSort(column.id)"></i>
+              </div>
+          </div>
+          <div class="filters" ng-show="filtersAreVisible">
+              <div ng-repeat="column in tableStructure.column" ng-style="tableElementsSize[column.id]">
+                  <div ng-show="column.filter == true">
+                      <search-input search-string="filter[column.id]" search-suggestions="column.suggestions">
+                  
+                      </search-input>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="ipad-scroll">
+          <div  class="sub-ipad-scroll">
+              <table class="main-table">
+                  <thead>
+                      <tr>
+                          <th ng-repeat="column in tableStructure.column" ng-style="tableElementsSize[column.id]">{{column.name}}</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr ng-repeat="(index, event) in eventLogDataFiltered" ng-class="overclass"> <!-- | orderBy:sort.column:sort.descending -->
+                          <td ng-repeat="column in tableStructure.column" ng-style="tableElementsSize[column.id]" ng-class="column.id" ng-click="selectItem(index)" ng-if="column.type != 'buttons'">{{event[column.id] | useTableFilter:column.angularFilter}}</td>
+                          <td ng-repeat="column in tableStructure.column" ng-style="tableElementsSize[column.id]" ng-class="column.id" ng-click="selectItem(index)" ng-if="column.type == 'buttons'">
+                            <button ng-repeat="button in event[column.id]" ng-click="button.fce(event)" class="btn-ico">{{button.title}}</button>                                                                                                                                                                                                                                   
+                          </td>
+                      </tr>
+                      <tr ng-show="dataLength == 0">
+                          <td colspan="{{tableStructure.column.length}}" width="{{noDataItemWidth}}" esg-i18n="No items"></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+      <div class="print-page-header">
+          <div class="brand">
+              <span>{{ ESGVisionConfig.ApiPrefix }}</span>
+          </div>
+          <div class="table-print-title">{{tablePrintTitle}}
+          </div>
+      </div>
+      <div class="table-settings" ng-model-fixed-scroll="4">
+
+          <div class="table-pager">
+              <button class="btn-ico ico-selection" ng-class="{buttonDisabled: previousPage == false}" ng-click="pagerPrevious()" esg-i18n="title:Previous page">
+                  <i class="icon-energo-move-left icon-energo"></i>
+              </button>
+              <button class="btn-ico ico-selection next-page" ng-class="{buttonDisabled: nextPage == false}" ng-click="pagerNext()" esg-i18n="title:Next page">
+                  <i class="icon-energo-move-right icon-energo"></i>
+              </button>
+              <span ng-show="dataLength > 0">{{offsetBegin + 1}}-{{offsetEnd}} / {{dataLength}}</span>
+          </div>
+
+          <div ng-repeat="select in tableStructure.selectionFilters" class="select-filter">
+              <rc-ware-dropdown select-value="select.selectValue" select-settings="select"></rc-ware-dropdown>
+          </div>
+
+          <span class="graph-reload">
+              <button class="btn-ico" ng-click="forceUpdateFunction()" esg-i18n="title:Refresh">
+                  <i class="icon-energo-reload icon-energo"></i>
+              </button>
+          </span>
+
+          <span class="download-data">
+              <button class="btn-ico" ng-click="exportDataCSVFunction()" esg-i18n="title:Export data as CSV">
+                  <i class="icon-energo-alarm-download-csv icon-energo"></i>
+              </button>
+          </span>
+
+          <span class="change-date-range" ng-show="tableStructure.dataRange">
+              <button class="btn-ico ico-selection" ng-click="openModalWindow()" esg-i18n="title:Change date range">
+                  <span class="labelButton" esg-i18n="Change date range"></span>
+              </button>
+          </span> <!-- fixme-i18n -->
+
+          <span class="time-range" ng-show="tableStructure.dataRange">
+              <strong><span esg-i18n="From"></span>:</strong> {{tableDataFrom | dateFormatCSharp:dateFilter}} 
+              <strong><span esg-i18n="To"></span>:</strong> {{tableDataTo | dateFormatCSharp:dateFilter}}
+          </span>
+
+      </div>
+  </div>
+</script>
+<script type="text/ng-template" id="html/templates/searchInputTemplate.html">
+    <div class="input-filter">
+        <input type="text" ng-model="searchStringDelay" esg-i18n="['placeholder:Filter','title:Filter']" class="search-input" ng-class="'input-search-'+browser.id" ng-model-input-onblur rc-ware-handle-global-key-down />
+        <button ng-show="browser.id != 'MSIE'" class="btn-ico ico-close" ng-click="clearInput()">
+            <i class="icon-energo-clear-search icon-energo"></i>
+        </button>
+        <div class="search-suggestion" ng-show="focus == true && suggestionIsVisible">
+            <table>
+             <!-- <tr rc-ware-repeat-new="searchSuggestionsActual">
+                    <td ng-class="tableClass(rc-ware-repeat-key)" ng-mouseenter="keydownSetActiveRow(rc-ware-repeat-key)" ng-mouseleave="enterclass= ''" ng-mousedown="mouseEnter(rc-ware-repeat-key)">
+                    {{searchSuggestionsActual[rc-ware-repeat-key]}}
+                    </td>
+                </tr> -->
+                <tr ng-repeat="(key, item) in searchSuggestions">
+                    <td  ng-class="tableClass(key)" ng-mouseenter="keydownSetActiveRow(key)" ng-mouseleave="enterclass= ''" ng-mousedown="mouseEnter(key)">{{key}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</script>
+<script type="text/ng-template" id="html/templates/sliderTemplate.html">
+  <div class="slider-container">
+      <span class="bubble limit">{{min}}</span>
+          <div class="slider">
+              <span class="bar">
+                  <span class="pointer" ng-style="pointerStyles" ng-class="{active: isActive}"></span> <!-- ng-class="{active: isActive}" -->
+              </span>
+          </div>
+      <span class="bubble limit right">{{max}}</span>
+  </div>
+</script>
+<script type="text/ng-template" id="html/desktop/modalWindow/modalWindow.confirmAction.html">
+<div class="modal-center  ipad-scroll" make-modal-window-scrollable >
+  <div class="sub-ipad-scroll">
+    <div>
+      <div class="modal-header">
+        <h1><span>{{message}}</span></h1>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+         <button ng-click="confirm(result)" class="btn btn-primary" esg-i18n="Yes" esg-is-clickable></button>
+         <button ng-click="close(result)" class="btn btn-primary" esg-i18n="No" esg-is-clickable></button>
+      </div>
+    </div>
+  </div>
+</div>
+</script>
+
+<script type="text/ng-template" id="html/desktop/modalWindow/modalWindow.login.html">
+<div class="modal-center {{ipadClass}}" make-modal-window-scrollable>
+  <div class="modal-header">
+    <h1>{{"Insert PIN" | i18n }}</h1>
+    <h2>{{text}}</h2>
+  </div>
+  <div class="modal-body">
+    
+    <input type="password" ng-model="pass.value" class="modal-window-init-input" />
+    
+  </div>
+  <div class="modal-footer">
+    <div class="text-information error-message" ng-hide="message.length == 0">{{message.value}}</div>
+    <button esg-is-clickable ng-click="confirm(result)" class="btn btn-primary set-modal-button" esg-i18n="Login"></button>
+    <button esg-is-clickable ng-click="close(result)" class="btn btn-primary close-modal-button" esg-i18n="Cancel"></button>
+  </div>
+</div>
+</script>

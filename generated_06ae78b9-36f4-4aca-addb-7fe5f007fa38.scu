@@ -1,0 +1,884 @@
+VAR_GLOBAL 
+	VypnutiChodba: time;
+	RekuperaceTPG: bool;
+	Zavrit_kousek: bool := False;
+END_VAR
+VAR_GLOBAL 
+	Otevrit_kousek: bool := False;
+END_VAR
+VAR_GLOBAL 
+	Zaluzie_Zavrit: bool := False;
+END_VAR
+VAR_GLOBAL 
+	Zaluzie_Otevrit: bool := False;
+END_VAR
+VAR_GLOBAL 
+	RekuperaceRucne: bool := False;
+END_VAR
+VAR_GLOBAL 
+	RezimRekuperace: bool;
+	Cas_VstupChodba: time := t#1m;
+END_VAR
+VAR_GLOBAL
+	FwVersion: real := 230211;
+END_VAR
+VAR_GLOBAL RETAIN 
+	SetTemp: real := 10;
+END_VAR
+VAR_GLOBAL RETAIN 
+	Vodomer_litry: int;
+	Vodomer_pulses: int := 0;
+END_VAR
+VAR_GLOBAL 
+	Power_Consumption: real;
+	Svetla_sviti: bool;
+	DI_3_4_Virtual: bool;
+	FVE_DayProducing: real;
+	DI_3_3_virtual: bool;
+	DI_3_2_virtual: bool;
+	FVE_Power: real;
+	TempPD: real;
+	Temp_Pracovna: real;
+	RunCnt: lint;
+	Temp_Puda: real;
+	OVL_SV_Volne: bool;
+	OVL_SV_Predgaraz: bool := False;
+END_VAR
+VAR_GLOBAL 
+	Vypnout_Vent: bool;
+	OVL_SV_Terasa: bool;
+	Krb_filtered: real;
+	Garaz_filtered: real;
+	Obyvak_filtered: real;
+	Temp_Venku: real;
+	Temp_Sever_Filtered: real;
+	Temp_Jih_Filtered: real;
+	AvgTemp: real;
+END_VAR
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.03_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.03_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.03_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.02_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.02_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.02_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NForce3_rd_timestamp$: dt;
+	$Neuron L523_NForce3_rd_commerror$: bool;
+	$Neuron L523_NForce3_rd_commblock$: bool;
+	$Neuron L523_NCnt3.01_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.01_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.01_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.09_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.09_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.09_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.06_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.06_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.06_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN
+	$Neuron L523_NConfig3_rd_timestamp$: dt;
+	$Neuron L523_NConfig3_rd_commerror$: bool;
+	$Neuron L523_NConfig3_rd_commblock$: bool;
+	$Neuron L523_NCnt3.05_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.05_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.05_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.13_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.13_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.13_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN
+	$Neuron L523_Nbits_wdboot3_woch_timestamp$: dt;
+	$Neuron L523_Nbits_wdboot3_woch_commerror$: bool;
+	$Neuron L523_Nbits_wdboot3_woch_commblock$: bool;
+	$Neuron L523_NCnt3.08_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.08_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.08_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.07_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.07_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.07_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.10_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.10_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.10_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NStatus3_rd_timestamp$: dt;
+	$Neuron L523_NStatus3_rd_commerror$: bool;
+	$Neuron L523_NStatus3_rd_commblock$: bool;
+	$Neuron L523_NCnt3.11_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.11_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.11_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.04_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.04_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.04_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3_rd_timestamp$: dt;
+	$Neuron L523_NCnt3_rd_commerror$: bool;
+	$Neuron L523_NCnt3_rd_commblock$: bool;
+	$Neuron L523_NCnt3.12_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.12_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.12_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NShadow3_wr_timestamp$: dt;
+	$Neuron L523_NShadow3_wr_commerror$: bool;
+	$Neuron L523_NShadow3_wr_commblock$: bool;
+	$Neuron L523_NCnt3.15_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.15_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.15_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.16_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.16_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.16_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NForce3_wr_timestamp$: dt;
+	$Neuron L523_NForce3_wr_commerror$: bool;
+	$Neuron L523_NForce3_wr_commblock$: bool;
+	$Neuron L523_Nbits_reboot3_woch_timestamp$: dt;
+	$Neuron L523_Nbits_reboot3_woch_commerror$: bool;
+	$Neuron L523_Nbits_reboot3_woch_commblock$: bool;
+	$Neuron L523_NCnt3.14_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.14_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt3.14_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN
+	$Neuron L523_NConfig2_rd_timestamp$: dt;
+	$Neuron L523_NConfig2_rd_commerror$: bool;
+	$Neuron L523_NConfig2_rd_commblock$: bool;
+	$Neuron L523_Nbits_wdboot2_woch_timestamp$: dt;
+	$Neuron L523_Nbits_wdboot2_woch_commerror$: bool;
+	$Neuron L523_Nbits_wdboot2_woch_commblock$: bool;
+	$Neuron L523_NForce2_wr_timestamp$: dt;
+	$Neuron L523_NForce2_wr_commerror$: bool;
+	$Neuron L523_NForce2_wr_commblock$: bool;
+	$Neuron L523_NCnt2.01_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt2.01_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt2.01_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN
+	$Neuron L523_Nbits_reboot2_woch_timestamp$: dt;
+	$Neuron L523_Nbits_reboot2_woch_commerror$: bool;
+	$Neuron L523_Nbits_reboot2_woch_commblock$: bool;
+	$Neuron L523_NCnt2.04_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt2.04_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt2.04_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NForce2_rd_timestamp$: dt;
+	$Neuron L523_NForce2_rd_commerror$: bool;
+	$Neuron L523_NForce2_rd_commblock$: bool;
+	$Neuron L523_NCnt2.02_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt2.02_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt2.02_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt2_rd_timestamp$: dt;
+	$Neuron L523_NCnt2_rd_commerror$: bool;
+	$Neuron L523_NCnt2_rd_commblock$: bool;
+	$Neuron L523_NCnt2.03_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt2.03_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt2.03_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NShadow2_wr_timestamp$: dt;
+	$Neuron L523_NShadow2_wr_commerror$: bool;
+	$Neuron L523_NShadow2_wr_commblock$: bool;
+	$Neuron L523_NAo2_wr_timestamp$: dt;
+	$Neuron L523_NAo2_wr_commerror$: bool;
+	$Neuron L523_NAo2_wr_commblock$: bool;
+	$Neuron L523_NStatus2_rd_timestamp$: dt;
+	$Neuron L523_NStatus2_rd_commerror$: bool;
+	$Neuron L523_NStatus2_rd_commblock$: bool;
+	$Neuron L523_NPwm1.02_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NPwm1.02_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NPwm1.02_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NPWM1_rd_timestamp$: dt;
+	$Neuron L523_NPWM1_rd_commerror$: bool;
+	$Neuron L523_NPWM1_rd_commblock$: bool;
+	$Neuron L523_ULED_1.03_w$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NULed1.03_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NULed1.03_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NULed1.03_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN
+	$Neuron L523_Nbits_wdboot1_woch_timestamp$: dt;
+	$Neuron L523_Nbits_wdboot1_woch_commerror$: bool;
+	$Neuron L523_Nbits_wdboot1_woch_commblock$: bool;
+	$Neuron L523_NCnt1.04_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt1.04_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt1.04_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN
+	$Neuron L523_Nbits_owoff1_woch_timestamp$: dt;
+	$Neuron L523_Nbits_owoff1_woch_commerror$: bool;
+	$Neuron L523_Nbits_owoff1_woch_commblock$: bool;
+	$Neuron L523_NPwm1.03_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NPwm1.03_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NPwm1.03_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NStatus1_rd_timestamp$: dt;
+	$Neuron L523_NStatus1_rd_commerror$: bool;
+	$Neuron L523_NStatus1_rd_commblock$: bool;
+	$Neuron L523_NForce1_wr_timestamp$: dt;
+	$Neuron L523_NForce1_wr_commerror$: bool;
+	$Neuron L523_NForce1_wr_commblock$: bool;
+	$Neuron L523_NConfig1_rd_timestamp$: dt;
+	$Neuron L523_NConfig1_rd_commerror$: bool;
+	$Neuron L523_NConfig1_rd_commblock$: bool;
+	$Neuron L523_NCnt1_rd_timestamp$: dt;
+	$Neuron L523_NCnt1_rd_commerror$: bool;
+	$Neuron L523_NCnt1_rd_commblock$: bool;
+	$Neuron L523_NVirtual1_wr_timestamp$: dt;
+	$Neuron L523_NVirtual1_wr_commerror$: bool;
+	$Neuron L523_NVirtual1_wr_commblock$: bool;
+	$Neuron L523_NCnt1.03_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt1.03_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt1.03_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN
+	$Neuron L523_Nbits_reboot1_woch_timestamp$: dt;
+	$Neuron L523_Nbits_reboot1_woch_commerror$: bool;
+	$Neuron L523_Nbits_reboot1_woch_commblock$: bool;
+	$Neuron L523_NStorageLife1_rd_timestamp$: dt;
+	$Neuron L523_NStorageLife1_rd_commerror$: bool;
+	$Neuron L523_NStorageLife1_rd_commblock$: bool;
+	$Neuron L523_ULED_1.04_w$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NULed1.04_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NULed1.04_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NULed1.04_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt1.01_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt1.01_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt1.01_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt1.02_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt1.02_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NCnt1.02_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_ULED_1.01_w$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NULed1.01_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NULed1.01_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NULed1.01_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NShadow1_wr_timestamp$: dt;
+	$Neuron L523_NShadow1_wr_commerror$: bool;
+	$Neuron L523_NShadow1_wr_commblock$: bool;
+	$Neuron L523_NPwm1.04_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NPwm1.04_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NPwm1.04_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_ULED_1.04_r$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_ULED_1.03_r$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_ULED_1.02_r$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_ULED_1.01_r$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NULed1_rd_timestamp$: dt;
+	$Neuron L523_NULed1_rd_commerror$: bool;
+	$Neuron L523_NULed1_rd_commblock$: bool;
+	$Neuron L523_ULED_1.02_w$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NULed1.02_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NULed1.02_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NULed1.02_wr_woch_commblock$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NVirtual1_rd_timestamp$: dt;
+	$Neuron L523_NVirtual1_rd_commerror$: bool;
+	$Neuron L523_NVirtual1_rd_commblock$: bool;
+	$Neuron L523_NForce1_rd_timestamp$: dt;
+	$Neuron L523_NForce1_rd_commerror$: bool;
+	$Neuron L523_NForce1_rd_commblock$: bool;
+	$Neuron L523_NPwm1.01_wr_woch_timestamp$: dt;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NPwm1.01_wr_woch_commerror$: bool;
+END_VAR
+END_NAMESPACE
+NAMESPACE hw 
+VAR_GLOBAL RETAIN 
+	$Neuron L523_NPwm1.01_wr_woch_commblock$: bool;
+END_VAR
+VAR_GLOBAL
+	$Neuron L523_SSR_SV_Terasa$: bool;
+	$Neuron L523_In1$: bool;
+	$Neuron L523_SSR_SvetlaDole$: bool;
+	$Neuron L523_IN2_1$: bool;
+	$Neuron L523_DI_3_1$: bool;
+	$Neuron L523_RO_2.04_r$: bool;
+	$Neuron L523_RO_2.05_r$: bool;
+	$Neuron L523_SV_PredGaraz$: bool;
+	$Neuron L523_SV_Volne$: bool;
+	$Neuron L523_OneWireControl$: bool;
+	$Pro380-Mod_Power$: real;
+	$Pro380-Mod_Napeti_L1$: real;
+	$Pro380-Mod_Napeti_L2$: real;
+	$Pro380-Mod_Napeti_L3$: real;
+	$Pro380-Mod_Tariff$: uint;
+	$Pro380-Mod_Parity_setting$: uint;
+	$Pro380-Mod_LCD_cycle_time$: uint;
+	$Pro380-Mod_Combination_code$: uint;
+	$Pro380-Mod_S0_output_rate$: real;
+	$Pro380-Mod_Baud_rate$: word;
+	$Pro380-Mod_Modbus_ID$: uint;
+	$Pro380-Mod_L3_phase_forward_dir$: bool;
+	$Pro380-Mod_L2_phase_forward_dir$: bool;
+	$Pro380-Mod_T2_reverse_reactive_energy$: real;
+	$Pro380-Mod_L2_reverse_reactive_energy$: real;
+	$Pro380-Mod_Total_reactive_energy$: real;
+	$Pro380-Mod_T1_total_reactive_energy$: real;
+	$Pro380-Mod_T2_total_reactive_energy$: real;
+	$Pro380-Mod_T2_forward_reactive_energy$: real;
+	$Pro380-Mod_L3_reverse_reactive_energy$: real;
+	$Pro380-Mod_L1_reverse_reactive_energy$: real;
+	$Pro380-Mod_L1_total_reactive_energy$: real;
+	$Pro380-Mod_L2_total_reactive_energy$: real;
+	$Pro380-Mod_L3_total_reactive_energy$: real;
+	$Pro380-Mod_T1_forward_reactive_energy$: real;
+	$Pro380-Mod_L3_forward_reactive_energy$: real;
+	$Pro380-Mod_L2_forward_reactive_energy$: real;
+	$Pro380-Mod_L1_forward_reactive_energy$: real;
+	$Pro380-Mod_Reverse_reactive_energy$: real;
+	$Pro380-Mod_T1_reverse_reactive_energy$: real;
+	$Pro380-Mod_Forward_reactive_energy$: real;
+	$Pro380-Mod_L3_reverse_active_energy$: real;
+	$Pro380-Mod_L2_reverse_active_energy$: real;
+	$Pro380-Mod_L1_reverse_active_energy$: real;
+	$Pro380-Mod_T2_reverse_active_energy$: real;
+	$Pro380-Mod_T1_reverse_active_energy$: real;
+	$Pro380-Mod_Reverse_active_energy$: real;
+	$Pro380-Mod_T2_forward_active_energy$: real;
+	$Pro380-Mod_L3_forward_active_energy$: real;
+	$Pro380-Mod_L2_forward_active_energy$: real;
+	$Pro380-Mod_L1_forward_active_energy$: real;
+	$Pro380-Mod_T1_forward_active_energy$: real;
+	$Pro380-Mod_L3_total_active_energy$: real;
+	$Pro380-Mod_L2_total_active_energy$: real;
+	$Pro380-Mod_L1_total_active_energy$: real;
+	$Pro380-Mod_T2_total_active_energy$: real;
+	$Pro380-Mod_T1_total_active_energy$: real;
+	$Pro380-Mod_Total_active_energy$: real;
+	$Pro380-Mod_L3_Power_factor$: real;
+	$Pro380-Mod_L2_Power_factor$: real;
+	$Pro380-Mod_L1_Power_factor$: real;
+	$Pro380-Mod_Power_factor$: real;
+	$Pro380-Mod_L3_Apparent_power$: real;
+	$Pro380-Mod_L2_Apparent_power$: real;
+	$Pro380-Mod_L1_Apparent_power$: real;
+	$Pro380-Mod_Total_Apparent_power$: real;
+	$Pro380-Mod_L3_Reactive_power$: real;
+	$Pro380-Mod_L2_Reactive_power$: real;
+	$Pro380-Mod_L1_Reactive_power$: real;
+	$Pro380-Mod_Total_Reactive_power$: real;
+	$Pro380-Mod_L3_Active_power$: real;
+	$Pro380-Mod_L2_Active_power$: real;
+	$Pro380-Mod_L1_Active_power$: real;
+	$Pro380-Mod_Total_Active_power$: real;
+	$Pro380-Mod_L3_Current$: real;
+	$Pro380-Mod_L2_Current$: real;
+	$Pro380-Mod_L1_Current$: real;
+	$Pro380-Mod_Grid_frequency$: real;
+	$Pro380-Mod_L1_phase_forward_dir$: bool;
+	$Pro380-Mod_Meter_amps$: uint;
+	$Pro380-Mod_Harware_version$: real;
+	$Pro380-Mod_Software_version$: real;
+	$Pro380-Mod_Protocol_version$: real;
+	$Pro380-Mod_Meter_code$: word;
+	$Pro380-Mod_Serial_number$: dword;
+	$device_ULED_1.03$: bool;
+	$device_ULED_1.02$: bool;
+	$device_ULED_1.01$: bool;
+	device_Clear_WD_boot_1: bool;
+	$device_CNT_1.05_set$: dword;
+	$device_CNT_1.08_set$: dword;
+	$device_CNT_1.04_set$: dword;
+	device_Was_WD_boot_1: bool;
+	$device_RO_1.13_r$: bool;
+	$device_RO_1.12_r$: bool;
+	$device_RO_1.11_r$: bool;
+	$device_RO_1.10_r$: bool;
+	$device_RO_1.09_r$: bool;
+	$device_RO_1.08_r$: bool;
+	$device_RO_1.07_r$: bool;
+	$device_RO_1.06_r$: bool;
+	$device_RO_1.05_r$: bool;
+	$device_RO_1.04_r$: bool;
+	$device_RO_1.03_r$: bool;
+	$device_RO_1.02_r$: bool;
+	$device_RO_1.01_r$: bool;
+	$device_DI_1.12$: bool;
+	$device_DI_1.11$: bool;
+	$device_DI_1.10$: bool;
+	$device_DI_1.09$: bool;
+	$device_DI_1.08$: bool;
+	$device_DI_1.07$: bool;
+	$device_DI_1.06$: bool;
+	$device_DI_1.05$: bool;
+	$device_DI_1.04$: bool;
+	$device_DI_1.03$: bool;
+	$device_DI_1.02$: bool;
+	$device_DI_1.01$: bool;
+	$device_ForceOutput_1.13_w$: bool;
+	$device_ForceOutput_1.12_w$: bool;
+	$device_ForceOutput_1.11_w$: bool;
+	$device_ForceOutput_1.10_w$: bool;
+	$device_ForceOutput_1.09_w$: bool;
+	$device_ForceOutput_1.08_w$: bool;
+	$device_ForceOutput_1.07_w$: bool;
+	$device_ForceOutput_1.06_w$: bool;
+	$device_ForceOutput_1.05_w$: bool;
+	$device_ForceOutput_1.04_w$: bool;
+	$device_ForceOutput_1.03_w$: bool;
+	$device_ForceOutput_1.02_w$: bool;
+	$device_ForceOutput_1.01_w$: bool;
+	$device_CNT_1.09_set$: dword;
+	$device_CNT_1.12$: dword;
+	$device_CNT_1.11$: dword;
+	$device_CNT_1.10$: dword;
+	$device_CNT_1.09$: dword;
+	$device_CNT_1.08$: dword;
+	$device_CNT_1.07$: dword;
+	$device_CNT_1.06$: dword;
+	$device_CNT_1.05$: dword;
+	$device_CNT_1.04$: dword;
+	$device_CNT_1.03$: dword;
+	$device_CNT_1.02$: dword;
+	$device_CNT_1.01$: dword;
+	$device_CNT_1.03_set$: dword;
+	device_Reboot_1: bool;
+	$device_CNT_1.10_set$: dword;
+	device_BoardSerial_1: dword;
+	device_HwVersion_1: word;
+	device_Version_1: word;
+	$device_CNT_1.01_set$: dword;
+	$device_CNT_1.12_set$: dword;
+	$device_CNT_1.11_set$: dword;
+	$device_CNT_1.02_set$: dword;
+	$device_CNT_1.07_set$: dword;
+	$device_ForceOutput_1.13_r$: bool;
+	$device_ForceOutput_1.12_r$: bool;
+	$device_ForceOutput_1.11_r$: bool;
+	$device_ForceOutput_1.10_r$: bool;
+	$device_ForceOutput_1.09_r$: bool;
+	$device_ForceOutput_1.08_r$: bool;
+	$device_ForceOutput_1.07_r$: bool;
+	$device_ForceOutput_1.06_r$: bool;
+	$device_ForceOutput_1.05_r$: bool;
+	$device_ForceOutput_1.04_r$: bool;
+	$device_ForceOutput_1.03_r$: bool;
+	$device_ForceOutput_1.02_r$: bool;
+	$device_ForceOutput_1.01_r$: bool;
+	$device_CNT_1.06_set$: dword;
+	$device_RO_1.13_w$: bool;
+	$device_RO_1.12_w$: bool;
+	$device_RO_1.11_w$: bool;
+	$device_RO_1.10_w$: bool;
+	$device_RO_1.09_w$: bool;
+	$device_RO_1.08_w$: bool;
+	$device_RO_1.07_w$: bool;
+	$device_RO_1.06_w$: bool;
+	$device_RO_1.05_w$: bool;
+	$device_RO_1.04_w$: bool;
+	$device_RO_1.03_w$: bool;
+	$device_RO_1.02_w$: bool;
+	device_Kotel: bool;
+	OneWire_OneWireComErr: bool;
+	xG18_Sever: real;
+	xG18_Garaz: real;
+	xG18_Kotel_vystup: real;
+	xG18_Kotel_vratka: real;
+	xG18_Temperature_CH6: real;
+	SDM120M_FVE_FVE_Voltage: real;
+	SDM120M_FVE_FVE_Current: real;
+	SDM120M_FVE_FVE_Energy: real;
+	SDM120M_FVE_FVE_Pwr: real;
+	$Neuron L523_SV_ObyvaK_Predni$: bool;
+	$Neuron L523_RO_2x01$: bool;
+	$Neuron L523_RO_2x02$: bool;
+	$Neuron L523_RO_2x03$: bool;
+	Garaz_Temperature: real;
+	Sever_Temperature: real;
+	Puda_Temperature: real;
+	Obyvak_Temperature: real;
+	$Neuron L523_DI_3_2$: bool;
+	$Neuron L523_DI_3_3$: bool;
+	$Neuron L523_DI_3_4$: bool;
+	$Neuron L523_SSR_SV_HorniChodba$: bool;
+	$Neuron L523_Vodomer_IN$: bool;
+	$Neuron L523_Cerpadlo_1NP$: bool;
+	$Neuron L523_ForceOutput_3.07_w$: bool;
+	$Neuron L523_Rekuperace$: bool;
+	$Neuron L523_SSR_SV_VstupChodba$: bool;
+	$Neuron L523_PIR_VstupChodba$: bool;
+	$Neuron L523_Zaluzie_P_Otevrit$: bool;
+	$Neuron L523_Zaluzie_P_Zavrit$: bool;
+END_VAR
+END_NAMESPACE

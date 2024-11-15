@@ -1,0 +1,219 @@
+var $PLC$.$HW_hidden$.$OneWire.Garaz.Temperature$: $base$.$int$ =0 
+var $PLC$.$HW_hidden$.$OneWire.Puda.Temperature$: $base$.$int$ =0 
+var $PLC$.$HW_hidden$.$OneWire.Obyvak.Temperature$: $base$.$int$ =0 
+var $PLC$.$HW_hidden$.$UniPi_Extensions.xG18.Temperature_CH1$: $base$.$int$ =0 
+var $PLC$.$HW_hidden$.$UniPi_Extensions.xG18.Temperature_CH2$: $base$.$int$ =0 
+var $PLC$.$HW_hidden$.$UniPi_Extensions.xG18.Temperature_CH3$: $base$.$int$ =0 
+var $PLC$.$HW_hidden$.$UniPi_Extensions.xG18.Temperature_CH4$: $base$.$int$ =0 
+var $PLC$.$HW_hidden$.$UniPi_Extensions.xG18.Temperature_CH6$: $base$.$int$ =0 
+var $PLC$.$HW_hidden$.$tmp_real$: $base$.$real$ =0 
+var $PLC$.$HW_hidden$.$OneWire.Garaz.Temperature.transformation$: $Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$ ={0,1,0.0625,0} 
+var $PLC$.$HW_hidden$.$OneWire.Puda.Temperature.transformation$: $Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$ ={0,1,0.0625,0} 
+var $PLC$.$HW_hidden$.$OneWire.Obyvak.Temperature.transformation$: $Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$ ={0,1,0.0625,0} 
+var $PLC$.$HW_hidden$.$UniPi_Extensions.xG18.Temperature_CH1.transformation$: $Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$ ={0,1,0.0099999997764825821,0} 
+var $PLC$.$HW_hidden$.$UniPi_Extensions.xG18.Temperature_CH2.transformation$: $Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$ ={0,1,0.0099999997764825821,0} 
+var $PLC$.$HW_hidden$.$UniPi_Extensions.xG18.Temperature_CH3.transformation$: $Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$ ={0,1,0.0099999997764825821,0} 
+var $PLC$.$HW_hidden$.$UniPi_Extensions.xG18.Temperature_CH4.transformation$: $Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$ ={0,1,0.0099999997764825821,0} 
+var $PLC$.$HW_hidden$.$UniPi_Extensions.xG18.Temperature_CH6.transformation$: $Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$ ={0,1,0.0099999997764825821,0} 
+/*
+ *	PROGRAM DECLARATION f_transform
+ */
+prog $PLC$.$HW_hidden$.$f_transform$
+()
+
+code
+## 17 "0"
+;;Call $Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$.$Forward$
+	LA			address($PLC$.$HW_hidden$.$OneWire.Garaz.Temperature$)
+	RDSW
+;;cast code from int to real
+	CF
+	LUB			1
+	LA			NULL
+	LA			address($PLC$.$HW_hidden$.$OneWire.Garaz.Temperature.transformation$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$.$Forward$)
+;;call end
+	LA			address($PLC$.$HW_hidden$.$tmp_real$)
+	WRF
+## 19 "0"
+	LA			address($PLC$.$HW_hidden$.$tmp_real$)
+	RDF
+	LA			address($OneWire1$.$hw$.$Garaz_Temperature$)
+	WRF
+## 22 "0"
+;;Call $Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$.$Forward$
+	LA			address($PLC$.$HW_hidden$.$OneWire.Puda.Temperature$)
+	RDSW
+;;cast code from int to real
+	CF
+	LUB			1
+	LA			NULL
+	LA			address($PLC$.$HW_hidden$.$OneWire.Puda.Temperature.transformation$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$.$Forward$)
+;;call end
+	LA			address($PLC$.$HW_hidden$.$tmp_real$)
+	WRF
+## 24 "0"
+	LA			address($PLC$.$HW_hidden$.$tmp_real$)
+	RDF
+	LA			address($OneWire1$.$hw$.$Puda_Temperature$)
+	WRF
+## 27 "0"
+;;Call $Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$.$Forward$
+	LA			address($PLC$.$HW_hidden$.$OneWire.Obyvak.Temperature$)
+	RDSW
+;;cast code from int to real
+	CF
+	LUB			1
+	LA			NULL
+	LA			address($PLC$.$HW_hidden$.$OneWire.Obyvak.Temperature.transformation$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$.$Forward$)
+;;call end
+	LA			address($PLC$.$HW_hidden$.$tmp_real$)
+	WRF
+## 29 "0"
+	LA			address($PLC$.$HW_hidden$.$tmp_real$)
+	RDF
+	LA			address($OneWire1$.$hw$.$Obyvak_Temperature$)
+	WRF
+## 32 "0"
+;;Call $Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$.$Forward$
+	LA			address($PLC$.$HW_hidden$.$UniPi_Extensions.xG18.Temperature_CH1$)
+	RDSW
+;;cast code from int to real
+	CF
+	LUB			1
+	LA			NULL
+	LA			address($PLC$.$HW_hidden$.$UniPi_Extensions.xG18.Temperature_CH1.transformation$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$.$Forward$)
+;;call end
+	LA			address($PLC$.$HW_hidden$.$tmp_real$)
+	WRF
+## 34 "0"
+	LA			address($PLC$.$HW_hidden$.$tmp_real$)
+	RDF
+	LA			address($OneWire1$.$hw$.$xG18_Sever$)
+	WRF
+## 37 "0"
+;;Call $Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$.$Forward$
+	LA			address($PLC$.$HW_hidden$.$UniPi_Extensions.xG18.Temperature_CH2$)
+	RDSW
+;;cast code from int to real
+	CF
+	LUB			1
+	LA			NULL
+	LA			address($PLC$.$HW_hidden$.$UniPi_Extensions.xG18.Temperature_CH2.transformation$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$.$Forward$)
+;;call end
+	LA			address($PLC$.$HW_hidden$.$tmp_real$)
+	WRF
+## 39 "0"
+	LA			address($PLC$.$HW_hidden$.$tmp_real$)
+	RDF
+	LA			address($OneWire1$.$hw$.$xG18_Garaz$)
+	WRF
+## 42 "0"
+;;Call $Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$.$Forward$
+	LA			address($PLC$.$HW_hidden$.$UniPi_Extensions.xG18.Temperature_CH3$)
+	RDSW
+;;cast code from int to real
+	CF
+	LUB			1
+	LA			NULL
+	LA			address($PLC$.$HW_hidden$.$UniPi_Extensions.xG18.Temperature_CH3.transformation$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$.$Forward$)
+;;call end
+	LA			address($PLC$.$HW_hidden$.$tmp_real$)
+	WRF
+## 44 "0"
+	LA			address($PLC$.$HW_hidden$.$tmp_real$)
+	RDF
+	LA			address($OneWire1$.$hw$.$xG18_Kotel_vystup$)
+	WRF
+## 47 "0"
+;;Call $Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$.$Forward$
+	LA			address($PLC$.$HW_hidden$.$UniPi_Extensions.xG18.Temperature_CH4$)
+	RDSW
+;;cast code from int to real
+	CF
+	LUB			1
+	LA			NULL
+	LA			address($PLC$.$HW_hidden$.$UniPi_Extensions.xG18.Temperature_CH4.transformation$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$.$Forward$)
+;;call end
+	LA			address($PLC$.$HW_hidden$.$tmp_real$)
+	WRF
+## 49 "0"
+	LA			address($PLC$.$HW_hidden$.$tmp_real$)
+	RDF
+	LA			address($OneWire1$.$hw$.$xG18_Kotel_vratka$)
+	WRF
+## 52 "0"
+;;Call $Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$.$Forward$
+	LA			address($PLC$.$HW_hidden$.$UniPi_Extensions.xG18.Temperature_CH6$)
+	RDSW
+;;cast code from int to real
+	CF
+	LUB			1
+	LA			NULL
+	LA			address($PLC$.$HW_hidden$.$UniPi_Extensions.xG18.Temperature_CH6.transformation$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$v1_0$.$Linear$.$Forward$)
+;;call end
+	LA			address($PLC$.$HW_hidden$.$tmp_real$)
+	WRF
+## 54 "0"
+	LA			address($PLC$.$HW_hidden$.$tmp_real$)
+	RDF
+	LA			address($OneWire1$.$hw$.$xG18_Temperature_CH6$)
+	WRF
+## 57 "0"
+	RET
+end code
+var $PLC$.$HW_hidden$.$f_transform$.dyn_met: addr, TLS META(2147483648)
+var $PLC$.$HW_hidden$.$f_transform$.dyn_obj: addr, TLS META(2147483648)
+
+/*
+ *	PROGRAM DECLARATION r_transform
+ */
+prog $PLC$.$HW_hidden$.$r_transform$
+()
+
+code
+## 59 "0"
+	RET
+end code
+var $PLC$.$HW_hidden$.$r_transform$.dyn_met: addr, TLS META(2147483648)
+var $PLC$.$HW_hidden$.$r_transform$.dyn_obj: addr, TLS META(2147483648)
+
+/*
+ *	PROGRAM DECLARATION init_transform
+ */
+prog $PLC$.$HW_hidden$.$init_transform$
+()
+
+code
+## 62 "0"
+	RET
+end code
+var $PLC$.$HW_hidden$.$init_transform$.dyn_met: addr, TLS META(2147483648)
+var $PLC$.$HW_hidden$.$init_transform$.dyn_obj: addr, TLS META(2147483648)
+
+/*
+ *	PROGRAM DECLARATION finish_transform
+ */
+prog $PLC$.$HW_hidden$.$finish_transform$
+()
+
+code
+## 65 "0"
+	RET
+end code
+var $PLC$.$HW_hidden$.$finish_transform$.dyn_met: addr, TLS META(2147483648)
+var $PLC$.$HW_hidden$.$finish_transform$.dyn_obj: addr, TLS META(2147483648)
+
+srcfile "0" "00000000000000000000000000000000"
+
+/////////////
+//internals
+
+

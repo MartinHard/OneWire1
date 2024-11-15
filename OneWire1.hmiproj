@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hmi_project xmlns:r="http://dev.rcware.eu/serialization/references" type="hmi_project" xmlns="http://dev.rcware.eu/shark-ide-2">
+  <Name>OneWire1</Name>
+  <RecreatedTemplates />
+  <Id>22d56558-7449-4031-bee8-6effcf420d05</Id>
+  <items>
+    <hmi_resources_root_directory type="hmi_resources_root_directory">
+      <RecreatedResources />
+      <Name>Resources</Name>
+      <Id>4e50d639-77f0-482f-a68f-76b1d6f23141</Id>
+      <items>
+        <hmi_resources_default_directory type="hmi_resources_default_directory">
+          <Name>Default Images</Name>
+          <Id>d7d20e87-ec4f-4583-8059-0fb7a8cd2a77</Id>
+          <items>
+            <hmi_resources_default_image type="hmi_resources_default_image">
+              <RelativeSource value="HmiResources/Alarm-Normal.svg" />
+              <OriginalSource value="pack://application:,,,/ESG.SharkPLC.IDE.HmiGraphicEditor;component/Resources/Images/gadget_alarm_none.svg" />
+              <Name>Alarm-Normal.svg</Name>
+              <Id>25ab54bf-897b-4137-8e5e-9fcdf0ac55b6</Id>
+              <items />
+            </hmi_resources_default_image>
+            <hmi_resources_default_image type="hmi_resources_default_image">
+              <RelativeSource value="HmiResources/Alarm-Active.svg" />
+              <OriginalSource value="pack://application:,,,/ESG.SharkPLC.IDE.HmiGraphicEditor;component/Resources/Images/gadget_alarm_new.svg" />
+              <Name>Alarm-Active.svg</Name>
+              <Id>7a14050c-a820-4001-b0a0-db774f1afb3d</Id>
+              <items />
+            </hmi_resources_default_image>
+            <hmi_resources_default_image type="hmi_resources_default_image">
+              <RelativeSource value="HmiResources/Alarm-Active%20Acknowledged.svg" />
+              <OriginalSource value="pack://application:,,,/ESG.SharkPLC.IDE.HmiGraphicEditor;component/Resources/Images/gadget_alarm_ack.svg" />
+              <Name>Alarm-Active Acknowledged.svg</Name>
+              <Id>f1172529-36a6-4a23-b4aa-16a709c7798c</Id>
+              <items />
+            </hmi_resources_default_image>
+            <hmi_resources_default_image type="hmi_resources_default_image">
+              <RelativeSource value="HmiResources/Alarm-Memory.svg" />
+              <OriginalSource value="pack://application:,,,/ESG.SharkPLC.IDE.HmiGraphicEditor;component/Resources/Images/gadget_alarm_reset.svg" />
+              <Name>Alarm-Memory.svg</Name>
+              <Id>526520d2-6abf-48ca-82c4-ff35682044e9</Id>
+              <items />
+            </hmi_resources_default_image>
+            <hmi_resources_default_image type="hmi_resources_default_image">
+              <RelativeSource value="HmiResources/Alarm-Memory%20Acknowledged.svg" />
+              <OriginalSource value="pack://application:,,,/ESG.SharkPLC.IDE.HmiGraphicEditor;component/Resources/Images/gadget_alarm_ack_reset.svg" />
+              <Name>Alarm-Memory Acknowledged.svg</Name>
+              <Id>9628f86d-9933-44ea-bda1-918d36e9ba08</Id>
+              <items />
+            </hmi_resources_default_image>
+            <hmi_resources_default_image type="hmi_resources_default_image">
+              <RelativeSource value="HmiResources/Arrow-Up.svg" />
+              <OriginalSource value="pack://application:,,,/ESG.SharkPLC.IDE.HmiGraphicEditor;component/Resources/Images/up.svg" />
+              <Name>Arrow-Up.svg</Name>
+              <Id>af866444-e049-460d-998e-52d054922437</Id>
+              <items />
+            </hmi_resources_default_image>
+            <hmi_resources_default_image type="hmi_resources_default_image">
+              <RelativeSource value="HmiResources/Arrow-Down.svg" />
+              <OriginalSource value="pack://application:,,,/ESG.SharkPLC.IDE.HmiGraphicEditor;component/Resources/Images/down.svg" />
+              <Name>Arrow-Down.svg</Name>
+              <Id>0c94cba4-c4a5-4958-8855-a3bc226610e3</Id>
+              <items />
+            </hmi_resources_default_image>
+            <hmi_resources_default_image type="hmi_resources_default_image">
+              <RelativeSource value="HmiResources/Gadget-TPG.svg" />
+              <OriginalSource value="pack://application:,,,/ESG.SharkPLC.IDE.HmiGraphicEditor;component/Resources/Images/gadget_tpg.svg" />
+              <Name>Gadget-TPG.svg</Name>
+              <Id>dd373f0e-d93f-4346-8205-03f1ddebc0e2</Id>
+              <items />
+            </hmi_resources_default_image>
+            <hmi_resources_default_image type="hmi_resources_default_image">
+              <RelativeSource value="HmiResources/Symbol-Plus.svg" />
+              <OriginalSource value="pack://application:,,,/ESG.SharkPLC.IDE.HmiGraphicEditor;component/Resources/Images/plus.svg" />
+              <Name>Symbol-Plus.svg</Name>
+              <Id>a2931aca-79c0-4df5-8586-b54271046c24</Id>
+              <items />
+            </hmi_resources_default_image>
+            <hmi_resources_default_image type="hmi_resources_default_image">
+              <RelativeSource value="HmiResources/Symbol-Minus.svg" />
+              <OriginalSource value="pack://application:,,,/ESG.SharkPLC.IDE.HmiGraphicEditor;component/Resources/Images/minus.svg" />
+              <Name>Symbol-Minus.svg</Name>
+              <Id>e14a67f3-0932-47c8-b6e3-dacc0a6dd599</Id>
+              <items />
+            </hmi_resources_default_image>
+          </items>
+        </hmi_resources_default_directory>
+      </items>
+    </hmi_resources_root_directory>
+    <hmi_graphic_template type="hmi_graphic_template">
+      <Name>Web</Name>
+      <Type>PLC</Type>
+      <AssociatedPlc id="20636bf6-c082-4a5e-9458-b1f7cc1d6cc0" />
+      <PageResolution type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GraphicEditorPageResolution" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" Width="1024" Height="600" Editable="true" />
+      <DocumentStreamPath>78dfd8e3-f94e-4821-a0ad-b64e8bdee6fa.ghmi</DocumentStreamPath>
+      <HeaderHeightPct>0</HeaderHeightPct>
+      <Id>78dfd8e3-f94e-4821-a0ad-b64e8bdee6fa</Id>
+      <items />
+    </hmi_graphic_template>
+  </items>
+</hmi_project>

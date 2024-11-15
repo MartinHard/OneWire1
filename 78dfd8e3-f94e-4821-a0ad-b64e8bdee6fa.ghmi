@@ -1,0 +1,2822 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hmiGraphicTemplate xmlns:r="http://dev.rcware.eu/serialization/references" xmlns="http://dev.rcware.eu/shark-ide-2">
+  <pages>
+    <GraphicEditorPage r:def="47">
+      <Background>#FFA7A7A7</Background>
+      <Id>0f0fc63c-5fca-40ef-90ea-88bb7ac52edd</Id>
+      <Title>Uvod</Title>
+      <UserGroup>1</UserGroup>
+      <Height>600</Height>
+      <Width>1024</Width>
+      <Gadgets>
+        <GadgetBase TypeId="rectangle">
+          <Background>#FFBDCADE</Background>
+          <CornerRadius>10</CornerRadius>
+          <Name>Rectangle</Name>
+          <Height>210</Height>
+          <Width>210</Width>
+          <Top>350</Top>
+          <Left>30</Left>
+          <ZIndex>0</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.GadgetStyles" s="2" r:def="1" />
+              <ii p="Name" s="1" r:def="2" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.Tooltip" s="1" r:def="3" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.MinWidth" s="1" r:def="4" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.MinHeight" s="1" r:def="5" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="text">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Sever:</Text>
+          <Name>Text</Name>
+          <Height>30</Height>
+          <Width>100</Width>
+          <Top>360</Top>
+          <Left>40</Left>
+          <ZIndex>1</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.Width" s="1" r:def="6" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.Height" s="1" r:def="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.Background" s="1" r:def="8" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.BorderColor" s="1" r:def="9" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.BorderThickness" s="1" r:def="10" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.CornerRadius" s="1" r:def="11" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.FontSize" s="1" r:def="12" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.FontFamily" s="1" r:def="13" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.BoldText" s="1" r:def="14" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.ItalicText" s="1" r:def="15" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.Foreground" s="1" r:def="16" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.VerticalAlignment" s="1" r:def="17" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.HorizontalAlignment" s="1" r:def="18" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.ImageVerticalAlignment" s="1" r:def="19" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.ImageHorizontalAlignment" s="1" r:def="20" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="text">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Jih:</Text>
+          <Name>Text</Name>
+          <Height>30</Height>
+          <Width>100</Width>
+          <Top>400</Top>
+          <Left>40</Left>
+          <ZIndex>2</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="dateTimeIndicator">
+          <Background>#FF324F7B</Background>
+          <FontSize>24</FontSize>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.DeviceRTCLink" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" />
+          <Format>d.m.Y H:M</Format>
+          <Name>DateTime Indicator</Name>
+          <Height>60</Height>
+          <Width>210</Width>
+          <Top>10</Top>
+          <Left>800</Left>
+          <ZIndex>3</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.Text" s="1" r:def="21" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.Source" s="1" r:def="22" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.Stretch" s="1" r:def="23" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.AutomatedSpaces" s="1" r:def="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$temp_sever_filtered$" module="OneWire1" />
+          </Variable>
+          <Unit>°C</Unit>
+          <Format>##.#</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>100</Width>
+          <Top>360</Top>
+          <Left>130</Left>
+          <ZIndex>4</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="21" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.Format" s="1" r:def="25" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$temp_jih_filtered$" module="OneWire1" />
+          </Variable>
+          <Unit>°C</Unit>
+          <Format>##.#</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>100</Width>
+          <Top>400</Top>
+          <Left>130</Left>
+          <ZIndex>5</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="21" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="25" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Venku:</Text>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$temp_venku$" module="OneWire1" r:def="26" />
+          </Variable>
+          <Unit>°C</Unit>
+          <Format>##.#</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>110</Width>
+          <Top>10</Top>
+          <Left>530</Left>
+          <ZIndex>6</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="25" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Garáž:</Text>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$garaz_filtered$" module="OneWire1" r:def="28" />
+          </Variable>
+          <Unit>°C</Unit>
+          <Format>##.#</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>110</Width>
+          <Top>10</Top>
+          <Left>410</Left>
+          <ZIndex>7</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="25" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Obývák:</Text>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$obyvak_filtered$" module="OneWire1" r:def="27" />
+          </Variable>
+          <Unit>°C</Unit>
+          <Format>##.#</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>110</Width>
+          <Top>10</Top>
+          <Left>290</Left>
+          <ZIndex>8</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="25" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="chart">
+          <Background>#FF324F7B</Background>
+          <BorderColor>#FFE1484E</BorderColor>
+          <BorderThickness>3</BorderThickness>
+          <CornerRadius>0</CornerRadius>
+          <ChartMappings type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.ChartMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor">
+            <AxisCollection>
+              <Axis Id="Teplota" r:type="21335138-a32e-41fd-b409-4f49de60d668" />
+            </AxisCollection>
+            <SeriesCollection>
+              <Series Thickness="1" Name="Venku" Inheritance="2" Text="Venku" FormatString="##.#" YAxisRef="Teplota" Color="#FFDA2128" r:type="e2df7ac1-5b41-4b92-aa42-c61c5ee4f88c">
+                <Variable r:type="f5cba30f-ce04-454e-b073-fe6b473d8723">
+                  <Reference r:ref="26" />
+                </Variable>
+              </Series>
+              <Series Thickness="1" Name="Obyvak" Inheritance="6" Text="Obyvak" FormatString="##.#" YAxisRef="Teplota" Color="#FFF57F20" r:type="e2df7ac1-5b41-4b92-aa42-c61c5ee4f88c">
+                <Variable r:type="f5cba30f-ce04-454e-b073-fe6b473d8723">
+                  <Reference r:ref="27" />
+                </Variable>
+              </Series>
+              <Series Thickness="1" Name="Garaz" Inheritance="6" Text="Garáž" FormatString="##.#" YAxisRef="Teplota" Color="#FFFCCC00" r:type="e2df7ac1-5b41-4b92-aa42-c61c5ee4f88c">
+                <Variable r:type="f5cba30f-ce04-454e-b073-fe6b473d8723">
+                  <Reference r:ref="28" />
+                </Variable>
+              </Series>
+            </SeriesCollection>
+          </ChartMappings>
+          <Duration>PT23H59M</Duration>
+          <SampleRate>PT1M</SampleRate>
+          <Name>Chart</Name>
+          <Height>380</Height>
+          <Width>510</Width>
+          <Top>60</Top>
+          <Left>280</Left>
+          <ZIndex>9</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.ChartLegend" s="1" r:def="35" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.ChartType" s="1" r:def="36" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="digitalsetter">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$ovl_sv_terasa$" module="OneWire1" />
+          </Variable>
+          <StatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s value="0" text="Terasa OFF" isDefaultState="true" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+              <s value="1" text="Terasa ON" Color="#FFFFFFFF" BackgroundColor="#FF80D22D" FontFamily="Open Sans" FontSize="12" />
+            </m>
+          </StatesMapping>
+          <Name>Digital Setter</Name>
+          <Height>50</Height>
+          <Width>100</Width>
+          <Top>290</Top>
+          <Left>130</Left>
+          <ZIndex>10</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="digitalsetter">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$ovl_sv_predgaraz$" module="OneWire1" />
+          </Variable>
+          <StatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s value="0" text="Pred Garazi OFF" isDefaultState="true" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+              <s value="1" text="Pred Garazi ON" Color="#FFFFFFFF" BackgroundColor="#FF80D22D" FontFamily="Open Sans" FontSize="12" />
+            </m>
+          </StatesMapping>
+          <Name>Digital Setter</Name>
+          <Height>50</Height>
+          <Width>100</Width>
+          <Top>290</Top>
+          <ZIndex>11</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="text">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Puda:</Text>
+          <Name>Text</Name>
+          <Height>30</Height>
+          <Width>100</Width>
+          <Top>440</Top>
+          <Left>40</Left>
+          <ZIndex>12</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$temp_puda$" module="OneWire1" />
+          </Variable>
+          <Unit>°C</Unit>
+          <Format>##.#</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>100</Width>
+          <Top>440</Top>
+          <Left>130</Left>
+          <ZIndex>13</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="21" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="25" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>10min Cnt:</Text>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$runcnt$" module="OneWire1" />
+          </Variable>
+          <Format>#####</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>120</Width>
+          <Top>510</Top>
+          <Left>280</Left>
+          <ZIndex>14</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="text">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Pracovna:</Text>
+          <Name>Text</Name>
+          <Height>30</Height>
+          <Width>100</Width>
+          <Top>480</Top>
+          <Left>40</Left>
+          <ZIndex>15</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Celková spotřeba:</Text>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$hw$.$pro380-mod_total_active_energy$" module="OneWire1" r:def="31" />
+          </Variable>
+          <Unit>kWh</Unit>
+          <Format>##.###</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>210</Width>
+          <Top>310</Top>
+          <Left>800</Left>
+          <ZIndex>16</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Aktualní spotřeba Síť:</Text>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$hw$.$pro380-mod_total_active_power$" module="OneWire1" r:def="32" />
+          </Variable>
+          <Unit>kW</Unit>
+          <Format>#.###</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>210</Width>
+          <Top>120</Top>
+          <Left>800</Left>
+          <ZIndex>17</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="text">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Pokoj P+D:</Text>
+          <Name>Text</Name>
+          <Height>30</Height>
+          <Width>100</Width>
+          <Top>520</Top>
+          <Left>40</Left>
+          <ZIndex>18</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$temppd$" module="OneWire1" />
+          </Variable>
+          <Unit>°C</Unit>
+          <Format>##.#</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>100</Width>
+          <Top>520</Top>
+          <Left>130</Left>
+          <ZIndex>19</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="21" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="25" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Celková výroba:</Text>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$hw$.$sdm120m_fve_fve_energy$" module="OneWire1" r:def="33" />
+          </Variable>
+          <Unit>kWh</Unit>
+          <Format>##.###</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>210</Width>
+          <Top>270</Top>
+          <Left>800</Left>
+          <ZIndex>20</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Aktualní výroba:</Text>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$fve_power$" module="OneWire1" r:def="34" />
+          </Variable>
+          <Unit>kW</Unit>
+          <Format>#.###</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>210</Width>
+          <Top>160</Top>
+          <Left>800</Left>
+          <ZIndex>21</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="button">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Energie</Text>
+          <PageId>87474a8b-e170-4c0c-a905-f2fd7684ce39</PageId>
+          <Name>Link</Name>
+          <Height>30</Height>
+          <Width>120</Width>
+          <Top>10</Top>
+          <ZIndex>22</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.ButtonAction" s="1" r:def="37" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.Url" s="1" r:def="38" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="digitalsetter">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$main$.$sv_dole$" module="OneWire1" />
+            <ProgramReference fullName="$main$" module="OneWire1" r:def="46" />
+          </Variable>
+          <StatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s value="0" text="Světlo Obyvak" isDefaultState="true" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+              <s value="1" text="Světlo Obyvak" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+            </m>
+          </StatesMapping>
+          <Name>Digital Setter</Name>
+          <Height>50</Height>
+          <Width>100</Width>
+          <Top>50</Top>
+          <ZIndex>23</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="digitalsetter">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$di_3_2_virtual$" module="OneWire1" />
+          </Variable>
+          <StatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s value="0" text="Světlo Krb" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+              <s value="1" text="Světlo Krb" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+            </m>
+          </StatesMapping>
+          <Name>Digital Setter</Name>
+          <Height>50</Height>
+          <Width>100</Width>
+          <Top>110</Top>
+          <ZIndex>24</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="digitalindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$hw$.$neuron l523_ssr_svetladole$" module="OneWire1" />
+          </Variable>
+          <StatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s value="0" text="OFF" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" r:def="29" />
+              <s value="1" text="ON" Color="#FFFFFFFF" BackgroundColor="#FF80D22D" FontFamily="Open Sans" FontSize="12" r:def="30" />
+            </m>
+          </StatesMapping>
+          <Name>Digital Indicator</Name>
+          <Height>50</Height>
+          <Width>100</Width>
+          <Top>50</Top>
+          <Left>130</Left>
+          <ZIndex>25</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="digitalindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$hw$.$neuron l523_ro_2x01$" module="OneWire1" />
+          </Variable>
+          <StatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s r:ref="29" />
+              <s r:ref="30" />
+            </m>
+          </StatesMapping>
+          <Name>Digital Indicator</Name>
+          <Height>50</Height>
+          <Width>100</Width>
+          <Top>110</Top>
+          <Left>130</Left>
+          <ZIndex>26</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="digitalindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$hw$.$neuron l523_ro_2x02$" module="OneWire1" />
+          </Variable>
+          <StatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s r:ref="29" />
+              <s r:ref="30" />
+            </m>
+          </StatesMapping>
+          <Name>Digital Indicator</Name>
+          <Height>50</Height>
+          <Width>100</Width>
+          <Top>170</Top>
+          <Left>130</Left>
+          <ZIndex>27</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="digitalsetter">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$di_3_3_virtual$" module="OneWire1" />
+          </Variable>
+          <StatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s value="0" text="Světlo Kuchyň" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+              <s value="1" text="Světlo Kuchyň" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+            </m>
+          </StatesMapping>
+          <Name>Digital Setter</Name>
+          <Height>50</Height>
+          <Width>100</Width>
+          <Top>170</Top>
+          <ZIndex>28</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Denní výroba:</Text>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$fve_dayproducing$" module="OneWire1" r:def="39" />
+          </Variable>
+          <Unit>kWh</Unit>
+          <Format>#.###</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>210</Width>
+          <Top>230</Top>
+          <Left>800</Left>
+          <ZIndex>29</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="digitalsetter">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$di_3_4_virtual$" module="OneWire1" />
+          </Variable>
+          <StatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s value="0" text="Světlo Schody" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+              <s value="1" text="Světlo Schody" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+            </m>
+          </StatesMapping>
+          <Name>Digital Setter</Name>
+          <Height>50</Height>
+          <Width>100</Width>
+          <Top>230</Top>
+          <ZIndex>30</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="digitalindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$hw$.$neuron l523_ssr_sv_hornichodba$" module="OneWire1" />
+          </Variable>
+          <StatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s r:ref="29" />
+              <s r:ref="30" />
+            </m>
+          </StatesMapping>
+          <Name>Digital Indicator</Name>
+          <Height>50</Height>
+          <Width>100</Width>
+          <Top>230</Top>
+          <Left>130</Left>
+          <ZIndex>31</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Celková spotřeba:</Text>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$power_consumption$" module="OneWire1" r:def="40" />
+          </Variable>
+          <Unit>kW</Unit>
+          <Format>#.###</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>210</Width>
+          <Top>80</Top>
+          <Left>800</Left>
+          <ZIndex>32</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$temp_pracovna$" module="OneWire1" />
+          </Variable>
+          <Unit>°C</Unit>
+          <Format>##.#</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>100</Width>
+          <Top>480</Top>
+          <Left>130</Left>
+          <ZIndex>33</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="21" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="25" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Vodoměr:</Text>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$vodomer_litry$" module="OneWire1" />
+          </Variable>
+          <Unit>l</Unit>
+          <Format>#</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>210</Width>
+          <Top>360</Top>
+          <Left>800</Left>
+          <ZIndex>34</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="digitalindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$hw$.$device_kotel$" module="OneWire1" r:def="41" />
+          </Variable>
+          <StatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s value="0" text="Netopí" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" r:def="42" />
+              <s value="1" text="Topí" Color="#FFFFFFFF" BackgroundColor="#FF80D22D" FontFamily="Open Sans" FontSize="12" r:def="43" />
+            </m>
+          </StatesMapping>
+          <Name>Digital Indicator</Name>
+          <Height>30</Height>
+          <Width>100</Width>
+          <Top>10</Top>
+          <Left>180</Left>
+          <ZIndex>35</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Kotel vystup:</Text>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$hw$.$xg18_kotel_vystup$" module="OneWire1" />
+          </Variable>
+          <Unit>°C</Unit>
+          <Format>##.#</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>140</Width>
+          <Top>470</Top>
+          <Left>280</Left>
+          <ZIndex>36</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="25" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Kotel vratka:</Text>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$hw$.$xg18_kotel_vratka$" module="OneWire1" />
+          </Variable>
+          <Unit>°C</Unit>
+          <Format>##.#</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>140</Width>
+          <Top>470</Top>
+          <Left>420</Left>
+          <ZIndex>37</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="25" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="digitalindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$hw$.$neuron l523_rekuperace$" module="OneWire1" r:def="44" />
+          </Variable>
+          <StatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s value="0" text="Vetrani Vypnuto" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+              <s value="1" text="Větraní" Color="#FFFFFFFF" BackgroundColor="#FF80D22D" FontFamily="Open Sans" FontSize="12" />
+            </m>
+          </StatesMapping>
+          <Name>Digital Indicator</Name>
+          <Height>30</Height>
+          <Width>100</Width>
+          <Top>10</Top>
+          <Left>650</Left>
+          <ZIndex>38</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="digitalsetter">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$zaluzie_otevrit$" module="OneWire1" />
+          </Variable>
+          <StatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s value="0" text="Zvednout" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+              <s value="1" text="Otevírám" Color="#FF4CBE9D" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+            </m>
+          </StatesMapping>
+          <Name>Digital Setter</Name>
+          <Height>50</Height>
+          <Width>100</Width>
+          <Top>440</Top>
+          <Left>820</Left>
+          <ZIndex>39</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="digitalsetter">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$zaluzie_zavrit$" module="OneWire1" />
+          </Variable>
+          <StatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s value="0" text="Spustit" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+              <s value="1" text="Zavírám" Color="#FF4CBE9D" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+            </m>
+          </StatesMapping>
+          <Name>Digital Setter</Name>
+          <Height>50</Height>
+          <Width>100</Width>
+          <Top>500</Top>
+          <Left>820</Left>
+          <ZIndex>40</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="digitalsetter">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$otevrit_kousek$" module="OneWire1" />
+          </Variable>
+          <StatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s value="0" text="Pootočit" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+              <s value="1" text="Pootočeno" Color="#FF4CBE9D" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+            </m>
+          </StatesMapping>
+          <Name>Digital Setter</Name>
+          <Height>50</Height>
+          <Width>70</Width>
+          <Top>440</Top>
+          <Left>930</Left>
+          <ZIndex>41</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="digitalsetter">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$zavrit_kousek$" module="OneWire1" />
+          </Variable>
+          <StatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s value="0" text="Pouzavřít" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+              <s value="1" text="Pouzavřeno" Color="#FF4CBE9D" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+            </m>
+          </StatesMapping>
+          <Name>Digital Setter</Name>
+          <Height>50</Height>
+          <Width>70</Width>
+          <Top>500</Top>
+          <Left>930</Left>
+          <ZIndex>42</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="digitalindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$hw$.$neuron l523_pir_vstupchodba$" module="OneWire1" />
+          </Variable>
+          <StatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s value="0" text="PIR OFF" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+              <s value="1" text="PIR ON" Color="#FFFFFFFF" BackgroundColor="#FF80D22D" FontFamily="Open Sans" FontSize="12" />
+            </m>
+          </StatesMapping>
+          <Name>Digital Indicator</Name>
+          <Height>50</Height>
+          <Width>100</Width>
+          <Top>470</Top>
+          <Left>630</Left>
+          <ZIndex>43</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="dateTimeIndicator">
+          <Background>#FF324F7B</Background>
+          <FontSize>24</FontSize>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$vypnutichodba$" module="OneWire1" />
+          </Variable>
+          <Format>S</Format>
+          <Name>DateTime Indicator</Name>
+          <Height>40</Height>
+          <Width>100</Width>
+          <Top>530</Top>
+          <Left>630</Left>
+          <ZIndex>44</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="21" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+      </Gadgets>
+    </GraphicEditorPage>
+    <GraphicEditorPage r:def="48">
+      <Background>#FFA7A7A7</Background>
+      <Id>87474a8b-e170-4c0c-a905-f2fd7684ce39</Id>
+      <Title>Energie</Title>
+      <UserGroup>1</UserGroup>
+      <Height>600</Height>
+      <Width>1024</Width>
+      <Gadgets>
+        <GadgetBase TypeId="rectangle">
+          <Background>#FFB8DD81</Background>
+          <Name>Rectangle</Name>
+          <Height>140</Height>
+          <Width>230</Width>
+          <Top>110</Top>
+          <ZIndex>0</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="11" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="rectangle">
+          <Background>#FFB8DD81</Background>
+          <Name>Rectangle</Name>
+          <Height>150</Height>
+          <Width>230</Width>
+          <Top>270</Top>
+          <ZIndex>1</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="11" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Celková spotřeba:</Text>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference r:ref="31" />
+          </Variable>
+          <Unit>kWh</Unit>
+          <Format>##.###</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>210</Width>
+          <Top>180</Top>
+          <Left>30</Left>
+          <ZIndex>2</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Aktualní spotřeba:</Text>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference r:ref="32" />
+          </Variable>
+          <Unit>kW</Unit>
+          <Format>#.###</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>210</Width>
+          <Top>140</Top>
+          <Left>30</Left>
+          <ZIndex>3</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Celková výroba:</Text>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference r:ref="33" />
+          </Variable>
+          <Unit>kWh</Unit>
+          <Format>##.###</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>210</Width>
+          <Top>380</Top>
+          <Left>30</Left>
+          <ZIndex>4</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Aktualní výroba:</Text>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference r:ref="34" />
+          </Variable>
+          <Unit>kW</Unit>
+          <Format>#.###</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>210</Width>
+          <Top>300</Top>
+          <Left>30</Left>
+          <ZIndex>5</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="dateTimeIndicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.DeviceRTCLink" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" />
+          <Format>d.m.Y H:M</Format>
+          <Name>DateTime Indicator</Name>
+          <Height>30</Height>
+          <Width>120</Width>
+          <Top>10</Top>
+          <Left>890</Left>
+          <ZIndex>6</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="21" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="chart">
+          <Background>#FF324F7B</Background>
+          <BorderColor>#FFDA2128</BorderColor>
+          <BorderThickness>2</BorderThickness>
+          <CornerRadius>0</CornerRadius>
+          <ChartMappings type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.ChartMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor">
+            <AxisCollection>
+              <Axis Id="Energie" r:type="21335138-a32e-41fd-b409-4f49de60d668" />
+            </AxisCollection>
+            <SeriesCollection>
+              <Series Thickness="1" Name="Spotřeba" Text="Spotřeba" FormatString="##.###" YAxisRef="Energie" Color="#FFDA2128" r:type="e2df7ac1-5b41-4b92-aa42-c61c5ee4f88c">
+                <Variable r:type="f5cba30f-ce04-454e-b073-fe6b473d8723">
+                  <Reference r:ref="32" />
+                </Variable>
+              </Series>
+              <Series Thickness="1" Name="Výroba" Text="Výroba" FormatString="##.###" YAxisRef="Energie" Color="#FF8FC73E" r:type="e2df7ac1-5b41-4b92-aa42-c61c5ee4f88c">
+                <Variable r:type="f5cba30f-ce04-454e-b073-fe6b473d8723">
+                  <Reference r:ref="34" />
+                </Variable>
+              </Series>
+            </SeriesCollection>
+          </ChartMappings>
+          <Duration>P1D</Duration>
+          <SampleRate>PT1M</SampleRate>
+          <Name>Chart</Name>
+          <Height>370</Height>
+          <Width>740</Width>
+          <Top>60</Top>
+          <Left>260</Left>
+          <ZIndex>7</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="35" />
+              <ii r:ref="36" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="button">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Uvod</Text>
+          <PageId>0f0fc63c-5fca-40ef-90ea-88bb7ac52edd</PageId>
+          <Name>Link</Name>
+          <Height>30</Height>
+          <Width>120</Width>
+          <Top>10</Top>
+          <ZIndex>8</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="37" />
+              <ii r:ref="38" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Denní výroba:</Text>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference r:ref="39" />
+          </Variable>
+          <Unit>kWh</Unit>
+          <Format>#.###</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>210</Width>
+          <Top>340</Top>
+          <Left>30</Left>
+          <ZIndex>9</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="valueindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Celková spotřeba:</Text>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference r:ref="40" />
+          </Variable>
+          <Unit>kW</Unit>
+          <Format>#.###</Format>
+          <Name>Value Indicator</Name>
+          <Height>30</Height>
+          <Width>210</Width>
+          <Top>60</Top>
+          <Left>30</Left>
+          <ZIndex>10</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+              <ii r:ref="24" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="text">
+          <Background>#FFB8DD81</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>FVE</Text>
+          <Name>Text</Name>
+          <Height>20</Height>
+          <Width>40</Width>
+          <Top>270</Top>
+          <Left>40</Left>
+          <ZIndex>11</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="text">
+          <Background>#FFB8DD81</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Síť</Text>
+          <Name>Text</Name>
+          <Height>20</Height>
+          <Width>40</Width>
+          <Top>110</Top>
+          <Left>40</Left>
+          <ZIndex>12</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="analogsetter">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Text>Teplota</Text>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$settemp$" module="OneWire1" />
+          </Variable>
+          <Unit>°C</Unit>
+          <Format>##.#</Format>
+          <DecreaseButtonSource id="0c94cba4-c4a5-4958-8855-a3bc226610e3" />
+          <DecreaseButtonStretch>Stretch</DecreaseButtonStretch>
+          <IncreaseButtonSource id="af866444-e049-460d-998e-52d054922437" />
+          <IncreaseButtonStretch>Stretch</IncreaseButtonStretch>
+          <MinValue>5</MinValue>
+          <MaxValue>30</MaxValue>
+          <StepValue>0.5</StepValue>
+          <Name>Analog Setter</Name>
+          <Height>30</Height>
+          <Width>210</Width>
+          <Top>440</Top>
+          <Left>30</Left>
+          <ZIndex>13</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="25" />
+              <ii r:ref="24" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.ValueVisible" s="1" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.InteractiveValue" s="1" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.DecreaseButtonSource" s="1" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.DecreaseButtonStretch" s="1" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.IncreaseButtonSource" s="1" />
+              <ii p="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.GadgetProperties.IncreaseButtonStretch" s="1" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="digitalindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference r:ref="41" />
+          </Variable>
+          <StatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s r:ref="42" />
+              <s r:ref="43" />
+            </m>
+          </StatesMapping>
+          <Name>Digital Indicator</Name>
+          <Height>30</Height>
+          <Width>100</Width>
+          <Top>480</Top>
+          <Left>30</Left>
+          <ZIndex>14</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="digitalindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference r:ref="44" />
+          </Variable>
+          <StatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s value="0" text="Ventilátor OFF" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+              <s value="1" text="Ventilátor ON" Color="#FFFFFFFF" BackgroundColor="#FF80D22D" FontFamily="Open Sans" FontSize="12" />
+            </m>
+          </StatesMapping>
+          <Name>Digital Indicator</Name>
+          <Height>30</Height>
+          <Width>100</Width>
+          <Top>440</Top>
+          <Left>400</Left>
+          <ZIndex>15</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="digitalsetter">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$rekuperacerucne$" module="OneWire1" />
+          </Variable>
+          <StatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s value="0" text="Větrání OFF" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+              <s value="1" text="Větrání ON" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+            </m>
+          </StatesMapping>
+          <Name>Digital Setter</Name>
+          <Height>30</Height>
+          <Width>100</Width>
+          <Top>480</Top>
+          <Left>400</Left>
+          <ZIndex>16</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="digitalindicator">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$rezimrekuperace$" module="OneWire1" r:def="45" />
+          </Variable>
+          <StatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s value="0" text="Ručně" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+              <s value="1" text="Letní" Color="#FFFFFFFF" BackgroundColor="#FF80D22D" FontFamily="Open Sans" FontSize="12" />
+            </m>
+          </StatesMapping>
+          <Name>Digital Indicator</Name>
+          <Height>30</Height>
+          <Width>100</Width>
+          <Top>440</Top>
+          <Left>270</Left>
+          <ZIndex>17</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="digitalsetter">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference r:ref="45" />
+          </Variable>
+          <StatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s value="0" text="Rekuperace OVL" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+              <s value="1" text="Rekuperace OVL" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" />
+            </m>
+          </StatesMapping>
+          <Name>Digital Setter</Name>
+          <Height>30</Height>
+          <Width>100</Width>
+          <Top>480</Top>
+          <Left>270</Left>
+          <ZIndex>18</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="6" />
+              <ii r:ref="7" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+        <GadgetBase TypeId="tpgbool">
+          <Background>#FF324F7B</Background>
+          <Foreground>#FFFFFFFF</Foreground>
+          <Source id="dd373f0e-d93f-4346-8205-03f1ddebc0e2" />
+          <Variable type="ESG.SharkPLC.IDE.Definitions.VariableModelLink" asm="ESG.SharkPLC.IDE.Hmi.Base">
+            <Reference var="$main$.$t17_boolean_scheduler$" field=".$base$" module="OneWire1" />
+            <ProgramReference r:ref="46" />
+          </Variable>
+          <BoolTpgStatesMapping type="ESG.SharkPLC.IDE.Definitions.HmiGraphicEditor.HmiGraphicBoolTPGStateMappings" asm="ESG.SharkPLC.IDE.HmiGraphicEditor" mappingType="Value">
+            <m>
+              <s value="0" text="Vetrani OFF" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" IsValueEditable="false" />
+              <s value="1" text="Vetrani ON" Color="#FFFFFFFF" BackgroundColor="#00FFFFFF" FontFamily="Open Sans" FontSize="12" IsValueEditable="false" />
+            </m>
+          </BoolTpgStatesMapping>
+          <Name>TPG Bool</Name>
+          <Height>70</Height>
+          <Width>180</Width>
+          <Top>440</Top>
+          <Left>520</Left>
+          <ZIndex>19</ZIndex>
+          <MinWidth>10</MinWidth>
+          <MinHeight>10</MinHeight>
+          <PropertyInheritanceInfo type="ESG.SharkPLC.IDE.Definitions.Hmi.Base.HmiPropertyInheritanceInfo" asm="ESG.SharkPLC.IDE.Hmi.Base" v="2">
+            <iis>
+              <ii r:ref="1" />
+              <ii r:ref="2" />
+              <ii r:ref="3" />
+              <ii r:ref="4" />
+              <ii r:ref="5" />
+              <ii r:ref="8" />
+              <ii r:ref="9" />
+              <ii r:ref="10" />
+              <ii r:ref="11" />
+              <ii r:ref="12" />
+              <ii r:ref="13" />
+              <ii r:ref="14" />
+              <ii r:ref="15" />
+              <ii r:ref="16" />
+              <ii r:ref="17" />
+              <ii r:ref="18" />
+              <ii r:ref="19" />
+              <ii r:ref="20" />
+              <ii r:ref="22" />
+              <ii r:ref="23" />
+            </iis>
+          </PropertyInheritanceInfo>
+        </GadgetBase>
+      </Gadgets>
+    </GraphicEditorPage>
+  </pages>
+  <templatePages>
+    <GraphicEditorPage r:ref="47" r:type="ffb78631-b8d2-4f9c-a903-e5558feaa44a" />
+    <GraphicEditorPage r:ref="48" r:type="ffb78631-b8d2-4f9c-a903-e5558feaa44a" />
+  </templatePages>
+  <resourceInfo>
+    <HmiResourceInfo ResourceGuid="af866444-e049-460d-998e-52d054922437" ResourceName="Arrow-Up.svg" ResourcePath="pack://application:,,,/ESG.SharkPLC.IDE.HmiGraphicEditor;component/Resources/Images/up.svg" IsDefaultResource="true" />
+    <HmiResourceInfo ResourceGuid="0c94cba4-c4a5-4958-8855-a3bc226610e3" ResourceName="Arrow-Down.svg" ResourcePath="pack://application:,,,/ESG.SharkPLC.IDE.HmiGraphicEditor;component/Resources/Images/down.svg" IsDefaultResource="true" />
+    <HmiResourceInfo ResourceGuid="dd373f0e-d93f-4346-8205-03f1ddebc0e2" ResourceName="Gadget-TPG.svg" ResourcePath="pack://application:,,,/ESG.SharkPLC.IDE.HmiGraphicEditor;component/Resources/Images/gadget_tpg.svg" IsDefaultResource="true" />
+  </resourceInfo>
+</hmiGraphicTemplate>

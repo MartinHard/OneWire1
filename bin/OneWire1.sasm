@@ -1,0 +1,1831 @@
+/*
+ *	PROGRAM DECLARATION main
+ */
+prog $OneWire1$.$main$
+()
+
+code
+## 134 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$hw$.$Neuron L523_SSR_SV_VstupChodba$)
+	RDUB
+	TNZ
+	NOT
+	LUD			1
+	AND
+	LA			address($OneWire1$.$main$.$tmparg_50$)
+	WRUB
+## 136 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_50$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$MonostableFlipFlop$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_0$.$MonostableFlipFlop$.$In$)
+	ADD
+	WRUB
+## 136 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Core$.$Lib$.$Core$.$V1_0$.$MonostableFlipFlop$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$MonostableFlipFlop$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_0$.$MonostableFlipFlop$.$main$)
+;;call end
+## 138 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$MonostableFlipFlop$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_0$.$MonostableFlipFlop$.$Out$)
+	ADD
+	RDUB
+	TNZ
+	NOT
+	LUD			1
+	AND
+	LA			address($OneWire1$.$main$.$tmparg_51$)
+	WRUB
+## 144 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$hw$.$Neuron L523_PIR_VstupChodba$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$tmparg_51$)
+	RDUB
+	TNZ
+	AND
+	LA			address($OneWire1$.$main$.$tmparg_44$)
+	WRUB
+## 146 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_44$)
+	RDUB
+	TNZ
+	CUD
+	LUD			1
+	AND
+	LA			address($OneWire1$.$main$.$tmparg_49$)
+	WRUB
+## 148 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_49$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$TOF_0$)
+	LUD			offset($Lib.Iec$.$TOF$.$IN$)
+	ADD
+	WRUB
+## 148 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Iec$.$TOF$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$TOF_0$)
+	CALL			address($Lib.Iec$.$TOF$.$main$)
+;;call end
+## 150 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$TOF_0$)
+	LUD			offset($Lib.Iec$.$TOF$.$ET$)
+	ADD
+	RDSQ
+	LA			address($OneWire1$.$VypnutiChodba$)
+	WRSQ
+## 152 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$TOF_0$)
+	LUD			offset($Lib.Iec$.$TOF$.$Q$)
+	ADD
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$hw$.$Neuron L523_SSR_SV_VstupChodba$)
+	WRUB
+## 154 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Hvac$.$Lib$.$Hvac$.$V1_0$.$T17_Boolean_Scheduler$.$main$
+	LA			address($OneWire1$.$main$.$T17_Boolean_Scheduler$)
+	LUD			meth_ofs($main$, $Lib.Hvac$.$Lib$.$Hvac$.$V1_0$.$T17_Boolean_Scheduler$)
+	LA			address($OneWire1$.$main$.dyn_met)
+	LA			address($OneWire1$.$main$.dyn_obj)
+	CALL			address(DynMethodBind)
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.dyn_obj)
+	RDA
+	LA			address($OneWire1$.$main$.dyn_met)
+	RDA
+	CALLI			typeid($Lib.Hvac$.$Lib$.$Hvac$.$V1_0$.$T17_Boolean_Scheduler$.$main$)
+;;call end
+## 158 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$Zavrit_kousek$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$BD2_Pulse_Generator_2$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$.$Enable$)
+	ADD
+	WRUB
+## 158 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$BD2_Pulse_Generator_2$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$.$main$)
+;;call end
+## 162 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$Otevrit_kousek$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$BD2_Pulse_Generator_1$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$.$Enable$)
+	ADD
+	WRUB
+## 162 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$BD2_Pulse_Generator_1$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$.$main$)
+;;call end
+## 166 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$Zaluzie_Zavrit$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$BD2_Pulse_Generator_2$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$.$Out$)
+	ADD
+	RDUB
+	TNZ
+	OR
+	LA			address($OneWire1$.$main$.$tmparg_41$)
+	WRUB
+## 168 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$Zaluzie_Zavrit$)
+	RDUB
+	TNZ
+	NOT
+	LUD			1
+	AND
+	LA			address($OneWire1$.$main$.$tmparg_36$)
+	WRUB
+## 172 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$BD2_Pulse_Generator_1$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$.$Out$)
+	ADD
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$Zaluzie_Otevrit$)
+	RDUB
+	TNZ
+	OR
+	LA			address($OneWire1$.$main$.$tmparg_40$)
+	WRUB
+## 174 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_40$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$tmparg_36$)
+	RDUB
+	TNZ
+	AND
+	LA			address($OneWire1$.$main$.$tmparg_37$)
+	WRUB
+## 176 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_37$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$hw$.$Neuron L523_Zaluzie_P_Otevrit$)
+	WRUB
+## 178 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$Zaluzie_Otevrit$)
+	RDUB
+	TNZ
+	NOT
+	LUD			1
+	AND
+	LA			address($OneWire1$.$main$.$tmparg_39$)
+	WRUB
+## 180 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_39$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$tmparg_41$)
+	RDUB
+	TNZ
+	AND
+	LA			address($OneWire1$.$main$.$tmparg_38$)
+	WRUB
+## 182 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_38$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$hw$.$Neuron L523_Zaluzie_P_Zavrit$)
+	WRUB
+## 190 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$Temp_Venku$)
+	RDF
+	LA			address($OneWire1$.$Obyvak_filtered$)
+	RDF
+	TGT
+	LA			address($OneWire1$.$main$.$tmparg_34$)
+	WRUB
+## 192 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$Temp_Venku$)
+	RDF
+	LA			address($OneWire1$.$Obyvak_filtered$)
+	RDF
+	SUB
+	LA			address($OneWire1$.$main$.$tmparg_30$)
+	WRF
+## 194 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_30$)
+	RDF
+	LA			address($OneWire1$.$main$.$RozdilVstupu$)
+	RDF
+	TLE
+	LA			address($OneWire1$.$main$.$tmparg_31$)
+	WRUB
+## 196 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_31$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$RS$)
+	LUD			offset($Lib.Iec$.$RS$.$S$)
+	ADD
+	WRUB
+## 196 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_34$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$RS$)
+	LUD			offset($Lib.Iec$.$RS$.$R1$)
+	ADD
+	WRUB
+## 196 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Iec$.$RS$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$RS$)
+	CALL			address($Lib.Iec$.$RS$.$main$)
+;;call end
+## 200 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$T17_Boolean_Scheduler$)
+	LUD			offset($Lib.Hvac$.$Lib$.$Hvac$.$V1_0$.$T17_Boolean_Scheduler_Base$.$Out$)
+	ADD
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$RekuperaceRucne$)
+	RDUB
+	TNZ
+	OR
+	LA			address($OneWire1$.$main$.$tmparg_42$)
+	WRUB
+## 204 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_42$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$RS$)
+	LUD			offset($Lib.Iec$.$RS$.$Q1$)
+	ADD
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$RezimRekuperace$)
+	RDUB
+	TNZ
+	JZ			@i_1620
+	SWP			1
+@i_1620:
+	POP
+	LA			address($OneWire1$.$main$.$tmparg_43$)
+	WRUB
+## 206 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_43$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$hw$.$Neuron L523_Rekuperace$)
+	WRUB
+## 214 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$hw$.$xG18_Sever$)
+	RDF
+	LA			address($OneWire1$.$main$.$B86_Filter_2$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$In$)
+	ADD
+	WRF
+## 214 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$B86_Filter_2$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$main$)
+;;call end
+## 216 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$B86_Filter_2$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$Out$)
+	ADD
+	RDF
+	LA			address($OneWire1$.$Temp_Sever_Filtered$)
+	WRF
+## 224 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$Obyvak_filtered$)
+	RDF
+	LA			address($OneWire1$.$main$.$B31_Reverse_On_Off_Control_Sequence$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_1$.$B30_On_Off_Control_Sequence$.$x$)
+	ADD
+	WRF
+## 224 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$SetTemp$)
+	RDF
+	LA			address($OneWire1$.$main$.$B31_Reverse_On_Off_Control_Sequence$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_1$.$B30_On_Off_Control_Sequence$.$w$)
+	ADD
+	WRF
+## 224 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$TempHysteresis$)
+	RDF
+	LA			address($OneWire1$.$main$.$B31_Reverse_On_Off_Control_Sequence$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_1$.$B30_On_Off_Control_Sequence$.$Xp$)
+	ADD
+	WRF
+## 224 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Core$.$Lib$.$Core$.$V1_1$.$B31_Reverse_On_Off_Control_Sequence$.$main$
+	LA			address($OneWire1$.$main$.$B31_Reverse_On_Off_Control_Sequence$)
+	LUD			meth_ofs($main$, $Lib.Core$.$Lib$.$Core$.$V1_1$.$B31_Reverse_On_Off_Control_Sequence$)
+	LA			address($OneWire1$.$main$.dyn_met)
+	LA			address($OneWire1$.$main$.dyn_obj)
+	CALL			address(DynMethodBind)
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.dyn_obj)
+	RDA
+	LA			address($OneWire1$.$main$.dyn_met)
+	RDA
+	CALLI			typeid($Lib.Core$.$Lib$.$Core$.$V1_1$.$B31_Reverse_On_Off_Control_Sequence$.$main$)
+;;call end
+## 226 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$B31_Reverse_On_Off_Control_Sequence$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_1$.$B30_On_Off_Control_Sequence$.$Out$)
+	ADD
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$BD12_SwitchOnDelay$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD12_SwitchOnDelay$.$In$)
+	ADD
+	WRUB
+## 226 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Core$.$Lib$.$Core$.$V1_1$.$BD12_SwitchOnDelay$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$BD12_SwitchOnDelay$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD12_SwitchOnDelay$.$main$)
+;;call end
+## 228 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$BD12_SwitchOnDelay$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD12_SwitchOnDelay$.$Out$)
+	ADD
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$TOF$)
+	LUD			offset($Lib.Iec$.$TOF$.$IN$)
+	ADD
+	WRUB
+## 228 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Iec$.$TOF$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$TOF$)
+	CALL			address($Lib.Iec$.$TOF$.$main$)
+;;call end
+## 230 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$TOF$)
+	LUD			offset($Lib.Iec$.$TOF$.$Q$)
+	ADD
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$hw$.$Neuron L523_Cerpadlo_1NP$)
+	WRUB
+## 232 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$BD12_SwitchOnDelay$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD12_SwitchOnDelay$.$Out$)
+	ADD
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$hw$.$device_Kotel$)
+	WRUB
+## 236 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$dummy_jih$)
+	RDF
+	LA			address($OneWire1$.$main$.$B86_Filter_1$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$In$)
+	ADD
+	WRF
+## 236 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$B86_Filter_1$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$main$)
+;;call end
+## 238 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$B86_Filter_1$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$Out$)
+	ADD
+	RDF
+	LA			address($OneWire1$.$main$.$B86_Filter_2$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$Out$)
+	ADD
+	RDF
+	TGT
+	LA			address($OneWire1$.$main$.$tmparg_4$)
+	WRUB
+## 240 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_4$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$Out_Temp_source$)
+	WRUB
+## 242 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$B86_Filter_2$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$Out$)
+	ADD
+	RDF
+	LA			address($OneWire1$.$main$.$B86_Filter_2$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$Out$)
+	ADD
+	RDF
+	LA			address($OneWire1$.$main$.$tmparg_4$)
+	RDUB
+	TNZ
+	JZ			@i_1627
+	SWP			1
+@i_1627:
+	POP
+	LA			address($OneWire1$.$main$.$tmparg_3$)
+	WRF
+## 244 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_3$)
+	RDF
+	LA			address($OneWire1$.$Temp_Venku$)
+	WRF
+## 246 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$B86_Filter_1$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$Out$)
+	ADD
+	RDF
+	LA			address($OneWire1$.$Temp_Jih_Filtered$)
+	WRF
+## 252 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$hw$.$Neuron L523_Vodomer_IN$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$R_TRIG_3$)
+	LUD			offset($Lib.Iec$.$R_TRIG$.$CLK$)
+	ADD
+	WRUB
+## 252 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Iec$.$R_TRIG$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$R_TRIG_3$)
+	CALL			address($Lib.Iec$.$R_TRIG$.$main$)
+;;call end
+## 254 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$hw$.$Neuron L523_Vodomer_IN$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$F_TRIG_3$)
+	LUD			offset($Lib.Iec$.$F_TRIG$.$CLK$)
+	ADD
+	WRUB
+## 254 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Iec$.$F_TRIG$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$F_TRIG_3$)
+	CALL			address($Lib.Iec$.$F_TRIG$.$main$)
+;;call end
+## 256 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$F_TRIG_3$)
+	LUD			offset($Lib.Iec$.$F_TRIG$.$Q$)
+	ADD
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$R_TRIG_3$)
+	LUD			offset($Lib.Iec$.$R_TRIG$.$Q$)
+	ADD
+	RDUB
+	TNZ
+	OR
+	LA			address($OneWire1$.$main$.$tmparg_28$)
+	WRUB
+## 258 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_28$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$CTU$)
+	LUD			offset($Lib.Iec$.$CTU$.$CU$)
+	ADD
+	WRUB
+## 258 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Iec$.$CTU$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$CTU$)
+	CALL			address($Lib.Iec$.$CTU$.$main$)
+;;call end
+## 260 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$CTU$)
+	LUD			offset($Lib.Iec$.$CTU$.$CV$)
+	ADD
+	RDSW
+	LA			address($OneWire1$.$main$.$Vodomer_konstanta$)
+	RDSW
+	MUL
+	LA			address($OneWire1$.$main$.$tmparg_29$)
+	WRSW
+## 262 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_29$)
+	RDSW
+	LA			address($OneWire1$.$Vodomer_litry$)
+	WRSW
+## 270 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$hw$.$xG18_Kotel_vystup$)
+	RDF
+	LA			address($OneWire1$.$main$.$B86_Filter_6$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$In$)
+	ADD
+	WRF
+## 270 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$B86_Filter_6$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$main$)
+;;call end
+## 272 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$B86_Filter_6$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$Out$)
+	ADD
+	RDF
+	LA			address($OneWire1$.$TempPD$)
+	WRF
+## 276 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$hw$.$xG18_Kotel_vratka$)
+	RDF
+	LA			address($OneWire1$.$main$.$B86_Filter_5$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$In$)
+	ADD
+	WRF
+## 276 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$B86_Filter_5$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$main$)
+;;call end
+## 278 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$B86_Filter_5$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$Out$)
+	ADD
+	RDF
+	LA			address($OneWire1$.$Temp_Pracovna$)
+	WRF
+## 290 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$hw$.$Neuron L523_SSR_SV_HorniChodba$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$hw$.$Neuron L523_SSR_SV_Terasa$)
+	RDUB
+	TNZ
+	OR
+	LA			address($OneWire1$.$hw$.$Neuron L523_RO_2x01$)
+	RDUB
+	TNZ
+	OR
+	LA			address($OneWire1$.$hw$.$Neuron L523_RO_2x02$)
+	RDUB
+	TNZ
+	OR
+	LA			address($OneWire1$.$hw$.$Neuron L523_SV_PredGaraz$)
+	RDUB
+	TNZ
+	OR
+	LA			address($OneWire1$.$hw$.$Neuron L523_SSR_SV_Terasa$)
+	RDUB
+	TNZ
+	OR
+	LA			address($OneWire1$.$hw$.$Neuron L523_SSR_SV_VstupChodba$)
+	RDUB
+	TNZ
+	OR
+	LA			address($OneWire1$.$main$.$tmparg_26$)
+	WRUB
+## 292 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_26$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$Svetla_sviti$)
+	WRUB
+## 296 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$DI_3_4_Virtual$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$R_TRIG_2$)
+	LUD			offset($Lib.Iec$.$R_TRIG$.$CLK$)
+	ADD
+	WRUB
+## 296 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Iec$.$R_TRIG$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$R_TRIG_2$)
+	CALL			address($Lib.Iec$.$R_TRIG$.$main$)
+;;call end
+## 298 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$DI_3_4_Virtual$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$F_TRIG_2$)
+	LUD			offset($Lib.Iec$.$F_TRIG$.$CLK$)
+	ADD
+	WRUB
+## 298 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Iec$.$F_TRIG$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$F_TRIG_2$)
+	CALL			address($Lib.Iec$.$F_TRIG$.$main$)
+;;call end
+## 302 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$hw$.$Neuron L523_DI_3_4$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$R_TRIG_2$)
+	LUD			offset($Lib.Iec$.$R_TRIG$.$Q$)
+	ADD
+	RDUB
+	TNZ
+	OR
+	LA			address($OneWire1$.$main$.$F_TRIG_2$)
+	LUD			offset($Lib.Iec$.$F_TRIG$.$Q$)
+	ADD
+	RDUB
+	TNZ
+	OR
+	LA			address($OneWire1$.$main$.$tmparg_25$)
+	WRUB
+## 304 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_25$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$Toggle_2$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$.$In$)
+	ADD
+	WRUB
+## 304 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$Toggle_2$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$.$main$)
+;;call end
+## 306 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$Toggle_2$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$.$Out$)
+	ADD
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$hw$.$Neuron L523_SSR_SV_HorniChodba$)
+	WRUB
+## 312 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$hw$.$SDM120M_FVE_FVE_Energy$)
+	RDF
+	LA			address($OneWire1$.$main$.$FVE_EnergyToday$)
+	RDF
+	SUB
+	LA			address($OneWire1$.$main$.$tmparg_24$)
+	WRF
+## 314 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_24$)
+	RDF
+	LA			address($OneWire1$.$FVE_DayProducing$)
+	WRF
+## 320 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Core$.$Lib$.$Core$.$V1_0$.$B99_PCTimeNode$
+	LA			NULL
+	LA			NULL
+	LA			NULL
+	LA			NULL
+	LA			NULL
+	LA			NULL
+	LA			address($OneWire1$.$main$.$tmparg_18$)
+	LA			address($OneWire1$.$main$.$tmparg_19$)
+	LA			NULL
+	LA			NULL
+	LUB			1
+	LUB			1
+	LA			NULL
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_0$.$B99_PCTimeNode$)
+;;call end
+	POP
+## 322 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_19$)
+	RDSB
+	LSB			0
+	TEQ
+	LA			address($OneWire1$.$main$.$tmparg_20$)
+	WRUB
+## 324 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_18$)
+	RDSB
+	LSB			0
+	TEQ
+	LA			address($OneWire1$.$main$.$tmparg_21$)
+	WRUB
+## 326 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_20$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$tmparg_21$)
+	RDUB
+	TNZ
+	AND
+	LA			address($OneWire1$.$main$.$tmparg_22$)
+	WRUB
+## 328 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$FVE_EnergyToday$)
+	RDF
+	LA			address($OneWire1$.$hw$.$SDM120M_FVE_FVE_Energy$)
+	RDF
+	LA			address($OneWire1$.$main$.$tmparg_22$)
+	RDUB
+	TNZ
+	JZ			@i_1655
+	SWP			1
+@i_1655:
+	POP
+	LA			address($OneWire1$.$main$.$tmparg_23$)
+	WRF
+## 330 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_23$)
+	RDF
+	LA			address($OneWire1$.$main$.$FVE_EnergyToday$)
+	WRF
+## 334 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$DI_3_3_virtual$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$F_TRIG_1$)
+	LUD			offset($Lib.Iec$.$F_TRIG$.$CLK$)
+	ADD
+	WRUB
+## 334 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Iec$.$F_TRIG$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$F_TRIG_1$)
+	CALL			address($Lib.Iec$.$F_TRIG$.$main$)
+;;call end
+## 336 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$DI_3_3_virtual$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$R_TRIG_1$)
+	LUD			offset($Lib.Iec$.$R_TRIG$.$CLK$)
+	ADD
+	WRUB
+## 336 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Iec$.$R_TRIG$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$R_TRIG_1$)
+	CALL			address($Lib.Iec$.$R_TRIG$.$main$)
+;;call end
+## 340 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$DI_3_2_virtual$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$F_TRIG_0$)
+	LUD			offset($Lib.Iec$.$F_TRIG$.$CLK$)
+	ADD
+	WRUB
+## 340 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Iec$.$F_TRIG$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$F_TRIG_0$)
+	CALL			address($Lib.Iec$.$F_TRIG$.$main$)
+;;call end
+## 342 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$DI_3_2_virtual$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$R_TRIG_0$)
+	LUD			offset($Lib.Iec$.$R_TRIG$.$CLK$)
+	ADD
+	WRUB
+## 342 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Iec$.$R_TRIG$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$R_TRIG_0$)
+	CALL			address($Lib.Iec$.$R_TRIG$.$main$)
+;;call end
+## 346 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$hw$.$Neuron L523_DI_3_3$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$R_TRIG_1$)
+	LUD			offset($Lib.Iec$.$R_TRIG$.$Q$)
+	ADD
+	RDUB
+	TNZ
+	OR
+	LA			address($OneWire1$.$main$.$F_TRIG_1$)
+	LUD			offset($Lib.Iec$.$F_TRIG$.$Q$)
+	ADD
+	RDUB
+	TNZ
+	OR
+	LA			address($OneWire1$.$main$.$tmparg_17$)
+	WRUB
+## 348 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_17$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$Toggle_1$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$.$In$)
+	ADD
+	WRUB
+## 348 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$Toggle_1$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$.$main$)
+;;call end
+## 350 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$Toggle_1$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$.$Out$)
+	ADD
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$hw$.$Neuron L523_RO_2x02$)
+	WRUB
+## 354 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$hw$.$Neuron L523_DI_3_2$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$R_TRIG_0$)
+	LUD			offset($Lib.Iec$.$R_TRIG$.$Q$)
+	ADD
+	RDUB
+	TNZ
+	OR
+	LA			address($OneWire1$.$main$.$F_TRIG_0$)
+	LUD			offset($Lib.Iec$.$F_TRIG$.$Q$)
+	ADD
+	RDUB
+	TNZ
+	OR
+	LA			address($OneWire1$.$main$.$tmparg_16$)
+	WRUB
+## 356 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_16$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$Toggle_0$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$.$In$)
+	ADD
+	WRUB
+## 356 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$Toggle_0$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$.$main$)
+;;call end
+## 358 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$Toggle_0$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$.$Out$)
+	ADD
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$hw$.$Neuron L523_RO_2x01$)
+	WRUB
+## 362 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$hw$.$Obyvak_Temperature$)
+	RDF
+	LA			address($OneWire1$.$main$.$B86_Filter$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$In$)
+	ADD
+	WRF
+## 362 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$B86_Filter$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$main$)
+;;call end
+## 364 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$B86_Filter$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$Out$)
+	ADD
+	RDF
+	LA			address($OneWire1$.$Obyvak_filtered$)
+	WRF
+## 368 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$hw$.$Puda_Temperature$)
+	RDF
+	LA			address($OneWire1$.$main$.$B86_Filter_4$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$In$)
+	ADD
+	WRF
+## 368 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$B86_Filter_4$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$main$)
+;;call end
+## 370 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$B86_Filter_4$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$Out$)
+	ADD
+	RDF
+	LA			address($OneWire1$.$Temp_Puda$)
+	WRF
+## 376 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$hw$.$Garaz_Temperature$)
+	RDF
+	LA			address($OneWire1$.$main$.$B86_Filter_0$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$In$)
+	ADD
+	WRF
+## 376 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$B86_Filter_0$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$main$)
+;;call end
+## 378 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$B86_Filter_0$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$Out$)
+	ADD
+	RDF
+	LA			address($OneWire1$.$Garaz_filtered$)
+	WRF
+## 382 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$SV_Dole$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$F_TRIG$)
+	LUD			offset($Lib.Iec$.$F_TRIG$.$CLK$)
+	ADD
+	WRUB
+## 382 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Iec$.$F_TRIG$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$F_TRIG$)
+	CALL			address($Lib.Iec$.$F_TRIG$.$main$)
+;;call end
+## 384 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$SV_Dole$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$R_TRIG$)
+	LUD			offset($Lib.Iec$.$R_TRIG$.$CLK$)
+	ADD
+	WRUB
+## 384 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Iec$.$R_TRIG$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$R_TRIG$)
+	CALL			address($Lib.Iec$.$R_TRIG$.$main$)
+;;call end
+## 388 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$hw$.$Neuron L523_DI_3_1$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$BD12_SwitchOnDelay_0$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD12_SwitchOnDelay$.$In$)
+	ADD
+	WRUB
+## 388 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Core$.$Lib$.$Core$.$V1_1$.$BD12_SwitchOnDelay$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$BD12_SwitchOnDelay_0$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD12_SwitchOnDelay$.$main$)
+;;call end
+## 390 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$BD12_SwitchOnDelay_0$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD12_SwitchOnDelay$.$Out$)
+	ADD
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$Toggle_3$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$.$In$)
+	ADD
+	WRUB
+## 390 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$Toggle_3$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$.$main$)
+;;call end
+## 392 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$hw$.$Neuron L523_DI_3_1$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$R_TRIG$)
+	LUD			offset($Lib.Iec$.$R_TRIG$.$Q$)
+	ADD
+	RDUB
+	TNZ
+	OR
+	LA			address($OneWire1$.$main$.$F_TRIG$)
+	LUD			offset($Lib.Iec$.$F_TRIG$.$Q$)
+	ADD
+	RDUB
+	TNZ
+	OR
+	LA			address($OneWire1$.$main$.$tmparg_15$)
+	WRUB
+## 394 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_15$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$Toggle$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$.$In$)
+	ADD
+	WRUB
+## 394 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$Toggle$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$.$main$)
+;;call end
+## 396 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$Toggle$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$.$Out$)
+	ADD
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$hw$.$Neuron L523_SSR_SvetlaDole$)
+	WRUB
+## 400 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$hw$.$SDM120M_FVE_FVE_Pwr$)
+	RDF
+	LF			-0.001
+	MUL
+	LA			address($OneWire1$.$main$.$tmparg_14$)
+	WRF
+## 402 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_14$)
+	RDF
+	LA			address($OneWire1$.$hw$.$Pro380-Mod_Total_Active_power$)
+	RDF
+	ADD
+	LA			address($OneWire1$.$main$.$tmparg_27$)
+	WRF
+## 404 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_27$)
+	RDF
+	LA			address($OneWire1$.$Power_Consumption$)
+	WRF
+## 406 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_14$)
+	RDF
+	LA			address($OneWire1$.$FVE_Power$)
+	WRF
+## 410 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$Control$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$hw$.$Neuron L523_OneWireControl$)
+	WRUB
+## 412 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$BD2_Pulse_Generator_0$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$.$main$)
+;;call end
+## 414 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$BD2_Pulse_Generator_0$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$.$Out$)
+	ADD
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$main$.$BD30_Counter$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_0$.$BD30_Counter$.$bx$)
+	ADD
+	WRUB
+## 414 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Core$.$Lib$.$Core$.$V1_0$.$BD30_Counter$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$BD30_Counter$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_0$.$BD30_Counter$.$main$)
+;;call end
+## 416 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$BD30_Counter$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_0$.$BD30_Counter$.$Out$)
+	ADD
+	RDSQ
+	LA			address($OneWire1$.$RunCnt$)
+	WRSQ
+## 420 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$Toggle_3$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$.$Out$)
+	ADD
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$OVL_SV_Predgaraz$)
+	RDUB
+	TNZ
+	OR
+	LA			address($OneWire1$.$main$.$tmparg_35$)
+	WRUB
+## 422 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$tmparg_35$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$hw$.$Neuron L523_SV_PredGaraz$)
+	WRUB
+## 426 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$OVL_SV_Terasa$)
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$hw$.$Neuron L523_SSR_SV_Terasa$)
+	WRUB
+## 428 "OneWire1//OneWire1//main//v0_0"
+;;Call $Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$.$main$
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$BD2_Pulse_Generator$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$.$main$)
+;;call end
+## 430 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$BD2_Pulse_Generator$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$.$Out$)
+	ADD
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$hw$.$device_ULED_1.01$)
+	WRUB
+## 432 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$BD2_Pulse_Generator$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$.$Out$)
+	ADD
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$hw$.$Neuron L523_ULED_1.03_w$)
+	WRUB
+## 434 "OneWire1//OneWire1//main//v0_0"
+	LA			address($OneWire1$.$main$.$BD2_Pulse_Generator$)
+	LUD			offset($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$.$Out$)
+	ADD
+	RDUB
+	TNZ
+	LA			address($OneWire1$.$hw$.$Neuron L523_ULED_1.01_w$)
+	WRUB
+## 435 "OneWire1//OneWire1//main//v0_0"
+	RET
+end code
+var $OneWire1$.$main$.dyn_met: addr, TLS META(2147483648)
+var $OneWire1$.$main$.dyn_obj: addr, TLS META(2147483648)
+
+var $OneWire1$.$main$.$B86_Filter$: $Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$ ={0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,300,0} 
+var $OneWire1$.$main$.$B86_Filter_1$: $Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$ ={0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,300,0} 
+var $OneWire1$.$main$.$B86_Filter_2$: $Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$ ={0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,300,0} 
+var $OneWire1$.$main$.$B86_Filter_0$: $Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$ ={0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,900,0} 
+var $OneWire1$.$main$.$Out_Temp_source$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$BD2_Pulse_Generator$: $Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$ ={0,1,0,0,0,0,1,1,2000000,10000000,1,0,1,0} 
+var $OneWire1$.$main$.$B86_Filter_4$: $Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$ ={0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,900,0} 
+var $OneWire1$.$main$.$BD2_Pulse_Generator_0$: $Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$ ={0,1,0,0,0,0,1,1,2000000,6000000000,1,0,1,0} 
+var $OneWire1$.$main$.$BD30_Counter$: $Lib.Core$.$Lib$.$Core$.$V1_0$.$BD30_Counter$ ={0,1,0,0,0,0,0,0,0,0,0,0,0,0,100000,0,0} 
+var $OneWire1$.$main$.$B86_Filter_5$: $Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$ ={0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,900,0} 
+var $OneWire1$.$main$.$B86_Filter_6$: $Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$ ={0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,900,0} 
+var $OneWire1$.$main$.$Control$: $base$.$bool$ =1 
+var $OneWire1$.$main$.$SV_Dole$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$Toggle$: $Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$ ={0,1,0,0,0,0} 
+var $OneWire1$.$main$.$R_TRIG$: $Lib.Iec$.$R_TRIG$ ={0,1,0,0,0} 
+var $OneWire1$.$main$.$R_TRIG_0$: $Lib.Iec$.$R_TRIG$ ={0,1,0,0,0} 
+var $OneWire1$.$main$.$R_TRIG_1$: $Lib.Iec$.$R_TRIG$ ={0,1,0,0,0} 
+var $OneWire1$.$main$.$Toggle_0$: $Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$ ={0,1,0,0,0,0} 
+var $OneWire1$.$main$.$F_TRIG$: $Lib.Iec$.$F_TRIG$ ={0,1,0,0,0} 
+var $OneWire1$.$main$.$F_TRIG_0$: $Lib.Iec$.$F_TRIG$ ={0,1,0,0,0} 
+var $OneWire1$.$main$.$F_TRIG_1$: $Lib.Iec$.$F_TRIG$ ={0,1,0,0,0} 
+var $OneWire1$.$main$.$Toggle_1$: $Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$ ={0,1,0,0,0,0} 
+var $OneWire1$.$main$.$Toggle_2$: $Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$ ={0,1,0,0,0,0} 
+var $OneWire1$.$main$.$F_TRIG_2$: $Lib.Iec$.$F_TRIG$ ={0,1,0,0,0} 
+var $OneWire1$.$main$.$R_TRIG_2$: $Lib.Iec$.$R_TRIG$ ={0,1,0,0,0} 
+var $OneWire1$.$main$.$F_TRIG_3$: $Lib.Iec$.$F_TRIG$ ={0,1,0,0,0} 
+var $OneWire1$.$main$.$R_TRIG_3$: $Lib.Iec$.$R_TRIG$ ={0,1,0,0,0} 
+var $OneWire1$.$main$.$CTU$: $Lib.Iec$.$CTU$ ={0,1,0,0,0,0,0,0} 
+var $OneWire1$.$main$.$Vodomer_konstanta$: $base$.$int$ =5 
+var $OneWire1$.$main$.$dummy_jih$: $base$.$real$ =5 
+var $OneWire1$.$main$.$B31_Reverse_On_Off_Control_Sequence$: $Lib.Core$.$Lib$.$Core$.$V1_1$.$B31_Reverse_On_Off_Control_Sequence$ ={0,1,0,0,0,22,$Lib.Core$.$Lib$.$Core$.$V1_0$.$ControllerType$.$Heating$,1,0.5,0,0} 
+var $OneWire1$.$main$.$TOF$: $Lib.Iec$.$TOF$ ={0,1,0,3000000000,0,0,0} 
+var $OneWire1$.$main$.$TempHysteresis$: $base$.$real$ =0.5 
+var $OneWire1$.$main$.$BD12_SwitchOnDelay$: $Lib.Core$.$Lib$.$Core$.$V1_1$.$BD12_SwitchOnDelay$ ={0,1,0,0,1,0,0,9000000000,0,0,0} 
+var $OneWire1$.$main$.$RS$: $Lib.Iec$.$RS$ ={0,1,0,0,0} 
+var $OneWire1$.$main$.$RozdilVstupu$: $base$.$real$ =-2 
+var $OneWire1$.$main$.$BD12_SwitchOnDelay_0$: $Lib.Core$.$Lib$.$Core$.$V1_1$.$BD12_SwitchOnDelay$ ={0,1,0,0,1,0,0,30000000,0,0,0} 
+var $OneWire1$.$main$.$Toggle_3$: $Lib.Core$.$Lib$.$Core$.$v1_0$.$Toggle$ ={0,1,0,0,0,0} 
+var $OneWire1$.$main$.$BD2_Pulse_Generator_1$: $Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$ ={0,1,0,0,0,0,1,1,5000000,10000000,0,0,1,0} 
+var $OneWire1$.$main$.$BD2_Pulse_Generator_2$: $Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$ ={0,1,0,0,0,0,1,1,5000000,10000000,1,0,1,0} 
+var $OneWire1$.$main$.$T17_Boolean_Scheduler$: $Lib.Hvac$.$Lib$.$Hvac$.$V1_0$.$T17_Boolean_Scheduler$ ={0,1,{{0,0},{480,1},{600,0},{1320,1},{1420,0},{1920,1},{2040,0},{2760,1},{2860,0},{3360,1},{3480,0},{4200,1},{4300,0},{4800,1},{4920,0},{5640,1},{5740,0},{6240,1},{6360,0},{7080,1},{7180,0},{7680,1},{7800,0},{8520,1},{8620,0},{9120,1},{9240,0},{9960,1},{10060,0},{65535,0},{65535,0},{65535,0},{65535,0},{65535,0},{65535,0},{65535,0},{65535,0},{65535,0},{65535,0},{65535,0},{65535,0},{65535,0}},0,0,0,0,0,0,0,0,0,0,0,{{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}},0,0,0,0,0,0} 
+var $OneWire1$.$main$.$TOF_0$: $Lib.Iec$.$TOF$ ={0,1,0,600000000,0,0,0} 
+var $OneWire1$.$main$.$MonostableFlipFlop$: $Lib.Core$.$Lib$.$Core$.$V1_0$.$MonostableFlipFlop$ ={0,1,40000000,0,0,0,0,0} 
+var $OneWire1$.$main$.$FVE_EnergyToday$: $base$.$real$ =0 , RETAIN 
+var $OneWire1$.$main$.$tmparg_3$: $base$.$real$ =0 
+var $OneWire1$.$main$.$tmparg_4$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_35$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_14$: $base$.$real$ =0 
+var $OneWire1$.$main$.$tmparg_15$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_16$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_17$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_18$: $base$.$sint$ =0 
+var $OneWire1$.$main$.$tmparg_19$: $base$.$sint$ =0 
+var $OneWire1$.$main$.$tmparg_20$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_21$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_22$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_23$: $base$.$real$ =0 
+var $OneWire1$.$main$.$tmparg_24$: $base$.$real$ =0 
+var $OneWire1$.$main$.$tmparg_25$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_26$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_27$: $base$.$real$ =0 
+var $OneWire1$.$main$.$tmparg_28$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_29$: $base$.$int$ =0 
+var $OneWire1$.$main$.$tmparg_43$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_30$: $base$.$real$ =0 
+var $OneWire1$.$main$.$tmparg_31$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_34$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_40$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_36$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_37$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_38$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_39$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_41$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_42$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_49$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_50$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_51$: $base$.$bool$ =0 
+var $OneWire1$.$main$.$tmparg_44$: $base$.$bool$ =0 
+/*
+ *	SUBPROGRAM DECLARATION init
+ */
+prog $OneWire1$.$main$.$init$
+
+()
+META (16777232)
+code
+;;spec block call for member variable B86_Filter
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$B86_Filter$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$init$)
+	
+;;spec block call for member variable B86_Filter_1
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$B86_Filter_1$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$init$)
+	
+;;spec block call for member variable B86_Filter_2
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$B86_Filter_2$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$init$)
+	
+;;spec block call for member variable B86_Filter_0
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$B86_Filter_0$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$init$)
+	
+;;spec block call for member variable BD2_Pulse_Generator
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$BD2_Pulse_Generator$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$.$init$)
+	
+;;spec block call for member variable B86_Filter_4
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$B86_Filter_4$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$init$)
+	
+;;spec block call for member variable BD2_Pulse_Generator_0
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$BD2_Pulse_Generator_0$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$.$init$)
+	
+;;spec block call for member variable B86_Filter_5
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$B86_Filter_5$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$init$)
+	
+;;spec block call for member variable B86_Filter_6
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$B86_Filter_6$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_0$.$B86_Filter$.$init$)
+	
+;;spec block call for member variable B31_Reverse_On_Off_Control_Sequence
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$B31_Reverse_On_Off_Control_Sequence$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_1$.$B31_Reverse_On_Off_Control_Sequence$.$init$)
+	
+;;spec block call for member variable TOF
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$TOF$)
+	CALL			address($Lib.Iec$.$TOF$.$init$)
+	
+;;spec block call for member variable BD12_SwitchOnDelay
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$BD12_SwitchOnDelay$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD12_SwitchOnDelay$.$init$)
+	
+;;spec block call for member variable BD12_SwitchOnDelay_0
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$BD12_SwitchOnDelay_0$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD12_SwitchOnDelay$.$init$)
+	
+;;spec block call for member variable BD2_Pulse_Generator_1
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$BD2_Pulse_Generator_1$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$.$init$)
+	
+;;spec block call for member variable BD2_Pulse_Generator_2
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$BD2_Pulse_Generator_2$)
+	CALL			address($Lib.Core$.$Lib$.$Core$.$V1_1$.$BD2_Pulse_Generator$.$init$)
+	
+;;spec block call for member variable TOF_0
+	LUB			1
+	LA			NULL
+	LA			address($OneWire1$.$main$.$TOF_0$)
+	CALL			address($Lib.Iec$.$TOF$.$init$)
+	
+	RET
+end code
+var $OneWire1$.$main$.$init$.dyn_met: addr, TLS META(2147483648)
+var $OneWire1$.$main$.$init$.dyn_obj: addr, TLS META(2147483648)
+
+var $OneWire1$.$main$.$init$.$eno$: $base$.$bool$ =0 , META (2)
+var $OneWire1$.$main$.$init$.$en$: $base$.$bool_1$ =1 , META (1)
+srcfile "OneWire1//OneWire1//main//v0_0" "00000000000000000000000000000000"
+
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.03_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.03_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.03_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.02_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.02_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.02_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NForce3_rd_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NForce3_rd_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NForce3_rd_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.01_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.01_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.01_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.09_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.09_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.09_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.06_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.06_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.06_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NConfig3_rd_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NConfig3_rd_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NConfig3_rd_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.05_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.05_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.05_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.13_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.13_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.13_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_Nbits_wdboot3_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_Nbits_wdboot3_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_Nbits_wdboot3_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.08_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.08_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.08_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.07_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.07_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.07_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.10_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.10_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.10_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NStatus3_rd_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NStatus3_rd_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NStatus3_rd_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.11_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.11_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.11_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.04_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.04_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.04_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3_rd_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3_rd_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3_rd_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.12_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.12_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.12_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NShadow3_wr_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NShadow3_wr_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NShadow3_wr_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.15_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.15_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.15_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.16_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.16_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.16_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NForce3_wr_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NForce3_wr_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NForce3_wr_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_Nbits_reboot3_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_Nbits_reboot3_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_Nbits_reboot3_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.14_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.14_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt3.14_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NConfig2_rd_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NConfig2_rd_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NConfig2_rd_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_Nbits_wdboot2_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_Nbits_wdboot2_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_Nbits_wdboot2_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NForce2_wr_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NForce2_wr_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NForce2_wr_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt2.01_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt2.01_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt2.01_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_Nbits_reboot2_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_Nbits_reboot2_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_Nbits_reboot2_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt2.04_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt2.04_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt2.04_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NForce2_rd_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NForce2_rd_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NForce2_rd_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt2.02_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt2.02_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt2.02_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt2_rd_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt2_rd_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt2_rd_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt2.03_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt2.03_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt2.03_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NShadow2_wr_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NShadow2_wr_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NShadow2_wr_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NAo2_wr_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NAo2_wr_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NAo2_wr_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NStatus2_rd_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NStatus2_rd_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NStatus2_rd_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NPwm1.02_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NPwm1.02_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NPwm1.02_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NPWM1_rd_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NPWM1_rd_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NPWM1_rd_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_ULED_1.03_w$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NULed1.03_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NULed1.03_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NULed1.03_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_Nbits_wdboot1_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_Nbits_wdboot1_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_Nbits_wdboot1_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt1.04_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt1.04_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt1.04_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_Nbits_owoff1_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_Nbits_owoff1_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_Nbits_owoff1_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NPwm1.03_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NPwm1.03_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NPwm1.03_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NStatus1_rd_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NStatus1_rd_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NStatus1_rd_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NForce1_wr_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NForce1_wr_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NForce1_wr_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NConfig1_rd_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NConfig1_rd_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NConfig1_rd_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt1_rd_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt1_rd_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt1_rd_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NVirtual1_wr_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NVirtual1_wr_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NVirtual1_wr_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt1.03_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt1.03_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt1.03_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_Nbits_reboot1_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_Nbits_reboot1_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_Nbits_reboot1_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NStorageLife1_rd_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NStorageLife1_rd_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NStorageLife1_rd_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_ULED_1.04_w$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NULed1.04_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NULed1.04_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NULed1.04_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt1.01_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt1.01_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt1.01_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt1.02_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt1.02_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NCnt1.02_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_ULED_1.01_w$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NULed1.01_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NULed1.01_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NULed1.01_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NShadow1_wr_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NShadow1_wr_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NShadow1_wr_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NPwm1.04_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NPwm1.04_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NPwm1.04_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_ULED_1.04_r$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_ULED_1.03_r$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_ULED_1.02_r$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_ULED_1.01_r$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NULed1_rd_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NULed1_rd_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NULed1_rd_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_ULED_1.02_w$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NULed1.02_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NULed1.02_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NULed1.02_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NVirtual1_rd_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NVirtual1_rd_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NVirtual1_rd_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NForce1_rd_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NForce1_rd_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NForce1_rd_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NPwm1.01_wr_woch_timestamp$: $base$.$dt$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NPwm1.01_wr_woch_commerror$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_NPwm1.01_wr_woch_commblock$: $base$.$bool$ =0 , RETAIN 
+var $OneWire1$.$hw$.$Neuron L523_SSR_SV_Terasa$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_In1$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_SSR_SvetlaDole$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_IN2_1$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_DI_3_1$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_RO_2.04_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_RO_2.05_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_SV_PredGaraz$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_SV_Volne$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_OneWireControl$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Power$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Napeti_L1$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Napeti_L2$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Napeti_L3$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Tariff$: $base$.$uint$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Parity_setting$: $base$.$uint$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_LCD_cycle_time$: $base$.$uint$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Combination_code$: $base$.$uint$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_S0_output_rate$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Baud_rate$: $base$.$word$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Modbus_ID$: $base$.$uint$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L3_phase_forward_dir$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L2_phase_forward_dir$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_T2_reverse_reactive_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L2_reverse_reactive_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Total_reactive_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_T1_total_reactive_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_T2_total_reactive_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_T2_forward_reactive_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L3_reverse_reactive_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L1_reverse_reactive_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L1_total_reactive_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L2_total_reactive_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L3_total_reactive_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_T1_forward_reactive_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L3_forward_reactive_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L2_forward_reactive_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L1_forward_reactive_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Reverse_reactive_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_T1_reverse_reactive_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Forward_reactive_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L3_reverse_active_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L2_reverse_active_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L1_reverse_active_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_T2_reverse_active_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_T1_reverse_active_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Reverse_active_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_T2_forward_active_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L3_forward_active_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L2_forward_active_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L1_forward_active_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_T1_forward_active_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L3_total_active_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L2_total_active_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L1_total_active_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_T2_total_active_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_T1_total_active_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Total_active_energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L3_Power_factor$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L2_Power_factor$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L1_Power_factor$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Power_factor$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L3_Apparent_power$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L2_Apparent_power$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L1_Apparent_power$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Total_Apparent_power$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L3_Reactive_power$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L2_Reactive_power$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L1_Reactive_power$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Total_Reactive_power$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L3_Active_power$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L2_Active_power$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L1_Active_power$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Total_Active_power$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L3_Current$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L2_Current$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L1_Current$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Grid_frequency$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_L1_phase_forward_dir$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Meter_amps$: $base$.$uint$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Harware_version$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Software_version$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Protocol_version$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Meter_code$: $base$.$word$ =0 
+var $OneWire1$.$hw$.$Pro380-Mod_Serial_number$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_ULED_1.03$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ULED_1.02$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ULED_1.01$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_Clear_WD_boot_1$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.05_set$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.08_set$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.04_set$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_Was_WD_boot_1$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.13_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.12_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.11_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.10_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.09_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.08_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.07_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.06_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.05_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.04_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.03_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.02_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.01_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_DI_1.12$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_DI_1.11$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_DI_1.10$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_DI_1.09$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_DI_1.08$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_DI_1.07$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_DI_1.06$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_DI_1.05$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_DI_1.04$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_DI_1.03$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_DI_1.02$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_DI_1.01$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.13_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.12_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.11_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.10_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.09_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.08_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.07_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.06_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.05_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.04_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.03_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.02_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.01_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.09_set$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.12$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.11$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.10$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.09$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.08$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.07$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.06$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.05$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.04$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.03$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.02$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.01$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.03_set$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_Reboot_1$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.10_set$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_BoardSerial_1$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_HwVersion_1$: $base$.$word$ =0 
+var $OneWire1$.$hw$.$device_Version_1$: $base$.$word$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.01_set$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.12_set$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.11_set$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.02_set$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.07_set$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.13_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.12_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.11_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.10_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.09_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.08_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.07_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.06_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.05_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.04_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.03_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.02_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_ForceOutput_1.01_r$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_CNT_1.06_set$: $base$.$dword$ =0 
+var $OneWire1$.$hw$.$device_RO_1.13_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.12_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.11_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.10_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.09_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.08_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.07_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.06_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.05_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.04_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.03_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_RO_1.02_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$device_Kotel$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$OneWire_OneWireComErr$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$xG18_Sever$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$xG18_Garaz$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$xG18_Kotel_vystup$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$xG18_Kotel_vratka$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$xG18_Temperature_CH6$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$SDM120M_FVE_FVE_Voltage$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$SDM120M_FVE_FVE_Current$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$SDM120M_FVE_FVE_Energy$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$SDM120M_FVE_FVE_Pwr$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Neuron L523_SV_ObyvaK_Predni$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_RO_2x01$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_RO_2x02$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_RO_2x03$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Garaz_Temperature$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Sever_Temperature$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Puda_Temperature$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Obyvak_Temperature$: $base$.$real$ =0 
+var $OneWire1$.$hw$.$Neuron L523_DI_3_2$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_DI_3_3$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_DI_3_4$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_SSR_SV_HorniChodba$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_Vodomer_IN$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_Cerpadlo_1NP$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_ForceOutput_3.07_w$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_Rekuperace$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_SSR_SV_VstupChodba$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_PIR_VstupChodba$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_Zaluzie_P_Otevrit$: $base$.$bool$ =0 
+var $OneWire1$.$hw$.$Neuron L523_Zaluzie_P_Zavrit$: $base$.$bool$ =0 
+var $OneWire1$.$VypnutiChodba$: $base$.$time$ =0 
+var $OneWire1$.$RekuperaceTPG$: $base$.$bool$ =0 
+var $OneWire1$.$Zavrit_kousek$: $base$.$bool$ =0 
+var $OneWire1$.$Otevrit_kousek$: $base$.$bool$ =0 
+var $OneWire1$.$Zaluzie_Zavrit$: $base$.$bool$ =0 
+var $OneWire1$.$Zaluzie_Otevrit$: $base$.$bool$ =0 
+var $OneWire1$.$RekuperaceRucne$: $base$.$bool$ =0 
+var $OneWire1$.$RezimRekuperace$: $base$.$bool$ =0 
+var $OneWire1$.$Cas_VstupChodba$: $base$.$time$ =600000000 
+var $OneWire1$.$FwVersion$: $base$.$real$ =230211 
+var $OneWire1$.$SetTemp$: $base$.$real$ =10 , RETAIN 
+var $OneWire1$.$Vodomer_litry$: $base$.$int$ =0 , RETAIN 
+var $OneWire1$.$Vodomer_pulses$: $base$.$int$ =0 , RETAIN 
+var $OneWire1$.$Power_Consumption$: $base$.$real$ =0 
+var $OneWire1$.$Svetla_sviti$: $base$.$bool$ =0 
+var $OneWire1$.$DI_3_4_Virtual$: $base$.$bool$ =0 
+var $OneWire1$.$FVE_DayProducing$: $base$.$real$ =0 
+var $OneWire1$.$DI_3_3_virtual$: $base$.$bool$ =0 
+var $OneWire1$.$DI_3_2_virtual$: $base$.$bool$ =0 
+var $OneWire1$.$FVE_Power$: $base$.$real$ =0 
+var $OneWire1$.$TempPD$: $base$.$real$ =0 
+var $OneWire1$.$Temp_Pracovna$: $base$.$real$ =0 
+var $OneWire1$.$RunCnt$: $base$.$lint$ =0 
+var $OneWire1$.$Temp_Puda$: $base$.$real$ =0 
+var $OneWire1$.$OVL_SV_Volne$: $base$.$bool$ =0 
+var $OneWire1$.$OVL_SV_Predgaraz$: $base$.$bool$ =0 
+var $OneWire1$.$Vypnout_Vent$: $base$.$bool$ =0 
+var $OneWire1$.$OVL_SV_Terasa$: $base$.$bool$ =0 
+var $OneWire1$.$Krb_filtered$: $base$.$real$ =0 
+var $OneWire1$.$Garaz_filtered$: $base$.$real$ =0 
+var $OneWire1$.$Obyvak_filtered$: $base$.$real$ =0 
+var $OneWire1$.$Temp_Venku$: $base$.$real$ =0 
+var $OneWire1$.$Temp_Sever_Filtered$: $base$.$real$ =0 
+var $OneWire1$.$Temp_Jih_Filtered$: $base$.$real$ =0 
+var $OneWire1$.$AvgTemp$: $base$.$real$ =0 
+srcfile "OneWire1//OneWire1//Globals//generated" "00000000000000000000000000000000"
+
+/////////////
+//internals
+
+

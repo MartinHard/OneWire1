@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project xmlns:r="http://dev.rcware.eu/serialization/references" type="project" xmlns="http://dev.rcware.eu/shark-ide-2">
+  <ProjectKind>Executable</ProjectKind>
+  <references>
+    <item />
+    <item module="base" />
+    <item module="Lib.Core" />
+    <item module="Lib.Hvac" />
+    <item module="Lib.Iec" />
+    <item module="Lib.Mervis" />
+  </references>
+  <Name>OneWire1</Name>
+  <Id>3b50290b-36f5-43f2-ae83-a3e2de1450a9</Id>
+  <items>
+    <codeunit type="codeunit">
+      <CodeUnitKind>Program</CodeUnitKind>
+      <LanguageType>fbd</LanguageType>
+      <DocumentStreamPath>main_adb0e059-3599-465b-976c-964d94164df0.scu</DocumentStreamPath>
+      <Name>main</Name>
+      <Id>adb0e059-3599-465b-976c-964d94164df0</Id>
+      <items />
+    </codeunit>
+    <directory type="directory">
+      <Name>Globals</Name>
+      <Id>71fb9421-b8e8-4581-8828-a0f46235c614</Id>
+      <items>
+        <codeunit type="codeunit">
+          <LanguageType>st</LanguageType>
+          <Version major="-1" minor="-1" />
+          <DocumentStreamPath>generated_06ae78b9-36f4-4aca-addb-7fe5f007fa38.scu</DocumentStreamPath>
+          <Name>generated</Name>
+          <Id>06ae78b9-36f4-4aca-addb-7fe5f007fa38</Id>
+          <items />
+        </codeunit>
+      </items>
+    </directory>
+  </items>
+</project>
